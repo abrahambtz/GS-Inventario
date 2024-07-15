@@ -1,0 +1,87 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 1317.6862999507905,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 347.3921588804281,
+            "y": 6.220930232558139
+          },
+          "nodeIndex": "NV_ComInv",
+          "nodeLineageTag": "85a4d7b8-7f75-4356-8af8-bfedc33def7a",
+          "size": {
+            "height": 856.546511627907,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 807.3738714864196,
+            "y": 146.81395348837214
+          },
+          "nodeIndex": "Agencias",
+          "nodeLineageTag": "d32107d6-0c48-4812-ace9-b26dd9efa8bc",
+          "size": {
+            "height": 402.32048775468206,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1268.278303877097,
+            "y": 0
+          },
+          "nodeIndex": "RF_ComInv",
+          "nodeLineageTag": "c4364007-39ce-4c50-ba8b-5ffdf9c7d309",
+          "size": {
+            "height": 1000,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 56.418604651162838
+          },
+          "nodeIndex": "EstatusPedidos",
+          "nodeLineageTag": "59c991e3-6234-4ab1-8a5e-42fb103ad2d8",
+          "size": {
+            "height": 437.6395348837209,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 2688.2783038770967,
+            "y": 424
+          },
+          "nodeIndex": "RF",
+          "nodeLineageTag": "2b3f6ac1-d6da-4343-941c-ed814c8b0d35",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 1
+        }
+      ],
+      "name": "Todas las tablas",
+      "zoomValue": 61.199357693240763,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "Todas las tablas",
+  "defaultDiagram": "Todas las tablas"
+}

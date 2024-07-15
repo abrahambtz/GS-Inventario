@@ -1,0 +1,9 @@
+{
+  "version": "4.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../GS_Inventario.SemanticModel"
+    },
+    "byConnection": null
+  }
+}
