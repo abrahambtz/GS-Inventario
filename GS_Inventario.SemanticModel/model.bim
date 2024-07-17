@@ -1088,6 +1088,27 @@
                   }
                 ]
               },
+              "rf_detalle_cominv.cliente_": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "RF_Detalle_ComInv",
+                    "ConceptualProperty": "Cliente_"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Cliente": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
               "rf_detalle_cominv.column_cantidad_sum": {
                 "Definition": {
                   "Binding": {
@@ -1161,7 +1182,7 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "No. Pedido": {
+                    "Pedido": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -1171,7 +1192,7 @@
                     }
                   },
                   {
-                    "Pedido": {
+                    "No. Pedido": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -1187,6 +1208,27 @@
                   "Binding": {
                     "ConceptualEntity": "RF_Detalle_ComInv",
                     "ConceptualProperty": "vendedor"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Vendedor": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "rf_detalle_cominv.vendedor_": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "RF_Detalle_ComInv",
+                    "ConceptualProperty": "Vendedor_"
                   }
                 },
                 "State": "Generated",
@@ -3706,11 +3748,15 @@
               {
                 "name": "SummarizationSetBy",
                 "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isDecimal\":true}"
               }
             ],
             "dataType": "double",
             "expression": "VALUE(RELATED((RF_ComInv[costototalapartado])))",
-            "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "formatString": "#,0",
             "isDataTypeInferred": true,
             "lineageTag": "901003b0-39d1-431d-a63f-f5c31b71c70e",
             "summarizeBy": "sum",
@@ -3746,6 +3792,25 @@
             "lineageTag": "74f9469a-a000-4a3a-ad99-e295da32cd1c",
             "summarizeBy": "none",
             "type": "calculated"
+          },
+          {
+            "name": "_diasEnPedido",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": [
+              "DATEDIFF(RF_Detalle_ComInv[_fechaPedido], TODAY(), DAY)",
+              ""
+            ],
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "16d4c5d2-a5e0-462f-bd30-e795564da6a0",
+            "summarizeBy": "sum",
+            "type": "calculated"
           }
         ],
         "lineageTag": "f9b4b92d-d589-4673-a012-835d8c1c86f5",
@@ -3771,6 +3836,72 @@
             ],
             "expression": "SUM(RF_Detalle_ComInv[_cantidad])",
             "lineageTag": "0850c57e-38b8-481a-933c-2788f90f5bf8"
+          },
+          {
+            "name": "Dias Transcurridos",
+            "expression": [
+              "IF(",
+              "    ISINSCOPE(RF_Detalle_ComInv[pedido]),",
+              "    MAX(RF_Detalle_ComInv[_diasEnPedido]),",
+              "    SUM(RF_Detalle_ComInv[_diasEnPedido])",
+              ")"
+            ],
+            "formatString": "#,0",
+            "lineageTag": "84cc2717-def7-4228-b157-77c974445f3f"
+          },
+          {
+            "name": "EsMayorDe90",
+            "expression": [
+              "IF(",
+              "    ISINSCOPE(RF_Detalle_ComInv[pedido]),",
+              "    IF([Dias Transcurridos] > 90, 1, 0),",
+              "    0",
+              ")"
+            ],
+            "formatString": "0",
+            "lineageTag": "e997d495-c2b1-436d-88a7-e34ee2200dea"
+          },
+          {
+            "name": "Fecha del Pedido",
+            "expression": [
+              "IF(",
+              "    ISINSCOPE(RF_Detalle_ComInv[pedido]),",
+              "    MIN(RF_Detalle_ComInv[_fechaPedido]),",
+              "    BLANK()",
+              ")",
+              "",
+              ""
+            ],
+            "formatString": "Short Date",
+            "lineageTag": "7a2df43d-f617-4a86-b4f2-d851ad78ec82"
+          },
+          {
+            "name": "Vendedor_",
+            "expression": [
+              "IF(",
+              "    ISINSCOPE(RF_Detalle_ComInv[pedido]),",
+              "    MAX(RF_Detalle_ComInv[vendedor]),",
+              "    BLANK()",
+              ")"
+            ],
+            "lineageTag": "13e62cdb-c559-46da-8dc8-921dc681ea9a"
+          },
+          {
+            "name": "Cliente_",
+            "expression": [
+              "IF(",
+              "    ISINSCOPE(RF_Detalle_ComInv[pedido]),",
+              "    MAX(RF_Detalle_ComInv[cliente]),",
+              "    BLANK()",
+              ")"
+            ],
+            "lineageTag": "31b0d31c-8bd3-40e0-924c-3364de3ef551"
+          },
+          {
+            "name": "Importe",
+            "expression": "CALCULATE(SUM(RF_Detalle_ComInv[_costototalApartado]))",
+            "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "lineageTag": "e044ad07-9055-445d-9cad-356a3cb1a61e"
           }
         ],
         "partitions": [
