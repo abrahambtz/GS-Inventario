@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"NV_ComInv\",\"Agencias\",\"RF_ComInv\",\"ListaMarca\",\"Marca\",\"EstatusPedidos\"]"
+        "value": "[\"NV_ComInv\",\"Agencias\",\"RF_ComInv\",\"ListaMarca\",\"Marca\",\"EstatusPedidos\",\"RF_Detalle_ComInv\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -739,27 +739,17 @@
                 "State": "Generated",
                 "Terms": [
                   {
-                    "Importe": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  },
-                  {
-                    "Pesos": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  },
-                  {
                     "---": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Importe": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -778,6 +768,27 @@
                   }
                 },
                 "State": "Generated"
+              },
+              "rf_cominv.column_importerefinvcard": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "RF_ComInv",
+                    "ConceptualProperty": "_importeRefInvCard"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Importe": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
               },
               "rf_cominv.column_marcaagencia": {
                 "Definition": {
@@ -830,6 +841,27 @@
                   }
                 ]
               },
+              "rf_cominv.column_sum_apartado_importe": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "RF_ComInv",
+                    "ConceptualProperty": "_sum_apartado_importe"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Importe": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
               "rf_cominv.column_sum_disponible": {
                 "Definition": {
                   "Binding": {
@@ -851,6 +883,27 @@
                   }
                 ]
               },
+              "rf_cominv.column_sum_disponible_importe": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "RF_ComInv",
+                    "ConceptualProperty": "_sum_disponible_importe"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Importe": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
               "rf_cominv.column_sum_existencia": {
                 "Definition": {
                   "Binding": {
@@ -862,6 +915,27 @@
                 "Terms": [
                   {
                     "Existencia": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "rf_cominv.column_sum_existencia_importe": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "RF_ComInv",
+                    "ConceptualProperty": "_sum_existencia_importe"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Importe": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -992,6 +1066,142 @@
                     }
                   }
                 ]
+              },
+              "rf_detalle_cominv.cliente": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "RF_Detalle_ComInv",
+                    "ConceptualProperty": "cliente"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Cliente": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "rf_detalle_cominv.column_cantidad_sum": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "RF_Detalle_ComInv",
+                    "ConceptualProperty": "_cantidad_card"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Apartado": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "rf_detalle_cominv.column_cantidad_sum1": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "RF_Detalle_ComInv",
+                    "ConceptualProperty": "_cantidad_sum"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Apartado": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "rf_detalle_cominv.column_descripcion": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "RF_Detalle_ComInv",
+                    "ConceptualProperty": "_descripcion"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Articulo": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "rf_detalle_cominv.pedido": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "RF_Detalle_ComInv",
+                    "ConceptualProperty": "pedido"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "No. Pedido": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Pedido": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "rf_detalle_cominv.vendedor": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "RF_Detalle_ComInv",
+                    "ConceptualProperty": "vendedor"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Vendedor": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
               }
             },
             "Language": "en-US",
@@ -1067,6 +1277,31 @@
         "relyOnReferentialIntegrity": true,
         "toColumn": "serie",
         "toTable": "NV_ComInv"
+      },
+      {
+        "name": "cc7f7db9-4db6-af73-ebbe-0aa099e34b32",
+        "fromColumn": "idPedidoDetalle",
+        "fromTable": "RF_Detalle_ComInv",
+        "toColumn": "idPedidoDetalle",
+        "toTable": "RF_ComInv"
+      },
+      {
+        "name": "f39d5ba0-7386-5417-5344-d964016bbb79",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "IdOperacion",
+        "fromTable": "RF_ComInv_control",
+        "toColumn": "idOperacion",
+        "toTable": "RF_ComInv_piezas"
+      },
+      {
+        "name": "a8fb9844-55fe-6254-5bde-14f52454ffe7",
+        "crossFilteringBehavior": "bothDirections",
+        "fromCardinality": "one",
+        "fromColumn": "IdOperacion",
+        "fromTable": "RF_ComInv_control",
+        "toColumn": "IdOperacion",
+        "toTable": "RF_ComInv_importe"
       }
     ],
     "sourceQueryCulture": "es-MX",
@@ -1077,6 +1312,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "columns": [
@@ -1569,8 +1808,7 @@
           {
             "name": "UnidadesCard",
             "expression": [
-              "CALCULATE(IF(ISBLANK([Unidades]), 0, [Unidades]))",
-              "",
+              "COALESCE([Unidades], 0)",
               " "
             ],
             "formatString": "#,0",
@@ -1815,7 +2053,7 @@
               "VAR TotalUnidades = CALCULATE(COUNT(NV_ComInv[serie]), ALLEXCEPT(NV_ComInv, NV_ComInv[tipo], NV_ComInv[_clasificaciónEstatus]))",
               "VAR UnidadesActuales = [Unidades]",
               "",
-              "RETURN DIVIDE(UnidadesActuales, TotalUnidades)",
+              "RETURN COALESCE(DIVIDE(UnidadesActuales, TotalUnidades),0)",
               "",
               ""
             ],
@@ -1876,7 +2114,7 @@
           },
           {
             "name": "importeInvUnidades",
-            "expression": "CALCULATE(IF(ISBLANK([Costo Bruto]), 0, [Costo Bruto]))",
+            "expression": "COALESCE([Costo Bruto], 0)",
             "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
             "lineageTag": "55994118-0a0c-424a-a530-1493673a1939"
           }
@@ -2132,6 +2370,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "columns": [
@@ -2538,6 +2780,21 @@
             "lineageTag": "7b26485b-8f34-45f8-9505-258a7dca99f3",
             "summarizeBy": "none",
             "type": "calculated"
+          },
+          {
+            "name": "idPedidoDetalle",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "lineageTag": "904c6787-0869-4d4b-bb3c-b5f42203af75",
+            "sourceColumn": "idPedidoDetalle",
+            "sourceProviderType": "varchar(511)",
+            "summarizeBy": "none"
           }
         ],
         "lineageTag": "c4364007-39ce-4c50-ba8b-5ffdf9c7d309",
@@ -2563,10 +2820,10 @@
             "expression": [
               "",
               "VAR costoTotal = CALCULATE(",
-              "    [_ImporteInvRef], ALLEXCEPT(RF_ComInv,RF_ComInv[_marcaAgencia])",
+              "    [_ImporteInvRef], ALLEXCEPT(RF_ComInv,RF_ComInv[_marcaAgencia], RF_ComInv[clasificacion])",
               ")",
-              "VAR result  = DIVIDE([_ImporteInvRef], costoTotal)",
-              "RETURN result"
+              "",
+              "RETURN DIVIDE([_ImporteInvRef], costoTotal)"
             ],
             "formatString": "#,0.00\\ %;-#,0.00\\ %;#,0.00\\ %",
             "lineageTag": "2f2d839b-6424-4ab8-9cd3-a7efcf98a399"
@@ -2592,7 +2849,7 @@
             "name": "tituloDinamicoUnidades",
             "expression": [
               "",
-              "VAR selector = SELECTEDVALUE(RF[RF Order])",
+              "VAR selector = SELECTEDVALUE(RF_ComInv_piezas[RF Order])",
               "RETURN ",
               "SWITCH(",
               "    selector,",
@@ -2628,7 +2885,7 @@
               }
             ],
             "expression": [
-              "IF(CALCULATE(SUM(RF_ComInv[_apartado]))=0, BLANK(),CALCULATE(SUM(RF_ComInv[_apartado])))",
+              "IF(CALCULATE(SUM(RF_ComInv[_apartado]))<>0, CALCULATE(SUM(RF_ComInv[_apartado])))",
               ""
             ],
             "lineageTag": "aec1b436-b4c2-443e-bf7c-f0d5a02f2271"
@@ -2647,27 +2904,32 @@
           },
           {
             "name": "_ImporteInvRef",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
             "expression": [
               "",
-              "VAR selector = SELECTEDVALUE(RF[RF Order])",
-              "var result =  CALCULATE(",
+              "VAR selector = SELECTEDVALUE(RF_ComInv_piezas[RF Order])",
+              "RETURN  CALCULATE(",
               "SWITCH(",
               "    selector,",
-              "    1, IF(SUM(RF_ComInv[_costoTotalApartado])<>0, SUM(RF_ComInv[_costoTotalApartado])),",
-              "    0, SUM(RF_ComInv[_costoTotalExistencia]),",
-              "    2, SUM(RF_ComInv[_costoTotalDisponible]),",
+              "    1, [_sum_apartado_importe],",
+              "    0, [_sum_existencia_importe],",
+              "    2, [_sum_disponible_importe],",
               "    0",
               "))",
-              "RETURN IF(ISBLANK(result), BLANK(), result)"
+              ""
             ],
-            "formatString": "\\$#,0;(\\$#,0);\\$#,0",
             "lineageTag": "575079f9-3bd2-48e2-a2e9-cdd36a71c112"
           },
           {
             "name": "tituloDinamicoExistencias",
             "expression": [
               "",
-              "VAR selector = SELECTEDVALUE(RF[RF Order])",
+              "VAR selector = SELECTEDVALUE(RF_ComInv_piezas[RF Order])",
               "RETURN ",
               "SWITCH(",
               "    selector,",
@@ -2678,6 +2940,36 @@
               ")"
             ],
             "lineageTag": "fed85092-773d-48c3-99f7-4f890501383a"
+          },
+          {
+            "name": "_sum_apartado_importe",
+            "expression": [
+              "IF(CALCULATE(SUM(RF_ComInv[_costoTotalApartado]))<>0, CALCULATE(SUM(RF_ComInv[_costoTotalApartado])))",
+              ""
+            ],
+            "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "lineageTag": "b2fe009c-41ae-4eb4-9ebd-bd4ddd4b9cd5"
+          },
+          {
+            "name": "_sum_disponible_importe",
+            "expression": "CALCULATE(SUM(RF_ComInv[_costoTotalDisponible]))",
+            "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "lineageTag": "827b50e6-733f-4232-bb39-c2a6ec5cd180"
+          },
+          {
+            "name": "_sum_existencia_importe",
+            "expression": [
+              "CALCULATE(SUM(RF_ComInv[_costoTotalExistencia]))",
+              ""
+            ],
+            "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "lineageTag": "5d16e044-5d3c-4c12-9bbd-434ce990e9cb"
+          },
+          {
+            "name": "_importeRefInvCard",
+            "expression": "COALESCE([_ImporteInvRef],0)",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "lineageTag": "f0bfd103-9567-4f7b-aaf2-b81c8f99872d"
           }
         ],
         "partitions": [
@@ -2688,8 +2980,7 @@
               "expression": [
                 "let",
                 "    Origen = Sql.Database(\"192.168.249.151\", \"SBI\", [Query=\"",
-                "    SELECT *",
-                "FROM RF_ComInv ",
+                "    SELECT CONCAT(numeroParte, '-',idAgencia) as idPedidoDetalle, * FROM RF_ComInv ",
                 "    ",
                 "    ",
                 "    \"])",
@@ -3151,7 +3442,7 @@
         ]
       },
       {
-        "name": "RF",
+        "name": "RF_ComInv_piezas",
         "annotations": [
           {
             "name": "PBI_Id",
@@ -3227,19 +3518,464 @@
             "sourceColumn": "[Value3]",
             "summarizeBy": "sum",
             "type": "calculatedTableColumn"
+          },
+          {
+            "name": "idOperacion",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isNameInferred": false,
+            "lineageTag": "51be3d62-12b4-449a-a5be-31835390a145",
+            "sourceColumn": "[Value4]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
           }
         ],
         "lineageTag": "2b3f6ac1-d6da-4343-941c-ed814c8b0d35",
         "partitions": [
           {
-            "name": "RF",
+            "name": "RF_ComInv_piezas",
             "mode": "import",
             "source": {
               "expression": [
                 "{",
-                "    (\"Existencia\", NAMEOF('RF_ComInv'[_sum_existencia]), 0),",
-                "    (\"Apartado\", NAMEOF('RF_ComInv'[_sum_apartado]), 1),",
-                "    (\"Disponible\", NAMEOF('RF_ComInv'[_sum_disponible]), 2)",
+                "    (\"Existencia\", NAMEOF('RF_ComInv'[_sum_existencia]), 0, 0),",
+                "    (\"Apartado\", NAMEOF('RF_ComInv'[_sum_apartado]), 1,1),",
+                "    (\"Disponible\", NAMEOF('RF_ComInv'[_sum_disponible]), 2,2)",
+                "}"
+              ],
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "RF_Detalle_ComInv",
+        "annotations": [
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "columns": [
+          {
+            "name": "idPedidoDetalle",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isNullable": false,
+            "lineageTag": "d8708dda-e012-4739-9eb3-593ea2253bdc",
+            "sourceColumn": "idPedidoDetalle",
+            "sourceProviderType": "varchar(511)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "idAgencia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "aad7b536-8abc-4d45-ad8f-8bf5b82a086e",
+            "sourceColumn": "idAgencia",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "pedido",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2618d40b-cd64-427a-b70b-d434e77c046c",
+            "sourceColumn": "pedido",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "fechaPedido",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "afb32647-8a2a-438b-9d04-fc531b26073e",
+            "sourceColumn": "fechaPedido",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "cliente",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "25430c76-1417-4fc8-b82c-6428af84c746",
+            "sourceColumn": "cliente",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "vendedor",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9034cd6d-7e99-43e5-af51-01eba2b35287",
+            "sourceColumn": "vendedor",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "codigo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "351b8f45-e124-4db2-8a4a-bb806a4c421d",
+            "sourceColumn": "codigo",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "cantidad",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "23c81d48-2379-4d2f-b783-abc9dc12b070",
+            "sourceColumn": "cantidad",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "_cantidad",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "dataType": "double",
+            "expression": "VALUE(RF_Detalle_ComInv[cantidad])",
+            "isDataTypeInferred": true,
+            "lineageTag": "27642005-199b-4681-9a5c-bcd349882f95",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "_costototalApartado",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "double",
+            "expression": "VALUE(RELATED((RF_ComInv[costototalapartado])))",
+            "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "isDataTypeInferred": true,
+            "lineageTag": "901003b0-39d1-431d-a63f-f5c31b71c70e",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "_fechaPedido",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "dateTime",
+            "expression": "DATEVALUE(RF_Detalle_ComInv[fechaPedido])",
+            "formatString": "Short Date",
+            "isDataTypeInferred": true,
+            "lineageTag": "3b8a0d3c-9915-4b6e-a7d2-a0ec963334c5",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "_descripcion",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "RELATED((RF_ComInv[descripcion]))",
+            "isDataTypeInferred": true,
+            "lineageTag": "74f9469a-a000-4a3a-ad99-e295da32cd1c",
+            "summarizeBy": "none",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "f9b4b92d-d589-4673-a012-835d8c1c86f5",
+        "measures": [
+          {
+            "name": "_cantidad_card",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "COALESCE([_cantidad_sum],0)",
+            "lineageTag": "8fc304f1-6631-493f-83ac-b2413bdad5ff"
+          },
+          {
+            "name": "_cantidad_sum",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "expression": "SUM(RF_Detalle_ComInv[_cantidad])",
+            "lineageTag": "0850c57e-38b8-481a-933c-2788f90f5bf8"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "RF_Detalle_ComInv",
+            "mode": "directQuery",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"192.168.249.151\", \"SBI\", [Query=\"SELECT  CONCAT(codigo, '-',idAgencia) as idPedidoDetalle, * FROM RF_Detalle_ComInv\"])",
+                "in",
+                "    Source"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "RF_ComInv_importe",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "1dc6706a2b0641a3863210341abba73c"
+          }
+        ],
+        "columns": [
+          {
+            "name": "RF_ComInv_importe",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": false,
+            "lineageTag": "59953f5b-4208-46fd-8b0f-33411b970484",
+            "relatedColumnDetails": {
+              "groupByColumns": [
+                {
+                  "groupingColumn": "RF_ComInv_importe Campos"
+                }
+              ]
+            },
+            "sortByColumn": "RF_ComInv_importe Orden",
+            "sourceColumn": "[Value1]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "RF_ComInv_importe Campos",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "extendedProperties": [
+              {
+                "name": "ParameterMetadata",
+                "type": "json",
+                "value": {
+                  "kind": 2,
+                  "version": 3
+                }
+              }
+            ],
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": false,
+            "lineageTag": "33c62d18-8032-464c-81a3-e9b925ba693c",
+            "sortByColumn": "RF_ComInv_importe Orden",
+            "sourceColumn": "[Value2]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "RF_ComInv_importe Orden",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "isNameInferred": false,
+            "lineageTag": "25d471d7-0e70-428f-be02-24e20e394223",
+            "sourceColumn": "[Value3]",
+            "summarizeBy": "sum",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "IdOperacion",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isNameInferred": false,
+            "lineageTag": "f51daf1e-325f-47b8-81c4-dd764ccd5b7b",
+            "sourceColumn": "[Value4]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "lineageTag": "c43fe4cb-5e62-4b2a-97ee-716220f5aa30",
+        "partitions": [
+          {
+            "name": "RF_ComInv_importe",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "{",
+                "    (\"Importe\", NAMEOF('RF_ComInv'[_sum_existencia_importe]), 0,0),",
+                "    (\"Importe\", NAMEOF('RF_ComInv'[_sum_apartado_importe]), 1,1),",
+                "    (\"Importe\", NAMEOF('RF_ComInv'[_sum_disponible_importe]), 2,2)",
+                "}"
+              ],
+              "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "RF_ComInv_control",
+        "annotations": [
+          {
+            "name": "PBI_Id",
+            "value": "c93f947d256a4734afd789974c26ec64"
+          }
+        ],
+        "columns": [
+          {
+            "name": "TipoOrden",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "isDataTypeInferred": true,
+            "isNameInferred": false,
+            "lineageTag": "756e926a-59ab-473b-b5ba-96e053b69922",
+            "sortByColumn": "Orden",
+            "sourceColumn": "[Value1]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "IdOperacion",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isNameInferred": false,
+            "lineageTag": "6ece6c16-15c6-4eb3-8239-a0864281dc53",
+            "sourceColumn": "[Value2]",
+            "summarizeBy": "none",
+            "type": "calculatedTableColumn"
+          },
+          {
+            "name": "Orden",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isNameInferred": false,
+            "lineageTag": "0bce93c3-177b-4db2-a0b1-cfdf72150fe1",
+            "sourceColumn": "[Value3]",
+            "summarizeBy": "sum",
+            "type": "calculatedTableColumn"
+          }
+        ],
+        "lineageTag": "4dbbd4e2-f3b9-4241-9559-ba749dc7f492",
+        "partitions": [
+          {
+            "name": "RF_ComInv_control",
+            "mode": "import",
+            "source": {
+              "expression": [
+                "{",
+                "    (\"Existencia\", 0, 1),",
+                "    (\"Apartado\", 1,3),",
+                "    (\"Disponible\", 2, 2)",
                 "}"
               ],
               "type": "calculated"

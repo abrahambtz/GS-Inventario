@@ -4,7 +4,7 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 1317.6862999507905,
+        "x": 0,
         "y": 0
       },
       "nodes": [
@@ -19,12 +19,12 @@
             "height": 856.546511627907,
             "width": 234
           },
-          "zIndex": 4
+          "zIndex": 3
         },
         {
           "location": {
-            "x": 807.3738714864196,
-            "y": 146.81395348837214
+            "x": 675.01954122365919,
+            "y": 73.28377000906076
           },
           "nodeIndex": "Agencias",
           "nodeLineageTag": "d32107d6-0c48-4812-ace9-b26dd9efa8bc",
@@ -32,7 +32,7 @@
             "height": 402.32048775468206,
             "width": 234
           },
-          "zIndex": 3
+          "zIndex": 2
         },
         {
           "location": {
@@ -45,7 +45,7 @@
             "height": 1000,
             "width": 234
           },
-          "zIndex": 7
+          "zIndex": 5
         },
         {
           "location": {
@@ -58,20 +58,59 @@
             "height": 437.6395348837209,
             "width": 234
           },
-          "zIndex": 5
+          "zIndex": 4
         },
         {
           "location": {
-            "x": 2688.2783038770967,
-            "y": 424
+            "x": 1687.9510991051243,
+            "y": 166.28550664451848
           },
-          "nodeIndex": "RF",
+          "nodeIndex": "RF_Detalle_ComInv",
+          "nodeLineageTag": "f9b4b92d-d589-4673-a012-835d8c1c86f5",
+          "size": {
+            "height": 378.2102650256719,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 734.00945233765538,
+            "y": 770.40886439142253
+          },
+          "nodeIndex": "RF_ComInv_piezas",
           "nodeLineageTag": "2b3f6ac1-d6da-4343-941c-ed814c8b0d35",
           "size": {
-            "height": 152,
+            "height": 225.53018347931129,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 735.01000634214415,
+            "y": 1082.5036431591661
+          },
+          "nodeIndex": "RF_ComInv_importe",
+          "nodeLineageTag": "c43fe4cb-5e62-4b2a-97ee-716220f5aa30",
+          "size": {
+            "height": 183.04607746904253,
             "width": 234
           },
           "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 429.4512438836723,
+            "y": 932.288857218363
+          },
+          "nodeIndex": "RF_ComInv_control",
+          "nodeLineageTag": "4dbbd4e2-f3b9-4241-9559-ba749dc7f492",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 8
         }
       ],
       "name": "Todas las tablas",
