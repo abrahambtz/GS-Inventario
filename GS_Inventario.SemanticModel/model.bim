@@ -3244,22 +3244,16 @@
         "lineageTag": "59c991e3-6234-4ab1-8a5e-42fb103ad2d8",
         "measures": [
           {
-            "name": "DetallePedido",
-            "expression": [
-              "",
-              "VAR PedidosPorSerie =",
-              "    FILTER(",
-              "        EstatusPedidos,",
-              "        EstatusPedidos[noSerie] = MAX(NV_ComInv[serie])",
-              "    )",
-              "RETURN",
-              "CONCATENATEX(",
-              "    PedidosPorSerie,",
-              "    EstatusPedidos[fechaPedido] & \"-\" & EstatusPedidos[_diasPedido],",
-              "    \", \"  -- Delimitador (coma y espacio en este caso)",
-              ")"
-            ],
-            "lineageTag": "b3796a9e-e942-4ea8-a201-71a3b4df7628"
+            "name": "Dias en Pedido",
+            "expression": "MAX(EstatusPedidos[_diasPedido])",
+            "formatString": "0",
+            "lineageTag": "8e3bc188-ecfb-4d28-b919-4edd4404d1c6"
+          },
+          {
+            "name": "PedidoEsMayorDe90",
+            "expression": "IF([Dias en Pedido] > 90, 1, 0)",
+            "formatString": "0",
+            "lineageTag": "cc2ce895-7c21-47a7-9e33-06ca2600d8c1"
           }
         ],
         "partitions": [
