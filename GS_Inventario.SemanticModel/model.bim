@@ -2159,6 +2159,18 @@
             "expression": "COALESCE([Costo Bruto], 0)",
             "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
             "lineageTag": "55994118-0a0c-424a-a530-1493673a1939"
+          },
+          {
+            "name": "Dias en Inv",
+            "expression": "MAX([_antiguedadEnDias])",
+            "formatString": "0",
+            "lineageTag": "c5186065-ea56-4dc9-a1b3-de9d299f3ab7"
+          },
+          {
+            "name": "pedidoEsMayor90",
+            "expression": "IF([Dias en Inv] > 90, 1, 0)",
+            "formatString": "0",
+            "lineageTag": "7b4fd55c-537d-4483-918c-762abc9332f5"
           }
         ],
         "partitions": [
