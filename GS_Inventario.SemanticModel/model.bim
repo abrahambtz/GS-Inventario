@@ -1591,7 +1591,7 @@
             ],
             "dataType": "string",
             "expression": [
-              "SWITCH(TRUE(), VALUE(NV_ComInv[diasInv]) <= 30, \"Menor a 30 dias\",VALUE(NV_ComInv[diasInv] )<= 60, \"30 a 60 dias\",VALUE(NV_ComInv[diasInv]) <= 90, \"60 a 90 dias\", VALUE(NV_ComInv[diasInv] )> 90, \"Mayor a 90 dias\",\"\"",
+              "SWITCH(TRUE(), VALUE(NV_ComInv[diasInv]) <= 30, \"Menor a 30 dias\",VALUE(NV_ComInv[diasInv] )<= 60, \"30 a 60 dias\",VALUE(NV_ComInv[diasInv]) <= 90, \"60 a 90 dias\", VALUE(NV_ComInv[diasInv] )> 90, \"Mayor a 90 dias\",\"\"\r",
               ")"
             ],
             "lineageTag": "6811f34b-e3a3-4755-9a59-e0146573cae0",
@@ -1609,7 +1609,7 @@
             ],
             "dataType": "int64",
             "expression": [
-              "SWITCH(TRUE(), VALUE(NV_ComInv[diasInv]) <= 30, 1 ,VALUE(NV_ComInv[diasInv] )<= 60, 2 ,VALUE(NV_ComInv[diasInv]) <= 90, 3, VALUE(NV_ComInv[diasInv] )> 90, 4,0",
+              "SWITCH(TRUE(), VALUE(NV_ComInv[diasInv]) <= 30, 1 ,VALUE(NV_ComInv[diasInv] )<= 60, 2 ,VALUE(NV_ComInv[diasInv]) <= 90, 3, VALUE(NV_ComInv[diasInv] )> 90, 4,0\r",
               ")"
             ],
             "formatString": "0",
@@ -1628,7 +1628,7 @@
             ],
             "dataType": "double",
             "expression": [
-              "( VALUE([costoTotal]))",
+              "( VALUE([costoTotal]))\r",
               ""
             ],
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
@@ -1652,14 +1652,14 @@
             ],
             "dataType": "string",
             "expression": [
-              "",
-              "SWITCH(",
-              "    TRUE(),",
-              "    NV_ComInv[estatus] = \"SEP\", \"Apartados\",",
-              "    OR(NV_ComInv[estatus] = \"FIS\", NV_ComInv[estatus] = \"Disponible\"), \"Disponibles\",",
-              "    OR(NV_ComInv[estatus] = \"PED\", NV_ComInv[estatus] = \"Pedido\"), \"Pedidos\",",
-              "    NV_ComInv[estatus] = \"DEMO\", \"Demo\",",
-              "    \"Otro\"  // Opcional: para manejar otros estados no considerados",
+              "\r",
+              "SWITCH(\r",
+              "    TRUE(),\r",
+              "    NV_ComInv[estatus] = \"SEP\", \"Apartados\",\r",
+              "    OR(NV_ComInv[estatus] = \"FIS\", NV_ComInv[estatus] = \"Disponible\"), \"Disponibles\",\r",
+              "    OR(NV_ComInv[estatus] = \"PED\", NV_ComInv[estatus] = \"Pedido\"), \"Pedidos\",\r",
+              "    NV_ComInv[estatus] = \"DEMO\", \"Demo\",\r",
+              "    \"Otro\"  // Opcional: para manejar otros estados no considerados\r",
               ")"
             ],
             "isDataTypeInferred": true,
@@ -1678,13 +1678,13 @@
             ],
             "dataType": "int64",
             "expression": [
-              "",
-              "SWITCH(",
-              "    TRUE(),",
-              "    NV_ComInv[estatus] = \"SEP\", 2,",
-              "    OR(NV_ComInv[estatus] = \"FIS\", NV_ComInv[estatus] = \"Disponible\"), 1,",
-              "    OR(NV_ComInv[estatus] = \"PED\", NV_ComInv[estatus] = \"Pedido\"), 3,",
-              "    4  // Opcional: para manejar otros estados no considerados",
+              "\r",
+              "SWITCH(\r",
+              "    TRUE(),\r",
+              "    NV_ComInv[estatus] = \"SEP\", 2,\r",
+              "    OR(NV_ComInv[estatus] = \"FIS\", NV_ComInv[estatus] = \"Disponible\"), 1,\r",
+              "    OR(NV_ComInv[estatus] = \"PED\", NV_ComInv[estatus] = \"Pedido\"), 3,\r",
+              "    4  // Opcional: para manejar otros estados no considerados\r",
               ")"
             ],
             "formatString": "0",
@@ -1723,7 +1723,7 @@
             ],
             "dataType": "double",
             "expression": [
-              "( VALUE([costoNeto]))",
+              "( VALUE([costoNeto]))\r",
               ""
             ],
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
@@ -1836,7 +1836,7 @@
             ],
             "dataType": "string",
             "expression": [
-              "",
+              "\r",
               "RELATED(Agencias[Region])"
             ],
             "isDataTypeInferred": true,
@@ -2555,7 +2555,7 @@
             ],
             "dataType": "string",
             "expression": [
-              "RELATED(Agencias[Agencia])",
+              "RELATED(Agencias[Agencia])\r",
               ""
             ],
             "isDataTypeInferred": true,
@@ -2629,7 +2629,7 @@
             ],
             "dataType": "string",
             "expression": [
-              "RELATED(Agencias[Marca])  & \"   \"",
+              "RELATED(Agencias[Marca])  & \"   \"\r",
               ""
             ],
             "isDataTypeInferred": true,
@@ -3135,7 +3135,7 @@
             ],
             "dataType": "string",
             "expression": [
-              "",
+              "\r",
               "RELATED(Agencias[Agencia])"
             ],
             "isDataTypeInferred": true,
@@ -3176,7 +3176,7 @@
             ],
             "dataType": "double",
             "expression": [
-              "",
+              "\r",
               "RELATED(NV_ComInv[CostoTotalNeto])"
             ],
             "formatString": "\\$#,0.0;(\\$#,0.0);\\$#,0.0",
@@ -3607,12 +3607,12 @@
         "name": "RF_Detalle_ComInv",
         "annotations": [
           {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
-          },
-          {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "columns": [
@@ -3809,7 +3809,7 @@
             ],
             "dataType": "int64",
             "expression": [
-              "DATEDIFF(RF_Detalle_ComInv[_fechaPedido], TODAY(), DAY)",
+              "DATEDIFF(RF_Detalle_ComInv[_fechaPedido], TODAY(), DAY)\r",
               ""
             ],
             "formatString": "0",
