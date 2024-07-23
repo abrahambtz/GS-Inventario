@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"NV_ComInv\",\"Agencias\",\"RF_ComInv\",\"ListaMarca\",\"Marca\",\"EstatusPedidos\",\"RF_Detalle_ComInv\"]"
+        "value": "[\"NV_ComInv\",\"Agencias\",\"RF_ComInv\",\"ListaMarca\",\"Marca\",\"EstatusPedidos\",\"RF_Detalle_ComInv\",\"SR_ComPer\",\"FN_ComPer\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -12,7 +12,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.131.901.0 (24.07)"
+        "value": "2.131.1126.0 (24.07)"
       },
       {
         "name": "PBI_ProTooling",
@@ -43,6 +43,236 @@
                   }
                 },
                 "State": "Generated"
+              },
+              "fn_comper.ano": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "FN_ComPer",
+                    "ConceptualProperty": "ano"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Año": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fn_comper.cantfacturas": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "FN_ComPer",
+                    "ConceptualProperty": "cantFacturas"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Facturas": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fn_comper.cliente": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "FN_ComPer",
+                    "ConceptualProperty": "cliente"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Cliente": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fn_comper.colext": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "FN_ComPer",
+                    "ConceptualProperty": "colExt"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Color Ext": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fn_comper.colint": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "FN_ComPer",
+                    "ConceptualProperty": "colInt"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Col Int": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fn_comper.condicion": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "FN_ComPer",
+                    "ConceptualProperty": "condicion"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Estado": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fn_comper.factura": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "FN_ComPer",
+                    "ConceptualProperty": "factura"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Factura": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fn_comper.fechaemision": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "FN_ComPer",
+                    "ConceptualProperty": "fechaEmision"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Fecha de Emision": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fn_comper.serie": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "FN_ComPer",
+                    "ConceptualProperty": "serie"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "No. Serie": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Serie": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "fn_comper.tipo": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "FN_ComPer",
+                    "ConceptualProperty": "tipo"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Carline": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "Modelo": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
               },
               "nv_cominv.agencianombre": {
                 "Definition": {
@@ -115,7 +345,7 @@
                     }
                   },
                   {
-                    "Carline": {
+                    "Marca": {
                       "Source": {
                         "Agent": "PowerBI.VisualColumnRename",
                         "Type": "External"
@@ -415,19 +645,7 @@
                     "ConceptualProperty": "Costo Total"
                   }
                 },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "Costo + IVA": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  }
-                ]
+                "State": "Generated"
               },
               "nv_cominv.descripcion": {
                 "Definition": {
@@ -694,19 +912,7 @@
                     "ConceptualProperty": "_fechaUltimaVenta"
                   }
                 },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "Ultima Venta": {
-                      "Source": {
-                        "Agent": "PowerBI.VisualColumnRename",
-                        "Type": "External"
-                      },
-                      "State": "Suggested",
-                      "Weight": 0.9
-                    }
-                  }
-                ]
+                "State": "Generated"
               },
               "rf_cominv.column_fechaultimaventablank": {
                 "Definition": {
@@ -1244,6 +1450,247 @@
                     }
                   }
                 ]
+              },
+              "sr_comper.column_estatus": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "SR_ComPer",
+                    "ConceptualProperty": "_estatus"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Estatus": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sr_comper.column_fechaorden": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "SR_ComPer",
+                    "ConceptualProperty": "_fechaOrden"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Fecha de Orden": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sr_comper.estatus": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "SR_ComPer",
+                    "ConceptualProperty": "estatus"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Estatus": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sr_comper.modelo": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "SR_ComPer",
+                    "ConceptualProperty": "modelo"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Año": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sr_comper.nombreasesor": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "SR_ComPer",
+                    "ConceptualProperty": "nombreAsesor"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Asesor": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sr_comper.nombrecliente": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "SR_ComPer",
+                    "ConceptualProperty": "nombreCliente"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Cliente": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sr_comper.numserie": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "SR_ComPer",
+                    "ConceptualProperty": "numSerie"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Serie": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  },
+                  {
+                    "No. Serie": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sr_comper.orden": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "SR_ComPer",
+                    "ConceptualProperty": "orden"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "No. Orden": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sr_comper.placas": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "SR_ComPer",
+                    "ConceptualProperty": "placas"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Placas": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sr_comper.tipoauto": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "SR_ComPer",
+                    "ConceptualProperty": "tipoAuto"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Modelo": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
+              },
+              "sr_comper.tipoorden": {
+                "Definition": {
+                  "Binding": {
+                    "ConceptualEntity": "SR_ComPer",
+                    "ConceptualProperty": "tipoOrden"
+                  }
+                },
+                "State": "Generated",
+                "Terms": [
+                  {
+                    "Tipo de Orden": {
+                      "Source": {
+                        "Agent": "PowerBI.VisualColumnRename",
+                        "Type": "External"
+                      },
+                      "State": "Suggested",
+                      "Weight": 0.9
+                    }
+                  }
+                ]
               }
             },
             "Language": "en-US",
@@ -1344,6 +1791,22 @@
         "fromTable": "RF_ComInv_control",
         "toColumn": "IdOperacion",
         "toTable": "RF_ComInv_importe"
+      },
+      {
+        "name": "50913ebe-c186-bee1-9ab2-fc85865b1746",
+        "fromColumn": "idAgencia",
+        "fromTable": "SR_ComPer",
+        "relyOnReferentialIntegrity": true,
+        "toColumn": "IdAgencia",
+        "toTable": "Agencias"
+      },
+      {
+        "name": "b789909f-8dff-d126-3b27-da1b90c76004",
+        "fromColumn": "idAgencia",
+        "fromTable": "FN_ComPer",
+        "relyOnReferentialIntegrity": true,
+        "toColumn": "IdAgencia",
+        "toTable": "Agencias"
       }
     ],
     "sourceQueryCulture": "es-MX",
@@ -1354,10 +1817,11 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
+          }
+        ],
+        "changedProperties": [
           {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
+            "property": "IsHidden"
           }
         ],
         "columns": [
@@ -1369,7 +1833,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "4581e2d8-856d-4d8a-9240-d90150e2d67b",
             "sourceColumn": "idAgencia",
             "sourceProviderType": "varchar(255)",
@@ -1383,7 +1853,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "09a31d56-faa6-4c0b-b6a7-1abefe989c92",
             "sourceColumn": "carline",
             "sourceProviderType": "varchar(255)",
@@ -1397,7 +1873,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "f55c3d68-7b15-49c8-a474-066dabf4258f",
             "sourceColumn": "inventario",
             "sourceProviderType": "varchar(255)",
@@ -1411,7 +1893,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "c119d26a-3d34-45f2-9884-0adb66365d64",
             "sourceColumn": "ano",
             "sourceProviderType": "varchar(255)",
@@ -1425,7 +1913,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "c96f817f-9b10-40df-94f7-c2f5c87c215c",
             "sourceColumn": "estatus",
             "sourceProviderType": "varchar(255)",
@@ -1439,7 +1933,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "2891d579-9249-4aa7-b325-8dbd71ca4d9b",
             "sourceColumn": "compra",
             "sourceProviderType": "varchar(255)",
@@ -1453,7 +1953,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "6d6d2dc0-20a1-479e-8a34-7fe166def7cf",
             "sourceColumn": "serie",
             "sourceProviderType": "varchar(255)",
@@ -1467,7 +1973,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "a32c45fe-7e7b-4217-94b3-65ac82dfc4f2",
             "sourceColumn": "descripcion",
             "sourceProviderType": "varchar(255)",
@@ -1481,7 +1993,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "7881fa9f-199f-4a93-8c04-bdd3f8b98d07",
             "sourceColumn": "fechaCompra",
             "sourceProviderType": "varchar(255)",
@@ -1495,7 +2013,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "902b57bb-208d-4926-b1d7-0ade813280d9",
             "sourceColumn": "diasInv",
             "sourceProviderType": "varchar(255)",
@@ -1509,7 +2033,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "993025f5-c4a4-4ccd-b957-47fccdd7967e",
             "sourceColumn": "colorExt",
             "sourceProviderType": "varchar(255)",
@@ -1523,7 +2053,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "39bb1384-5dc2-4525-abaf-35781ac49bd8",
             "sourceColumn": "colorInt",
             "sourceProviderType": "varchar(255)",
@@ -1537,7 +2073,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "ead35af7-f2b4-485b-bdd7-853b7a49e128",
             "sourceColumn": "costoTotal",
             "sourceProviderType": "varchar(255)",
@@ -1551,7 +2093,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "87a86380-e00b-4346-8611-22d40fa2f336",
             "sourceColumn": "costoNeto",
             "sourceProviderType": "varchar(255)",
@@ -1565,10 +2113,16 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "dateTime",
             "expression": "DATEVALUE(NV_ComInv[fechaCompra])",
             "formatString": "Short Date",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "7e8717b3-a038-4d08-8be5-2032c5051203",
             "summarizeBy": "none",
             "type": "calculated"
@@ -1587,13 +2141,17 @@
               },
               {
                 "property": "SortByColumn"
+              },
+              {
+                "property": "IsHidden"
               }
             ],
             "dataType": "string",
             "expression": [
-              "SWITCH(TRUE(), VALUE(NV_ComInv[diasInv]) <= 30, \"Menor a 30 dias\",VALUE(NV_ComInv[diasInv] )<= 60, \"30 a 60 dias\",VALUE(NV_ComInv[diasInv]) <= 90, \"60 a 90 dias\", VALUE(NV_ComInv[diasInv] )> 90, \"Mayor a 90 dias\",\"\"\r",
+              "SWITCH(TRUE(), VALUE(NV_ComInv[diasInv]) <= 30, \"Menor a 30 dias\",VALUE(NV_ComInv[diasInv] )<= 60, \"31 a 60 dias\",VALUE(NV_ComInv[diasInv]) <= 90, \"61 a 90 dias\", VALUE(NV_ComInv[diasInv] )> 90, \"Mayor a 90 dias\",\"\"",
               ")"
             ],
+            "isHidden": true,
             "lineageTag": "6811f34b-e3a3-4755-9a59-e0146573cae0",
             "sortByColumn": "RangoDiasInvOrden",
             "summarizeBy": "none",
@@ -1607,13 +2165,19 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "int64",
             "expression": [
-              "SWITCH(TRUE(), VALUE(NV_ComInv[diasInv]) <= 30, 1 ,VALUE(NV_ComInv[diasInv] )<= 60, 2 ,VALUE(NV_ComInv[diasInv]) <= 90, 3, VALUE(NV_ComInv[diasInv] )> 90, 4,0\r",
+              "SWITCH(TRUE(), VALUE(NV_ComInv[diasInv]) <= 30, 1 ,VALUE(NV_ComInv[diasInv] )<= 60, 2 ,VALUE(NV_ComInv[diasInv]) <= 90, 3, VALUE(NV_ComInv[diasInv] )> 90, 4,0",
               ")"
             ],
             "formatString": "0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "afb23caf-0ea9-40bd-b7d2-ebe6b1ae18f2",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -1626,13 +2190,19 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "double",
             "expression": [
-              "( VALUE([costoTotal]))\r",
+              "( VALUE([costoTotal]))",
               ""
             ],
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "2d741f31-b7a3-402f-9ab9-991f6a28f1fa",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -1648,21 +2218,25 @@
             "changedProperties": [
               {
                 "property": "SortByColumn"
+              },
+              {
+                "property": "IsHidden"
               }
             ],
             "dataType": "string",
             "expression": [
-              "\r",
-              "SWITCH(\r",
-              "    TRUE(),\r",
-              "    NV_ComInv[estatus] = \"SEP\", \"Apartados\",\r",
-              "    OR(NV_ComInv[estatus] = \"FIS\", NV_ComInv[estatus] = \"Disponible\"), \"Disponibles\",\r",
-              "    OR(NV_ComInv[estatus] = \"PED\", NV_ComInv[estatus] = \"Pedido\"), \"Pedidos\",\r",
-              "    NV_ComInv[estatus] = \"DEMO\", \"Demo\",\r",
-              "    \"Otro\"  // Opcional: para manejar otros estados no considerados\r",
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    NV_ComInv[estatus] = \"SEP\", \"Apartados\",",
+              "    OR(NV_ComInv[estatus] = \"FIS\", NV_ComInv[estatus] = \"Disponible\"), \"Disponibles\",",
+              "    OR(NV_ComInv[estatus] = \"PED\", NV_ComInv[estatus] = \"Pedido\"), \"Pedidos\",",
+              "    NV_ComInv[estatus] = \"DEMO\", \"Demo\",",
+              "    \"Otro\"  // Opcional: para manejar otros estados no considerados",
               ")"
             ],
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "b364a5e8-78e8-4547-956a-9a291ac77e48",
             "sortByColumn": "_clasificaciónEstatusOrden",
             "summarizeBy": "none",
@@ -1676,19 +2250,25 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "int64",
             "expression": [
-              "\r",
-              "SWITCH(\r",
-              "    TRUE(),\r",
-              "    NV_ComInv[estatus] = \"SEP\", 2,\r",
-              "    OR(NV_ComInv[estatus] = \"FIS\", NV_ComInv[estatus] = \"Disponible\"), 1,\r",
-              "    OR(NV_ComInv[estatus] = \"PED\", NV_ComInv[estatus] = \"Pedido\"), 3,\r",
-              "    4  // Opcional: para manejar otros estados no considerados\r",
+              "",
+              "SWITCH(",
+              "    TRUE(),",
+              "    NV_ComInv[estatus] = \"SEP\", 2,",
+              "    OR(NV_ComInv[estatus] = \"FIS\", NV_ComInv[estatus] = \"Disponible\"), 1,",
+              "    OR(NV_ComInv[estatus] = \"PED\", NV_ComInv[estatus] = \"Pedido\"), 3,",
+              "    4  // Opcional: para manejar otros estados no considerados",
               ")"
             ],
             "formatString": "0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "3d18e690-a2de-4936-89fb-970dd3ac8761",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -1701,10 +2281,16 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "int64",
             "expression": "DATEDIFF(('NV_ComInv'[_fechaCompra]), TODAY(),  DAY)",
             "formatString": "0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "6f299717-bda1-4153-8d1d-968931425d94",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -1721,13 +2307,19 @@
                 "value": "{\"currencyCulture\":\"en-US\"}"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "double",
             "expression": [
-              "( VALUE([costoNeto]))\r",
+              "( VALUE([costoNeto]))",
               ""
             ],
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "27d08ab3-0514-4d77-8ab2-5453caee6a12",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -1740,9 +2332,15 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
             "expression": "RELATED(Agencias[Agencia])",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "b3c05247-afc1-4488-b2f9-9ef110069b41",
             "summarizeBy": "none",
             "type": "calculated"
@@ -1755,7 +2353,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "isNullable": false,
             "lineageTag": "a13af70e-dcfd-4fe2-aefe-625c9726fe8a",
             "sourceColumn": "tipo",
@@ -1770,9 +2374,15 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
             "expression": "RELATED(Agencias[Marca])",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "5acfa5af-82a1-4e46-b897-75f544d37c4c",
             "summarizeBy": "none",
             "type": "calculated"
@@ -1785,9 +2395,15 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
             "expression": "RELATED(Agencias[Marca]) & \"   \"",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "32172d97-d502-4c3a-996c-d96cb10950bc",
             "summarizeBy": "none",
             "type": "calculated"
@@ -1800,7 +2416,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "adf0a9d1-717d-4b28-a200-d1eab7b25263",
             "sourceColumn": "kms",
             "sourceProviderType": "varchar(255)",
@@ -1818,10 +2440,16 @@
                 "value": "{\"isDecimal\":true}"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "double",
             "expression": "VALUE(NV_ComInv[kms])",
             "formatString": "#,0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "de68940b-e349-4f90-9398-91c653657a52",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -1834,69 +2462,148 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
             "expression": [
-              "\r",
+              "",
               "RELATED(Agencias[Region])"
             ],
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "6a933e38-694f-473b-99cf-5adbecaf021e",
             "summarizeBy": "none",
             "type": "calculated"
+          },
+          {
+            "name": "_diasInv",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              },
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "double",
+            "expression": "VALUE(NV_ComInv[diasInv])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "0b8e7309-db0b-4afb-b0c3-0a219d4aa8ad",
+            "summarizeBy": "sum",
+            "type": "calculated"
           }
         ],
+        "isHidden": true,
         "lineageTag": "85a4d7b8-7f75-4356-8af8-bfedc33def7a",
         "measures": [
           {
             "name": "UnidadesCard",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
-              "COALESCE([Unidades], 0)",
+              "IF([Unidades]<>0, [Unidades],0)",
               " "
             ],
             "formatString": "#,0",
+            "isHidden": true,
             "lineageTag": "9a7a8e66-cc41-4bea-9141-e06338861861"
           },
           {
             "name": "Unidades",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": "CALCULATE(COUNT(NV_ComInv[serie]))",
             "formatString": "0",
+            "isHidden": true,
             "lineageTag": "aea5a63e-f67a-4393-8e84-325dff47c6a4"
           },
           {
             "name": "Costo Total",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": "CALCULATE(SUM((NV_ComInv[CostoTotalEntero])))",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "isHidden": true,
             "lineageTag": "2612f642-f2c1-4aa9-bf53-c88a2cb9bffd"
           },
           {
             "name": "_antiguedad",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": "min(NV_ComInv[_fechaCompra])",
             "formatString": "Short Date",
+            "isHidden": true,
             "lineageTag": "16fd03f6-7caa-4f86-b393-2ea3f3dd068c"
           },
           {
             "name": "EsFechaMasAntigua",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": "CALCULATE(MAX(NV_ComInv[_antiguedadEnDias]), ALLSELECTED(NV_ComInv))",
             "formatString": "0",
+            "isHidden": true,
             "lineageTag": "9866b8a9-f276-4fd2-8794-904c883d3756"
           },
           {
             "name": "TotalVentasJerarquico",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": "CALCULATE([EsFechaMasAntigua], ALLEXCEPT(NV_ComInv, Agencias[Agencia]))",
             "formatString": "0",
+            "isHidden": true,
             "lineageTag": "c334f837-e940-4a84-b131-2e8dc31c0cfa"
           },
           {
             "name": "FormatoParaAntiguedad",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "IF(MAX(NV_ComInv[_antiguedadEnDias]) = [Medidaantiguedad],1,0)",
               ""
             ],
             "formatString": "0",
+            "isHidden": true,
             "lineageTag": "2e4a24fb-7dca-4f4f-b131-0c879f1764a3"
           },
           {
             "name": "FormatoParaAntiguedad2",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "",
               "",
@@ -1919,10 +2626,16 @@
               "RETURN IF(SUM(NV_ComInv[_antiguedadEnDias]) = MaximaAntiguedad,1,0)"
             ],
             "formatString": "0",
+            "isHidden": true,
             "lineageTag": "a4408fe6-bd91-460d-87d3-efe12da66548"
           },
           {
             "name": "Medidaantiguedad",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "",
               "VAR modeloActual = SELECTEDVALUE('NV_ComInv'[descripcion])",
@@ -1934,10 +2647,16 @@
               ")"
             ],
             "formatString": "0",
+            "isHidden": true,
             "lineageTag": "5999464c-cda2-4e4d-a2b2-f4817c1bfc0f"
           },
           {
             "name": "MaximaAntiguedad",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "",
               "VAR NivelJerarquia =",
@@ -1960,10 +2679,16 @@
               ")"
             ],
             "formatString": "0",
+            "isHidden": true,
             "lineageTag": "5b6b2287-3c42-4149-933b-0514d1915640"
           },
           {
             "name": "MaximaAntiguedad2",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "",
               "VAR modeloActual = SELECTEDVALUE('NV_ComInv'[descripcion])",
@@ -1986,10 +2711,16 @@
               ")"
             ],
             "formatString": "0",
+            "isHidden": true,
             "lineageTag": "499bd1e2-01bf-446f-ade9-3d65ca8a8f7b"
           },
           {
             "name": "MedidaJerarquicaAntiguedad",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "",
               "",
@@ -2015,31 +2746,61 @@
               ")"
             ],
             "formatString": "0",
+            "isHidden": true,
             "lineageTag": "6190287d-e580-408e-9df0-f0445a6a5d12"
           },
           {
             "name": "_compraDetalle",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": "FIRSTNONBLANK(NV_ComInv[compra], 1)",
+            "isHidden": true,
             "lineageTag": "8761ff2f-3f4f-4599-8b03-90ad21e400d0"
           },
           {
             "name": "_colorExtDetalle",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": "FIRSTNONBLANK(NV_ComInv[colorExt], 1)",
+            "isHidden": true,
             "lineageTag": "4877118f-eeb6-4e37-8df1-7d5f92ce4d63"
           },
           {
             "name": "_colorIntDetalle",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": "FIRSTNONBLANK(NV_ComInv[colorInt], 1)",
+            "isHidden": true,
             "lineageTag": "ffb4762a-bde0-4839-aa97-d8f504414c29"
           },
           {
             "name": "Costo Bruto",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": "CALCULATE(SUM((NV_ComInv[CostoTotalNeto])))",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "isHidden": true,
             "lineageTag": "3f6d048d-b8b2-454c-b1af-06f56d08574f"
           },
           {
             "name": "_anio",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "",
               "",
@@ -2060,34 +2821,27 @@
               "        MAX('NV_ComInv'[ano])  // Devuelve el año máximo si no hay años únicos",
               "    )"
             ],
+            "isHidden": true,
             "lineageTag": "f70a0561-e847-4845-88dd-8398140bed5a"
           },
           {
             "name": "_estatusDetalle",
-            "expression": [
-              "",
-              "VAR estatusUnicos =",
-              "    DISTINCT(",
-              "        SELECTCOLUMNS(",
-              "            RELATEDTABLE(NV_ComInv),",
-              "            \"Estatus\", NV_ComInv[estatus]",
-              "        )",
-              "    )",
-              "RETURN",
-              "    IF(",
-              "        COUNTROWS(estatusUnicos) > 0,",
-              "        CONCATENATE(",
-              "        CONCATENATEX(estatusUnicos, [Estatus], \", \"), ",
-              "        \"\"",
-              "    ),",
-              "        MAX('NV_ComInv'[estatus])  // Devuelve el año máximo si no hay años únicos",
-              "    )",
-              "    "
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
             ],
+            "expression": "MAX('NV_ComInv'[estatus])",
+            "isHidden": true,
             "lineageTag": "7b72e690-eaca-4455-a9b1-8325c052b0f2"
           },
           {
             "name": "UnidadesPorcentaje",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "",
               "VAR AgenciaActual = SELECTEDVALUE('Agencias'[Marca])",
@@ -2095,25 +2849,37 @@
               "VAR TotalUnidades = CALCULATE(COUNT(NV_ComInv[serie]), ALLEXCEPT(NV_ComInv, NV_ComInv[tipo], NV_ComInv[_clasificaciónEstatus]))",
               "VAR UnidadesActuales = [Unidades]",
               "",
-              "RETURN COALESCE(DIVIDE(UnidadesActuales, TotalUnidades),0)",
+              "RETURN IF(DIVIDE(UnidadesActuales, TotalUnidades)<>0,DIVIDE(UnidadesActuales, TotalUnidades),0)",
               "",
               ""
             ],
             "formatString": "0\\ %;-0\\ %;0\\ %",
+            "isHidden": true,
             "lineageTag": "2e26803f-4c60-4db4-bee4-5c164462f876"
           },
           {
             "name": "IdAgenciaSeleccionados_NV_ComInv",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "",
               "",
               "VAR usrl = CONCATENATE(CONCATENATE(CONCATENATE(CONCATENATE(\"http://192.168.249.99:8080/bi_api/view/select/InventarioAutos_Comper/where/\",[idAgenciasFiltro]),\"\"), [carlineFiltro]),[estatusFiltro])",
               "RETURN usrl"
             ],
+            "isHidden": true,
             "lineageTag": "0ffb6445-3d6b-480d-b969-40e0c518bec9"
           },
           {
             "name": "carlineFiltro",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "",
               "VAR carline = CONCATENATEX(",
@@ -2131,10 +2897,51 @@
               "",
               "RETURN isAnd"
             ],
+            "isHidden": true,
             "lineageTag": "41c2567d-fdea-4b55-bef4-f610d8c2ccf0"
           },
           {
+            "name": "importeInvUnidades",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "expression": "IF([Costo Bruto]<>0, [Costo Bruto],0)",
+            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "isHidden": true,
+            "lineageTag": "55994118-0a0c-424a-a530-1493673a1939"
+          },
+          {
+            "name": "Dias en Inv",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "expression": "MAX([_antiguedadEnDias])",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "c5186065-ea56-4dc9-a1b3-de9d299f3ab7"
+          },
+          {
+            "name": "pedidoEsMayor90",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "expression": "IF([Dias en Inv] > 90, \"#FFF9C4\", \"#FFFFFF\")",
+            "isHidden": true,
+            "lineageTag": "7b4fd55c-537d-4483-918c-762abc9332f5"
+          },
+          {
             "name": "estatusFiltro",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "",
               "VAR estatus = CONCATENATEX(",
@@ -2152,25 +2959,8 @@
               "",
               "RETURN isAnd"
             ],
-            "lineageTag": "d567d1e3-4906-4cbc-b8b3-d34821577346"
-          },
-          {
-            "name": "importeInvUnidades",
-            "expression": "COALESCE([Costo Bruto], 0)",
-            "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
-            "lineageTag": "55994118-0a0c-424a-a530-1493673a1939"
-          },
-          {
-            "name": "Dias en Inv",
-            "expression": "MAX([_antiguedadEnDias])",
-            "formatString": "0",
-            "lineageTag": "c5186065-ea56-4dc9-a1b3-de9d299f3ab7"
-          },
-          {
-            "name": "pedidoEsMayor90",
-            "expression": "IF([Dias en Inv] > 90, 1, 0)",
-            "formatString": "0",
-            "lineageTag": "7b4fd55c-537d-4483-918c-762abc9332f5"
+            "isHidden": true,
+            "lineageTag": "ca270ba7-a818-450b-9c68-4a5f7c7a0cb5"
           }
         ],
         "partitions": [
@@ -2199,6 +2989,11 @@
             "value": "Table"
           }
         ],
+        "changedProperties": [
+          {
+            "property": "IsHidden"
+          }
+        ],
         "columns": [
           {
             "name": "IdAgencia",
@@ -2208,7 +3003,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "fceeaa32-c821-4a28-9466-6e9967dcd1ca",
             "sourceColumn": "IdAgencia",
             "sourceProviderType": "char",
@@ -2222,7 +3023,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "isNullable": false,
             "lineageTag": "adc8a471-769a-4e0f-a161-0d8a50084159",
             "sourceColumn": "Marca",
@@ -2237,7 +3044,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "ed802312-d67b-42c4-af8b-b14f12ff8c53",
             "sourceColumn": "Agencia",
             "sourceProviderType": "char",
@@ -2251,7 +3064,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "6452d029-2e90-4325-9d0b-0b9570dd147d",
             "sourceColumn": "RazonSocial",
             "sourceProviderType": "char",
@@ -2265,7 +3084,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "972837ed-6f81-47ce-b4eb-f8e7cfbf1499",
             "sourceColumn": "RFC",
             "sourceProviderType": "char",
@@ -2279,8 +3104,14 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "int64",
             "formatString": "0",
+            "isHidden": true,
             "isNullable": false,
             "lineageTag": "cf198ffc-64f9-41dd-a32b-113f6852c4fb",
             "sourceColumn": "Status",
@@ -2295,27 +3126,51 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "24d0d09b-80e1-4d81-a879-cad289689ee2",
             "sourceColumn": "Region",
             "sourceProviderType": "varchar(255)",
             "summarizeBy": "none"
           }
         ],
+        "isHidden": true,
         "lineageTag": "d32107d6-0c48-4812-ace9-b26dd9efa8bc",
         "measures": [
           {
             "name": "UsuarioActual",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": "USERPRINCIPALNAME()",
+            "isHidden": true,
             "lineageTag": "5c277268-1cce-4548-95d4-fd4a0cc2906a"
           },
           {
             "name": "UsuarioNombre",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": "USERNAME() ",
+            "isHidden": true,
             "lineageTag": "31a73b56-ca50-4502-aafd-f9125c758761"
           },
           {
             "name": "Titulo Dinamico",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "",
               "VAR NumFiltros = COUNTROWS(ALLSELECTED(NV_ComInv[_marca])) // Cuenta los filtros aplicados",
@@ -2331,15 +3186,27 @@
               "RETURN result",
               ""
             ],
+            "isHidden": true,
             "lineageTag": "bfe75d31-b35f-47fd-bc7d-d11e846b0ec9"
           },
           {
             "name": "Titulo Blanco",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": "\"\"",
+            "isHidden": true,
             "lineageTag": "9f2f6e19-697e-4c84-9f12-7a07f4dbc05e"
           },
           {
             "name": "Titulo Detalles",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "VAR NumFiltros = COUNTROWS(ALLSELECTED(NV_ComInv[_agenciaNombre])) // Cuenta los filtros aplicados",
               "VAR TipoInv =  \"Detalle \" ",
@@ -2350,10 +3217,16 @@
               "    TipoInv // Si hay más de un filtro, muestra \"Grupo Solana\"",
               ")"
             ],
+            "isHidden": true,
             "lineageTag": "4e20066d-63d2-4d69-b1f9-e59c267aef55"
           },
           {
             "name": "MarcaSeleccionada",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "",
               "CALCULATE(IF (",
@@ -2363,10 +3236,16 @@
               "))"
             ],
             "formatString": "0",
+            "isHidden": true,
             "lineageTag": "7c93503d-ac46-418e-b950-3b6229ccfaf7"
           },
           {
             "name": "IdAgenciaSeleccionados",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "",
               "VAR codigoAgencia =",
@@ -2378,10 +3257,16 @@
               "VAR usrl = CONCATENATE(CONCATENATE(\"http://localhost:8090/bi_api/view/select/RF_ComInv/where/idAgencia IN ('\",codigoAgencia),\"')\")",
               "RETURN usrl"
             ],
+            "isHidden": true,
             "lineageTag": "74d9fe69-5406-40e8-83a4-73736c8e9d50"
           },
           {
             "name": "idAgenciasFiltro",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "",
               "VAR idAgencias = CONCATENATEX(",
@@ -2399,7 +3284,33 @@
               "",
               "RETURN isAnd"
             ],
+            "isHidden": true,
             "lineageTag": "8375a2cf-8317-4582-839f-c711aa0764d6"
+          },
+          {
+            "name": "Titulo Dinamico Ord Servicio",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "expression": [
+              "",
+              "VAR NumFiltros = COUNTROWS(ALLSELECTED(SR_ComPer[Marca])) // Cuenta los filtros aplicados",
+              "VAR NumFiltros2 = COUNTROWS(ALLSELECTED(SR_ComPer[Agencia]))",
+              "VAR TipoInv = IF(NumFiltros2 = 1,CONCATENATE( \"Ordenes de Servicio - \" , SELECTEDVALUE(SR_ComPer[Agencia])),CONCATENATE( \"Ordenes de Servicio - \" , SELECTEDVALUE(SR_ComPer[_estatus]))) ",
+              "VAR TipoInv2 = IF(NumFiltros2 = 1,CONCATENATE( \"Inventario \" , SELECTEDVALUE(SR_ComPer[Agencia])),CONCATENATE( \"Ordenes de Servicio - \" , SELECTEDVALUE(SR_ComPer[Marca]))) ",
+              "var result = SWITCH(",
+              "    TRUE(),",
+              "    NumFiltros = 0, TipoInv, // Si no hay filtros, muestra \"Grupo Solana\"",
+              "    NumFiltros = 1, TipoInv2, // Si hay un filtro, muestra el valor seleccionado",
+              "    TipoInv // Si hay más de un filtro, muestra \"Grupo Solana\"",
+              ")",
+              "RETURN result",
+              ""
+            ],
+            "isHidden": true,
+            "lineageTag": "c6d43394-323f-4177-9864-622694f4914b"
           }
         ],
         "partitions": [
@@ -2424,10 +3335,11 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
+          }
+        ],
+        "changedProperties": [
           {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
+            "property": "IsHidden"
           }
         ],
         "columns": [
@@ -2439,7 +3351,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "708bde5f-c6c5-4a08-a2b3-91cc1a7cdea7",
             "sourceColumn": "idAgencia",
             "sourceProviderType": "varchar(255)",
@@ -2453,7 +3371,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "3a7dacac-4bcd-402d-b708-a7df3e6dfa4f",
             "sourceColumn": "numeroParte",
             "sourceProviderType": "varchar(255)",
@@ -2467,7 +3391,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "2714eb6d-b27b-4b4c-b1bc-2fc61c745aa4",
             "sourceColumn": "descripcion",
             "sourceProviderType": "varchar(255)",
@@ -2481,7 +3411,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "cca3fc36-2352-4c1f-95d1-80ffebf76280",
             "sourceColumn": "ubicacion",
             "sourceProviderType": "varchar(255)",
@@ -2495,7 +3431,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "7b1b24df-3d5a-4208-a255-1e92557825aa",
             "sourceColumn": "existencia",
             "sourceProviderType": "varchar(255)",
@@ -2509,8 +3451,14 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "dateTime",
             "formatString": "General Date",
+            "isHidden": true,
             "lineageTag": "479c6d5d-533a-4352-bd18-d97281a94f68",
             "sourceColumn": "fechaUltimaCompra",
             "sourceProviderType": "date",
@@ -2524,8 +3472,14 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "dateTime",
             "formatString": "General Date",
+            "isHidden": true,
             "lineageTag": "174b6149-ad0c-4f30-ab17-1da89386e356",
             "sourceColumn": "fechaUltimaVenta",
             "sourceProviderType": "date",
@@ -2539,7 +3493,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "87b8d43d-ce76-4130-b507-ff7f9634b508",
             "sourceColumn": "clasificacion",
             "sourceProviderType": "varchar(255)",
@@ -2553,12 +3513,18 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
             "expression": [
-              "RELATED(Agencias[Agencia])\r",
+              "RELATED(Agencias[Agencia])",
               ""
             ],
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "a9dc1d28-c961-4e53-9c43-fc83ed4be4f0",
             "summarizeBy": "none",
             "type": "calculated"
@@ -2578,11 +3544,15 @@
             "changedProperties": [
               {
                 "property": "SortByColumn"
+              },
+              {
+                "property": "IsHidden"
               }
             ],
             "dataType": "double",
             "expression": "VALUE(RF_ComInv[existencia])",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "11fbd4fc-fd71-4bf5-9656-ad0e186f9704",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -2595,10 +3565,16 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "dateTime",
             "expression": "DATEVALUE(RF_ComInv[fechaUltimaCompra])",
             "formatString": "Short Date",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "26c49f35-6df1-4f4c-89f7-2ab73b258eab",
             "summarizeBy": "none",
             "type": "calculated"
@@ -2611,10 +3587,16 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "dateTime",
             "expression": "DATEVALUE(RF_ComInv[fechaUltimaVenta])",
             "formatString": "Short Date",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "39f5cfe8-3ca3-477e-896a-d3f66c35d366",
             "summarizeBy": "none",
             "type": "calculated"
@@ -2627,12 +3609,18 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
             "expression": [
-              "RELATED(Agencias[Marca])  & \"   \"\r",
+              "RELATED(Agencias[Marca])  & \"   \"",
               ""
             ],
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "44237006-02c2-4ac1-b49a-6f097c7fe6e0",
             "summarizeBy": "none",
             "type": "calculated"
@@ -2645,7 +3633,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "04bf27c3-9fc5-440f-8cbb-50e64f775e9b",
             "sourceColumn": "apartado",
             "sourceProviderType": "varchar(255)",
@@ -2662,12 +3656,16 @@
             "changedProperties": [
               {
                 "property": "SortByColumn"
+              },
+              {
+                "property": "IsHidden"
               }
             ],
             "dataType": "double",
             "expression": "VALUE(RF_ComInv[apartado])",
             "formatString": "0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "9e3002b5-3e3e-4982-b14d-73993d447462",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -2680,7 +3678,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "2a45b14c-6ffc-404e-8ea1-1b32f2bc731c",
             "sourceColumn": "disponible",
             "sourceProviderType": "varchar(255)",
@@ -2694,7 +3698,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "45640a6c-5c60-4faf-b735-bb4f5418e771",
             "sourceColumn": "costototalexistencia",
             "sourceProviderType": "varchar(255)",
@@ -2708,7 +3718,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "c8ce1297-eda7-4fec-84e1-b6f17b8b532c",
             "sourceColumn": "costototaldisponible",
             "sourceProviderType": "varchar(255)",
@@ -2722,7 +3738,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "731ab266-bb9e-4a43-9e24-a1c450bba8c2",
             "sourceColumn": "costototalapartado",
             "sourceProviderType": "varchar(255)",
@@ -2736,7 +3758,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "f2ca3f36-6a19-4200-9062-02a5b0c821d6",
             "sourceColumn": "costopromedio",
             "sourceProviderType": "varchar(255)",
@@ -2754,10 +3782,16 @@
                 "value": "{\"currencyCulture\":\"en-US\"}"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "double",
             "expression": "VALUE(RF_ComInv[costototalapartado])",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "7c33964a-3795-4949-ad3c-acaea47f1eec",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -2774,10 +3808,16 @@
                 "value": "{\"currencyCulture\":\"en-US\"}"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "double",
             "expression": "VALUE(RF_ComInv[costototalexistencia])",
             "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "2159caf0-36f8-43a2-84fc-7050f67bc4ea",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -2794,9 +3834,15 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "double",
             "expression": "VALUE(RF_ComInv[disponible])",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "bbf7626c-8d27-4497-bc7c-b8b6f3d32c72",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -2813,9 +3859,15 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "double",
             "expression": "VALUE(RF_ComInv[costototaldisponible])",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "39be7677-37b9-4c86-b5e5-dd7c95dc24ea",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -2828,9 +3880,15 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
             "expression": "RF_ComInv[_agenciaNombre]",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "7b26485b-8f34-45f8-9505-258a7dca99f3",
             "summarizeBy": "none",
             "type": "calculated"
@@ -2843,7 +3901,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "isNullable": false,
             "lineageTag": "904c6787-0869-4d4b-bb3c-b5f42203af75",
             "sourceColumn": "idPedidoDetalle",
@@ -2851,10 +3915,16 @@
             "summarizeBy": "none"
           }
         ],
+        "isHidden": true,
         "lineageTag": "c4364007-39ce-4c50-ba8b-5ffdf9c7d309",
         "measures": [
           {
             "name": "tituloDinamico",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "",
               "VAR NumFiltros = COUNTROWS(ALLSELECTED(RF_ComInv[_marcaAgencia])) // Cuenta los filtros aplicados",
@@ -2867,10 +3937,16 @@
               ")",
               ""
             ],
+            "isHidden": true,
             "lineageTag": "bbabe64f-a3d0-4f64-8e18-bda30699f220"
           },
           {
             "name": "_totalGeneralPorcentaje",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "",
               "VAR costoTotal = CALCULATE(",
@@ -2880,27 +3956,51 @@
               "RETURN DIVIDE([_ImporteInvRef], costoTotal)"
             ],
             "formatString": "#,0.00\\ %;-#,0.00\\ %;#,0.00\\ %",
+            "isHidden": true,
             "lineageTag": "2f2d839b-6424-4ab8-9cd3-a7efcf98a399"
           },
           {
             "name": "ubicacionBlank",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": "MAXX(FILTER(RF_ComInv, RF_ComInv[_ImporteInvRef] > 0), RF_ComInv[ubicacion])",
+            "isHidden": true,
             "lineageTag": "6eca656f-e210-45a4-bfab-3f8745d2f735"
           },
           {
             "name": "_fechaUltimaCompraBlank",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": "MAXX(FILTER(RF_ComInv, RF_ComInv[_ImporteInvRef]), RF_ComInv[_fechaUltimaCompra])",
             "formatString": "Short Date",
+            "isHidden": true,
             "lineageTag": "d9b471a4-688c-4db8-b8e6-b040d57f917a"
           },
           {
             "name": "_fechaUltimaVentaBlank",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": "MAXX(FILTER(RF_ComInv, RF_ComInv[_ImporteInvRef] > 0), RF_ComInv[_fechaUltimaVenta])",
             "formatString": "Short Date",
+            "isHidden": true,
             "lineageTag": "b6fbbe25-c8fc-45f2-9dbd-d8ad8a29c7c6"
           },
           {
             "name": "tituloDinamicoUnidades",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "",
               "VAR selector = SELECTEDVALUE(RF_ComInv_piezas[RF Order])",
@@ -2913,6 +4013,7 @@
               "    BLANK()",
               ")"
             ],
+            "isHidden": true,
             "lineageTag": "7e218059-eb41-49fc-b989-0358c3d1cfbd"
           },
           {
@@ -2923,11 +4024,17 @@
                 "value": "{\"isDecimal\":true}"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "CALCULATE(SUM(RF_ComInv[_existencia]))",
               ""
             ],
             "formatString": "#,0",
+            "isHidden": true,
             "lineageTag": "1dc46357-5628-4102-a35a-6c5575d2a29e"
           },
           {
@@ -2935,13 +4042,20 @@
             "annotations": [
               {
                 "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
+                "value": "{\"isDecimal\":true}"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
               }
             ],
             "expression": [
               "IF(CALCULATE(SUM(RF_ComInv[_apartado]))<>0, CALCULATE(SUM(RF_ComInv[_apartado])))",
               ""
             ],
+            "formatString": "#,0",
+            "isHidden": true,
             "lineageTag": "aec1b436-b4c2-443e-bf7c-f0d5a02f2271"
           },
           {
@@ -2952,16 +4066,21 @@
                 "value": "{\"isDecimal\":true}"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": "CALCULATE(SUM(RF_ComInv[_disponible]))",
             "formatString": "#,0",
+            "isHidden": true,
             "lineageTag": "e79aca18-2b2c-4287-a16c-2bc38824fe05"
           },
           {
             "name": "_ImporteInvRef",
-            "annotations": [
+            "changedProperties": [
               {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
+                "property": "IsHidden"
               }
             ],
             "expression": [
@@ -2977,10 +4096,17 @@
               "))",
               ""
             ],
+            "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "isHidden": true,
             "lineageTag": "575079f9-3bd2-48e2-a2e9-cdd36a71c112"
           },
           {
             "name": "tituloDinamicoExistencias",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "",
               "VAR selector = SELECTEDVALUE(RF_ComInv_piezas[RF Order])",
@@ -2993,36 +4119,61 @@
               "    BLANK()",
               ")"
             ],
+            "isHidden": true,
             "lineageTag": "fed85092-773d-48c3-99f7-4f890501383a"
           },
           {
             "name": "_sum_apartado_importe",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "IF(CALCULATE(SUM(RF_ComInv[_costoTotalApartado]))<>0, CALCULATE(SUM(RF_ComInv[_costoTotalApartado])))",
               ""
             ],
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "isHidden": true,
             "lineageTag": "b2fe009c-41ae-4eb4-9ebd-bd4ddd4b9cd5"
           },
           {
             "name": "_sum_disponible_importe",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": "CALCULATE(SUM(RF_ComInv[_costoTotalDisponible]))",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "isHidden": true,
             "lineageTag": "827b50e6-733f-4232-bb39-c2a6ec5cd180"
           },
           {
             "name": "_sum_existencia_importe",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "CALCULATE(SUM(RF_ComInv[_costoTotalExistencia]))",
               ""
             ],
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "isHidden": true,
             "lineageTag": "5d16e044-5d3c-4c12-9bbd-434ce990e9cb"
           },
           {
             "name": "_importeRefInvCard",
-            "expression": "COALESCE([_ImporteInvRef],0)",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "expression": "IF([_ImporteInvRef]<>0,[_ImporteInvRef],0)",
             "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "isHidden": true,
             "lineageTag": "f0bfd103-9567-4f7b-aaf2-b81c8f99872d"
           }
         ],
@@ -3034,7 +4185,7 @@
               "expression": [
                 "let",
                 "    Origen = Sql.Database(\"192.168.249.151\", \"SBI\", [Query=\"",
-                "    SELECT CONCAT(numeroParte, '-',idAgencia) as idPedidoDetalle, * FROM RF_ComInv ",
+                "    SELECT * FROM RF_ComInv ",
                 "    ",
                 "    ",
                 "    \"])",
@@ -3054,6 +4205,11 @@
             "value": "Table"
           }
         ],
+        "changedProperties": [
+          {
+            "property": "IsHidden"
+          }
+        ],
         "columns": [
           {
             "name": "idAgencia",
@@ -3063,7 +4219,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "bf84751e-af04-488a-b186-915230072473",
             "sourceColumn": "idAgencia",
             "sourceProviderType": "varchar(255)",
@@ -3077,7 +4239,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "3d4b3750-de79-49de-b962-68cee9a079db",
             "sourceColumn": "noSerie",
             "sourceProviderType": "varchar(255)",
@@ -3091,7 +4259,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "2ebde588-69a7-4904-a3a1-4e6113af6aa5",
             "sourceColumn": "estatus",
             "sourceProviderType": "varchar(255)",
@@ -3105,7 +4279,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "fd4d476f-8a67-4cd9-b19e-d3191e40fb7a",
             "sourceColumn": "fechaPedido",
             "sourceProviderType": "varchar(255)",
@@ -3119,7 +4299,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "e63c0542-a429-444b-8a6b-5385aa7b7c76",
             "sourceColumn": "diasPedido",
             "sourceProviderType": "varchar(255)",
@@ -3133,12 +4319,18 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
             "expression": [
-              "\r",
+              "",
               "RELATED(Agencias[Agencia])"
             ],
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "36e4c6ef-d33f-4aea-bb52-2415d0c24127",
             "summarizeBy": "none",
             "type": "calculated"
@@ -3155,9 +4347,15 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "double",
             "expression": "VALUE(EstatusPedidos[diasPedido])",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "d5df4342-48e2-4dab-add1-5dddcdd7e04b",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -3174,13 +4372,19 @@
                 "value": "{\"currencyCulture\":\"es-US\"}"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "double",
             "expression": [
-              "\r",
+              "",
               "RELATED(NV_ComInv[CostoTotalNeto])"
             ],
             "formatString": "\\$#,0.0;(\\$#,0.0);\\$#,0.0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "7fdb72aa-48c0-4bd6-ab76-f76565c26a91",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -3196,11 +4400,15 @@
             "changedProperties": [
               {
                 "property": "SortByColumn"
+              },
+              {
+                "property": "IsHidden"
               }
             ],
             "dataType": "string",
             "expression": "RELATED(NV_ComInv[RangoDiasInv])",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "2791e933-2fdb-4192-9937-9c10e6c8aaf9",
             "sortByColumn": "_rangoDiasOrden",
             "summarizeBy": "none",
@@ -3214,10 +4422,16 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "int64",
             "expression": "RELATED(NV_ComInv[RangoDiasInvOrden])",
             "formatString": "0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "658bf418-9b75-40f4-a2e4-0f13dc6ff030",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -3230,10 +4444,16 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "dateTime",
             "expression": "DATEVALUE(EstatusPedidos[fechaPedido])",
             "formatString": "Short Date",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "4ff1e1d5-6e33-431e-8739-a3f15e139a36",
             "summarizeBy": "none",
             "type": "calculated"
@@ -3246,25 +4466,43 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "0be29127-7aff-4463-85a2-66d9183f1040",
             "sourceColumn": "pedido",
             "sourceProviderType": "varchar(255)",
             "summarizeBy": "none"
           }
         ],
+        "isHidden": true,
         "lineageTag": "59c991e3-6234-4ab1-8a5e-42fb103ad2d8",
         "measures": [
           {
             "name": "Dias en Pedido",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": "MAX(EstatusPedidos[_diasPedido])",
             "formatString": "0",
+            "isHidden": true,
             "lineageTag": "8e3bc188-ecfb-4d28-b919-4edd4404d1c6"
           },
           {
             "name": "PedidoEsMayorDe90",
-            "expression": "IF([Dias en Pedido] > 90, 1, 0)",
-            "formatString": "0",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "expression": "IF([Dias en Pedido] > 90,\"#FFF9C4\", \"#FFFFFF\")",
+            "isHidden": true,
             "lineageTag": "cc2ce895-7c21-47a7-9e33-06ca2600d8c1"
           }
         ],
@@ -3508,6 +4746,7 @@
             ],
             "dataType": "string",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "isNameInferred": false,
             "lineageTag": "1c9beb5d-d093-4c4e-b262-360a9d99dc37",
             "relatedColumnDetails": {
@@ -3578,6 +4817,7 @@
             "dataType": "int64",
             "formatString": "0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "isNameInferred": false,
             "lineageTag": "51be3d62-12b4-449a-a5be-31835390a145",
             "sourceColumn": "[Value4]",
@@ -3585,6 +4825,7 @@
             "type": "calculatedTableColumn"
           }
         ],
+        "isHidden": true,
         "lineageTag": "2b3f6ac1-d6da-4343-941c-ed814c8b0d35",
         "partitions": [
           {
@@ -3609,10 +4850,11 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
-          },
+          }
+        ],
+        "changedProperties": [
           {
-            "name": "PBI_NavigationStepName",
-            "value": "Navigation"
+            "property": "IsHidden"
           }
         ],
         "columns": [
@@ -3624,7 +4866,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "isNullable": false,
             "lineageTag": "d8708dda-e012-4739-9eb3-593ea2253bdc",
             "sourceColumn": "idPedidoDetalle",
@@ -3639,7 +4887,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "aad7b536-8abc-4d45-ad8f-8bf5b82a086e",
             "sourceColumn": "idAgencia",
             "sourceProviderType": "varchar(255)",
@@ -3653,7 +4907,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "2618d40b-cd64-427a-b70b-d434e77c046c",
             "sourceColumn": "pedido",
             "sourceProviderType": "varchar(255)",
@@ -3667,7 +4927,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "afb32647-8a2a-438b-9d04-fc531b26073e",
             "sourceColumn": "fechaPedido",
             "sourceProviderType": "varchar(255)",
@@ -3681,7 +4947,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "25430c76-1417-4fc8-b82c-6428af84c746",
             "sourceColumn": "cliente",
             "sourceProviderType": "varchar(255)",
@@ -3695,7 +4967,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "9034cd6d-7e99-43e5-af51-01eba2b35287",
             "sourceColumn": "vendedor",
             "sourceProviderType": "varchar(255)",
@@ -3709,7 +4987,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "351b8f45-e124-4db2-8a4a-bb806a4c421d",
             "sourceColumn": "codigo",
             "sourceProviderType": "varchar(255)",
@@ -3723,7 +5007,13 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "23c81d48-2379-4d2f-b783-abc9dc12b070",
             "sourceColumn": "cantidad",
             "sourceProviderType": "varchar(255)",
@@ -3741,9 +5031,15 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "double",
             "expression": "VALUE(RF_Detalle_ComInv[cantidad])",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "27642005-199b-4681-9a5c-bcd349882f95",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -3760,10 +5056,16 @@
                 "value": "{\"isDecimal\":true}"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "double",
-            "expression": "VALUE(RELATED((RF_ComInv[costototalapartado])))",
+            "expression": "VALUE(RELATED(RF_ComInv[costopromedio])) * RF_Detalle_ComInv[_cantidad]",
             "formatString": "#,0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "901003b0-39d1-431d-a63f-f5c31b71c70e",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -3776,10 +5078,16 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "dateTime",
             "expression": "DATEVALUE(RF_Detalle_ComInv[fechaPedido])",
             "formatString": "Short Date",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "3b8a0d3c-9915-4b6e-a7d2-a0ec963334c5",
             "summarizeBy": "none",
             "type": "calculated"
@@ -3792,9 +5100,15 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "string",
             "expression": "RELATED((RF_ComInv[descripcion]))",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "74f9469a-a000-4a3a-ad99-e295da32cd1c",
             "summarizeBy": "none",
             "type": "calculated"
@@ -3807,18 +5121,67 @@
                 "value": "Automatic"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "dataType": "int64",
             "expression": [
-              "DATEDIFF(RF_Detalle_ComInv[_fechaPedido], TODAY(), DAY)\r",
+              "DATEDIFF(RF_Detalle_ComInv[_fechaPedido], TODAY(), DAY)",
               ""
             ],
             "formatString": "0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "16d4c5d2-a5e0-462f-bd30-e795564da6a0",
             "summarizeBy": "sum",
             "type": "calculated"
+          },
+          {
+            "name": "Agencia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "expression": "RELATED((RF_ComInv[_agenciaNombre]))",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "8fee258d-cfc7-443b-9caf-1d1638c4af5a",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Marca",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "expression": "RELATED((RF_ComInv[_marcaAgencia]))",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "e806fab3-8fa2-4272-b0a3-f04ec81fe329",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
+        "isHidden": true,
         "lineageTag": "f9b4b92d-d589-4673-a012-835d8c1c86f5",
         "measures": [
           {
@@ -3829,7 +5192,13 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
-            "expression": "COALESCE([_cantidad_sum],0)",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "expression": "IF([_cantidad_sum]<>0,[_cantidad_sum],0)",
+            "isHidden": true,
             "lineageTag": "8fc304f1-6631-493f-83ac-b2413bdad5ff"
           },
           {
@@ -3840,11 +5209,22 @@
                 "value": "{\"isGeneralNumber\":true}"
               }
             ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": "SUM(RF_Detalle_ComInv[_cantidad])",
+            "isHidden": true,
             "lineageTag": "0850c57e-38b8-481a-933c-2788f90f5bf8"
           },
           {
             "name": "Dias Transcurridos",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "IF(",
               "    ISINSCOPE(RF_Detalle_ComInv[pedido]),",
@@ -3853,10 +5233,16 @@
               ")"
             ],
             "formatString": "#,0",
+            "isHidden": true,
             "lineageTag": "84cc2717-def7-4228-b157-77c974445f3f"
           },
           {
             "name": "EsMayorDe90",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "IF(",
               "    ISINSCOPE(RF_Detalle_ComInv[pedido]),",
@@ -3865,10 +5251,16 @@
               ")"
             ],
             "formatString": "0",
+            "isHidden": true,
             "lineageTag": "e997d495-c2b1-436d-88a7-e34ee2200dea"
           },
           {
             "name": "Fecha del Pedido",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "IF(",
               "    ISINSCOPE(RF_Detalle_ComInv[pedido]),",
@@ -3879,10 +5271,16 @@
               ""
             ],
             "formatString": "Short Date",
+            "isHidden": true,
             "lineageTag": "7a2df43d-f617-4a86-b4f2-d851ad78ec82"
           },
           {
             "name": "Vendedor_",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "IF(",
               "    ISINSCOPE(RF_Detalle_ComInv[pedido]),",
@@ -3890,10 +5288,16 @@
               "    BLANK()",
               ")"
             ],
+            "isHidden": true,
             "lineageTag": "13e62cdb-c559-46da-8dc8-921dc681ea9a"
           },
           {
             "name": "Cliente_",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": [
               "IF(",
               "    ISINSCOPE(RF_Detalle_ComInv[pedido]),",
@@ -3901,12 +5305,19 @@
               "    BLANK()",
               ")"
             ],
+            "isHidden": true,
             "lineageTag": "31b0d31c-8bd3-40e0-924c-3364de3ef551"
           },
           {
             "name": "Importe",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
             "expression": "CALCULATE(SUM(RF_Detalle_ComInv[_costototalApartado]))",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "isHidden": true,
             "lineageTag": "e044ad07-9055-445d-9cad-356a3cb1a61e"
           }
         ],
@@ -3917,7 +5328,7 @@
             "source": {
               "expression": [
                 "let",
-                "    Source = Sql.Database(\"192.168.249.151\", \"SBI\", [Query=\"SELECT  CONCAT(codigo, '-',idAgencia) as idPedidoDetalle, * FROM RF_Detalle_ComInv\"])",
+                "    Source = Sql.Database(\"192.168.249.151\", \"SBI\", [Query=\"SELECT * FROM RF_Detalle_ComInv\"])",
                 "in",
                 "    Source"
               ],
@@ -3945,6 +5356,7 @@
             ],
             "dataType": "string",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "isNameInferred": false,
             "lineageTag": "59953f5b-4208-46fd-8b0f-33411b970484",
             "relatedColumnDetails": {
@@ -4016,6 +5428,7 @@
             "dataType": "int64",
             "formatString": "0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "isNameInferred": false,
             "lineageTag": "f51daf1e-325f-47b8-81c4-dd764ccd5b7b",
             "sourceColumn": "[Value4]",
@@ -4023,6 +5436,7 @@
             "type": "calculatedTableColumn"
           }
         ],
+        "isHidden": true,
         "lineageTag": "c43fe4cb-5e62-4b2a-97ee-716220f5aa30",
         "partitions": [
           {
@@ -4060,6 +5474,7 @@
             ],
             "dataType": "string",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "isNameInferred": false,
             "lineageTag": "756e926a-59ab-473b-b5ba-96e053b69922",
             "sortByColumn": "Orden",
@@ -4078,6 +5493,7 @@
             "dataType": "int64",
             "formatString": "0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "isNameInferred": false,
             "lineageTag": "6ece6c16-15c6-4eb3-8239-a0864281dc53",
             "sourceColumn": "[Value2]",
@@ -4095,6 +5511,7 @@
             "dataType": "int64",
             "formatString": "0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "isNameInferred": false,
             "lineageTag": "0bce93c3-177b-4db2-a0b1-cfdf72150fe1",
             "sourceColumn": "[Value3]",
@@ -4102,6 +5519,7 @@
             "type": "calculatedTableColumn"
           }
         ],
+        "isHidden": true,
         "lineageTag": "4dbbd4e2-f3b9-4241-9559-ba749dc7f492",
         "partitions": [
           {
@@ -4116,6 +5534,1105 @@
                 "}"
               ],
               "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "SR_ComPer",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "IsHidden"
+          }
+        ],
+        "columns": [
+          {
+            "name": "idAgencia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "5276769b-0f08-4bc2-b037-ea05957eb573",
+            "sourceColumn": "idAgencia",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "orden",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "b54b002d-537a-4acc-8153-20a59dec2355",
+            "sourceColumn": "orden",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "tipoOrden",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "70ec4de7-3ccc-4cc4-9656-50af9d74807d",
+            "sourceColumn": "tipoOrden",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nombreCliente",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "843de4f4-4a82-4f96-9267-74684ddc7d81",
+            "sourceColumn": "nombreCliente",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nombreAsesor",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "e470f789-f433-4603-b6d0-32918741ce02",
+            "sourceColumn": "nombreAsesor",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "estatus",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "4f811c35-845e-4809-9c0c-2f185a0d2abe",
+            "sourceColumn": "estatus",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "tipoAuto",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "0a5baa7a-3c6f-4d3a-b6dc-048e0169f272",
+            "sourceColumn": "tipoAuto",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "modelo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "3d06262b-a92e-48bc-b4ba-4415a0999557",
+            "sourceColumn": "modelo",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "placas",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "86d7fa65-72af-4830-a65d-8342b9e1a3eb",
+            "sourceColumn": "placas",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "numSerie",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "cb704cc2-48cd-44ce-9474-53f612100d0e",
+            "sourceColumn": "numSerie",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "fechaOrden",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "38fbb7dd-c19e-474d-879e-53d23e3a4abe",
+            "sourceColumn": "fechaOrden",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "dias",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "c63de0bc-6f5c-4a1c-bd43-344b4d860fa2",
+            "sourceColumn": "dias",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "manoObra",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "23a6f17b-de4a-4f3d-8157-e314fb1a7c5a",
+            "sourceColumn": "manoObra",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "refaccionaria",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "f2909964-544a-46d4-aa0d-a908b3bfbb2f",
+            "sourceColumn": "refaccionaria",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "varios",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "504ac36a-e6d4-4f17-bded-c0d00eecac0b",
+            "sourceColumn": "varios",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "total",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "1dcef198-3809-415d-bd61-6d22ef5a54f1",
+            "sourceColumn": "total",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "_fechaOrden",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "dateTime",
+            "expression": "DATEVALUE(SR_ComPer[fechaOrden])",
+            "formatString": "Short Date",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "35172f24-d695-4803-bde3-c0249b11d666",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "_manoDeObra",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "double",
+            "expression": "VALUE(SR_ComPer[manoObra])",
+            "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "34fb88f5-ffb9-48bf-8a23-f0f264ca2428",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "_refaccionaria",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "double",
+            "expression": "VALUE(SR_ComPer[refaccionaria])",
+            "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "b5fa36eb-ff33-4426-90cc-a7c57621ed72",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "_total",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "double",
+            "expression": "VALUE(SR_ComPer[total])",
+            "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "0b2bff3c-c69d-4a22-acf4-6f75afa127c8",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "_varios",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "double",
+            "expression": "VALUE(SR_ComPer[varios])",
+            "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "d42d4285-2ddf-4f4c-beb6-fd5b15fa9ed8",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "Agencia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "expression": "RELATED(Agencias[Agencia])",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "ccc1febc-9a83-4041-a09e-f4fa20738e83",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Antiguedad",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              },
+              {
+                "property": "SortByColumn"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "SWITCH(TRUE(), VALUE(SR_ComPer[dias]) <= 30, \"Menor a 30 dias\",VALUE(SR_ComPer[dias] )<= 60, \"31 a 60 dias\",VALUE(SR_ComPer[dias]) <= 90, \"61 a 90 dias\", VALUE(SR_ComPer[dias] )> 90, \"Mayor a 90 dias\",\"\"",
+              ")"
+            ],
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "95d1b223-1068-46de-8164-7449ee4153db",
+            "sortByColumn": "AntiguedadOrden",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Marca",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "expression": "RELATED(Agencias[Marca]) & \"   \"",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "eecca931-4f9b-45e0-b965-bbccf1f97ada",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "_estatus",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "",
+              "VAR lenWord = LEN(SR_ComPer[estatus])",
+              "VAR initial =  UPPER(MID(SR_ComPer[estatus], 1, 1))",
+              "VAR final =  LOWER( MID(SR_ComPer[estatus], 2, lenWord))",
+              "RETURN CONCATENATE(initial,final",
+              ")"
+            ],
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "a88681af-d29a-4e9c-8754-004e61254326",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "TipoOrdenE",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "5b998c93-bceb-4142-a415-1966b3aec885",
+            "sourceColumn": "TipoOrdenE",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "_dias",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "double",
+            "expression": "VALUE(SR_ComPer[dias])",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "883972b0-1c68-48e6-a542-2ca500c12127",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "AntiguedadOrden",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "expression": [
+              "SWITCH(TRUE(), VALUE(SR_ComPer[dias]) <= 30, 1,VALUE(SR_ComPer[dias] )<= 60,2,VALUE(SR_ComPer[dias]) <= 90, 3, VALUE(SR_ComPer[dias] )> 90, 4,0",
+              ")"
+            ],
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "isHidden": true,
+            "lineageTag": "86c02d22-8665-4608-8e36-59285b9e740a",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "9105fe26-53da-436d-af0f-860b2fd541a1",
+        "measures": [
+          {
+            "name": "Ordenes",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "expression": "CALCULATE(COUNT(SR_ComPer[orden]))",
+            "formatString": "#,0",
+            "isHidden": true,
+            "lineageTag": "e2826ba8-57e4-421f-b773-4640a88374a3"
+          },
+          {
+            "name": "OrdenEsMayorDe90",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "expression": "IF(SUM(SR_ComPer[_dias]) > 90, 1, 0)",
+            "formatString": "0",
+            "isHidden": true,
+            "lineageTag": "9de642cd-d52c-49b6-8995-92d8e82a97ce"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "SR_ComPer",
+            "mode": "directQuery",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"192.168.249.151\", \"SBI\", [Query=\"SELECT * FROM SR_ComPer\"])",
+                "in",
+                "    Source"
+              ],
+              "type": "m"
+            }
+          }
+        ]
+      },
+      {
+        "name": "FN_ComPer",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "IsHidden"
+          }
+        ],
+        "columns": [
+          {
+            "name": "idAgencia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3a030767-c6a3-4202-b1d4-f84eb224dbd4",
+            "sourceColumn": "idAgencia",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "factura",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2639017c-8f9e-40e9-8204-1b12b1628c5b",
+            "sourceColumn": "factura",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "fecha",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "04efec9c-6fc4-45eb-88a8-d848cab6708f",
+            "sourceColumn": "fecha",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "serie",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3e639325-49a3-4244-b0cf-69c5bbb53161",
+            "sourceColumn": "serie",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "noInv",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "32f99f4b-269d-491c-b47e-95c13541a02a",
+            "sourceColumn": "noInv",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "tipo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "696722d3-8a38-40e3-a7af-2c934d90e003",
+            "sourceColumn": "tipo",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "ano",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "441bc21a-f3a6-4c00-bf22-6425fc16004c",
+            "sourceColumn": "ano",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "colExt",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "714afeae-aeb6-4e48-a3d4-d26ef1822b81",
+            "sourceColumn": "colExt",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "colInt",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d401c7fa-5475-43d5-a4ef-532d8a660a2c",
+            "sourceColumn": "colInt",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "cliente",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "2c27e14f-e255-4f4a-b28a-fc6f79cda3e1",
+            "sourceColumn": "cliente",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Asesor",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "26b5408d-8bb7-4e4a-98c9-1b477a245f79",
+            "sourceColumn": "Asesor",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Canal",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "965cff00-8287-4131-a36d-8a2227553af0",
+            "sourceColumn": "Canal",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "condicion",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "9f08fb24-273a-4f5b-a1fa-86a05a6ce261",
+            "sourceColumn": "condicion",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "Agencia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "expression": "RELATED(Agencias[Agencia])",
+            "isDataTypeInferred": true,
+            "lineageTag": "7f3cd140-9569-4810-b5e6-839c4d823ad7",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Marca",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "expression": "RELATED(Agencias[Marca])",
+            "isDataTypeInferred": true,
+            "lineageTag": "f7413b89-c7b6-46ad-8f7e-afd725a67531",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "MarcaFormat",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "expression": "RELATED(Agencias[Marca]) & \"  \"",
+            "isDataTypeInferred": true,
+            "lineageTag": "eb7260f9-17c6-47b6-8174-aea833d075bb",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "diasSinEntregar",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "expression": "DATEDIFF(FN_ComPer[fechaEmision], TODAY(), DAY)",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "9bcd6197-db57-4049-b61a-3ecfda87aa2c",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "fechaEmision",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "dateTime",
+            "expression": "DATEVALUE(FN_ComPer[fecha])",
+            "formatString": "Short Date",
+            "isDataTypeInferred": true,
+            "lineageTag": "b14e1f87-f9e1-4bf1-baa5-4b4e6c4fb32e",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "Antiguedad",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "SortByColumn"
+              },
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "expression": [
+              "SWITCH(TRUE(), VALUE(FN_ComPer[diasSinEntregar]) <= 30, \"Menor a 30 dias\",VALUE(FN_ComPer[diasSinEntregar] )<= 60, \"31 a 60 dias\",VALUE(FN_ComPer[diasSinEntregar]) <= 90, \"61 a 90 dias\", VALUE(FN_ComPer[diasSinEntregar] )> 90, \"Mayor a 90 dias\",\"\"",
+              ")"
+            ],
+            "isDataTypeInferred": true,
+            "lineageTag": "448032ae-2565-42c4-b480-4c23a093dc64",
+            "sortByColumn": "AntiguedadOrden",
+            "summarizeBy": "none",
+            "type": "calculated"
+          },
+          {
+            "name": "AntiguedadOrden",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "int64",
+            "expression": [
+              "SWITCH(TRUE(), VALUE(FN_ComPer[diasSinEntregar]) <= 30, 1,VALUE(FN_ComPer[diasSinEntregar] )<= 60, 2,VALUE(FN_ComPer[diasSinEntregar]) <= 90, 3, VALUE(FN_ComPer[diasSinEntregar] )> 90, 4,5",
+              ")"
+            ],
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "29336991-e00d-44d8-973b-8f82aa8bb8e7",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          }
+        ],
+        "lineageTag": "c7e45e63-f4c9-4ff4-9761-0bf5e1669591",
+        "measures": [
+          {
+            "name": "cantFacturas",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "expression": "COUNT(FN_ComPer[factura])",
+            "formatString": "#,0",
+            "lineageTag": "e0d61fc9-d0fc-4dde-a9df-f4c5159b52fc"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "FN_ComPer",
+            "mode": "directQuery",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"192.168.249.151\", \"SBI\", [Query=\"SELECT * FROM  FN_ComPer\"])",
+                "in",
+                "    Source"
+              ],
+              "type": "m"
             }
           }
         ]
