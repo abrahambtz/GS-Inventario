@@ -4,13 +4,13 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 331.30048498305479,
-        "y": 441.42210491672813
+        "x": 0,
+        "y": 7.9921874326350375
       },
       "nodes": [
         {
           "location": {
-            "x": 602.07252417723168,
+            "x": 715.961195092281,
             "y": 0
           },
           "nodeIndex": "NV_ComInv",
@@ -19,12 +19,12 @@
             "height": 856.546511627907,
             "width": 234
           },
-          "zIndex": 8
+          "zIndex": 7
         },
         {
           "location": {
-            "x": 1118.9510714315313,
-            "y": 163.25143504286945
+            "x": 1172.8983366018178,
+            "y": 544.87838495119263
           },
           "nodeIndex": "Agencias",
           "nodeLineageTag": "d32107d6-0c48-4812-ace9-b26dd9efa8bc",
@@ -36,7 +36,7 @@
         },
         {
           "location": {
-            "x": 1790.7668883519827,
+            "x": 1662.8918894298222,
             "y": 0
           },
           "nodeIndex": "RF_ComInv",
@@ -45,25 +45,25 @@
             "height": 1000,
             "width": 234
           },
-          "zIndex": 9
+          "zIndex": 8
         },
         {
           "location": {
-            "x": 0,
-            "y": 56.418604651162838
+            "x": 249.75585726984491,
+            "y": 144.33266641014825
           },
           "nodeIndex": "EstatusPedidos",
           "nodeLineageTag": "59c991e3-6234-4ab1-8a5e-42fb103ad2d8",
           "size": {
-            "height": 437.6395348837209,
+            "height": 516.56743826966056,
             "width": 234
           },
           "zIndex": 4
         },
         {
           "location": {
-            "x": 2376.7258594515588,
-            "y": 334.32203632488381
+            "x": 2169.0329439964244,
+            "y": 161.16682289174184
           },
           "nodeIndex": "RF_Detalle_ComInv",
           "nodeLineageTag": "f9b4b92d-d589-4673-a012-835d8c1c86f5",
@@ -76,7 +76,7 @@
         {
           "location": {
             "x": 0,
-            "y": 1290.2718780900527
+            "y": 1160.3988323097335
           },
           "nodeIndex": "RF_ComInv_piezas",
           "nodeLineageTag": "2b3f6ac1-d6da-4343-941c-ed814c8b0d35",
@@ -88,8 +88,8 @@
         },
         {
           "location": {
-            "x": 257.15612506360537,
-            "y": 1289.9237344833671
+            "x": 301.11315594309809,
+            "y": 1200.0116258662229
           },
           "nodeIndex": "RF_ComInv_importe",
           "nodeLineageTag": "c43fe4cb-5e62-4b2a-97ee-716220f5aa30",
@@ -101,8 +101,8 @@
         },
         {
           "location": {
-            "x": 0,
-            "y": 958.54456498092
+            "x": 129.87304578031936,
+            "y": 896.60511237799847
           },
           "nodeIndex": "RF_ComInv_control",
           "nodeLineageTag": "4dbbd4e2-f3b9-4241-9559-ba749dc7f492",
@@ -110,12 +110,12 @@
             "height": 202.6255707762557,
             "width": 234
           },
-          "zIndex": 7
+          "zIndex": 10
         },
         {
           "location": {
-            "x": 835.49644898206986,
-            "y": 948.42523754920137
+            "x": 589.7366854285425,
+            "y": 964.40961241447144
           },
           "nodeIndex": "SR_ComPer",
           "nodeLineageTag": "9105fe26-53da-436d-af0f-860b2fd541a1",
@@ -127,8 +127,8 @@
         },
         {
           "location": {
-            "x": 1467.9460725444796,
-            "y": 909.41852108974717
+            "x": 1895.5281001904541,
+            "y": 1055.2759417353366
           },
           "nodeIndex": "FN_ComPer",
           "nodeLineageTag": "c7e45e63-f4c9-4ff4-9761-0bf5e1669591",
@@ -136,11 +136,11 @@
             "height": 498.98439023542619,
             "width": 234
           },
-          "zIndex": 10
+          "zIndex": 9
         }
       ],
       "name": "Todas las tablas",
-      "zoomValue": 79.082286889317615,
+      "zoomValue": 50.048876277182018,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,
