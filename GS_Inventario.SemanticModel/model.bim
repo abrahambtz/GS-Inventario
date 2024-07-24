@@ -4872,7 +4872,6 @@
               }
             ],
             "dataType": "string",
-            "isHidden": true,
             "isNullable": false,
             "lineageTag": "d8708dda-e012-4739-9eb3-593ea2253bdc",
             "sourceColumn": "idPedidoDetalle",
@@ -4893,7 +4892,6 @@
               }
             ],
             "dataType": "string",
-            "isHidden": true,
             "lineageTag": "aad7b536-8abc-4d45-ad8f-8bf5b82a086e",
             "sourceColumn": "idAgencia",
             "sourceProviderType": "varchar(255)",
@@ -4913,7 +4911,6 @@
               }
             ],
             "dataType": "string",
-            "isHidden": true,
             "lineageTag": "2618d40b-cd64-427a-b70b-d434e77c046c",
             "sourceColumn": "pedido",
             "sourceProviderType": "varchar(255)",
@@ -4933,7 +4930,6 @@
               }
             ],
             "dataType": "string",
-            "isHidden": true,
             "lineageTag": "afb32647-8a2a-438b-9d04-fc531b26073e",
             "sourceColumn": "fechaPedido",
             "sourceProviderType": "varchar(255)",
@@ -4953,7 +4949,6 @@
               }
             ],
             "dataType": "string",
-            "isHidden": true,
             "lineageTag": "25430c76-1417-4fc8-b82c-6428af84c746",
             "sourceColumn": "cliente",
             "sourceProviderType": "varchar(255)",
@@ -4973,7 +4968,6 @@
               }
             ],
             "dataType": "string",
-            "isHidden": true,
             "lineageTag": "9034cd6d-7e99-43e5-af51-01eba2b35287",
             "sourceColumn": "vendedor",
             "sourceProviderType": "varchar(255)",
@@ -4993,7 +4987,6 @@
               }
             ],
             "dataType": "string",
-            "isHidden": true,
             "lineageTag": "351b8f45-e124-4db2-8a4a-bb806a4c421d",
             "sourceColumn": "codigo",
             "sourceProviderType": "varchar(255)",
@@ -5013,7 +5006,6 @@
               }
             ],
             "dataType": "string",
-            "isHidden": true,
             "lineageTag": "23c81d48-2379-4d2f-b783-abc9dc12b070",
             "sourceColumn": "cantidad",
             "sourceProviderType": "varchar(255)",
@@ -5039,7 +5031,6 @@
             "dataType": "double",
             "expression": "VALUE(RF_Detalle_ComInv[cantidad])",
             "isDataTypeInferred": true,
-            "isHidden": true,
             "lineageTag": "27642005-199b-4681-9a5c-bcd349882f95",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -5065,7 +5056,6 @@
             "expression": "VALUE(RELATED(RF_ComInv[costopromedio])) * RF_Detalle_ComInv[_cantidad]",
             "formatString": "#,0",
             "isDataTypeInferred": true,
-            "isHidden": true,
             "lineageTag": "901003b0-39d1-431d-a63f-f5c31b71c70e",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -5087,7 +5077,6 @@
             "expression": "DATEVALUE(RF_Detalle_ComInv[fechaPedido])",
             "formatString": "Short Date",
             "isDataTypeInferred": true,
-            "isHidden": true,
             "lineageTag": "3b8a0d3c-9915-4b6e-a7d2-a0ec963334c5",
             "summarizeBy": "none",
             "type": "calculated"
@@ -5108,7 +5097,6 @@
             "dataType": "string",
             "expression": "RELATED((RF_ComInv[descripcion]))",
             "isDataTypeInferred": true,
-            "isHidden": true,
             "lineageTag": "74f9469a-a000-4a3a-ad99-e295da32cd1c",
             "summarizeBy": "none",
             "type": "calculated"
@@ -5133,7 +5121,6 @@
             ],
             "formatString": "0",
             "isDataTypeInferred": true,
-            "isHidden": true,
             "lineageTag": "16d4c5d2-a5e0-462f-bd30-e795564da6a0",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -5154,7 +5141,6 @@
             "dataType": "string",
             "expression": "RELATED((RF_ComInv[_agenciaNombre]))",
             "isDataTypeInferred": true,
-            "isHidden": true,
             "lineageTag": "8fee258d-cfc7-443b-9caf-1d1638c4af5a",
             "summarizeBy": "none",
             "type": "calculated"
@@ -5175,13 +5161,39 @@
             "dataType": "string",
             "expression": "RELATED((RF_ComInv[_marcaAgencia]))",
             "isDataTypeInferred": true,
-            "isHidden": true,
             "lineageTag": "e806fab3-8fa2-4272-b0a3-f04ec81fe329",
             "summarizeBy": "none",
             "type": "calculated"
+          },
+          {
+            "name": "receptor",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "10b9d8f7-e88b-41a0-98e8-655ce2052dca",
+            "sourceColumn": "receptor",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "tipo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "56f9db32-6449-494e-9a07-9c20f600bef7",
+            "sourceColumn": "tipo",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
           }
         ],
-        "isHidden": true,
         "lineageTag": "f9b4b92d-d589-4673-a012-835d8c1c86f5",
         "measures": [
           {
@@ -5198,7 +5210,6 @@
               }
             ],
             "expression": "IF([_cantidad_sum]<>0,[_cantidad_sum],0)",
-            "isHidden": true,
             "lineageTag": "8fc304f1-6631-493f-83ac-b2413bdad5ff"
           },
           {
@@ -5215,7 +5226,6 @@
               }
             ],
             "expression": "SUM(RF_Detalle_ComInv[_cantidad])",
-            "isHidden": true,
             "lineageTag": "0850c57e-38b8-481a-933c-2788f90f5bf8"
           },
           {
@@ -5233,7 +5243,6 @@
               ")"
             ],
             "formatString": "#,0",
-            "isHidden": true,
             "lineageTag": "84cc2717-def7-4228-b157-77c974445f3f"
           },
           {
@@ -5251,7 +5260,6 @@
               ")"
             ],
             "formatString": "0",
-            "isHidden": true,
             "lineageTag": "e997d495-c2b1-436d-88a7-e34ee2200dea"
           },
           {
@@ -5271,7 +5279,6 @@
               ""
             ],
             "formatString": "Short Date",
-            "isHidden": true,
             "lineageTag": "7a2df43d-f617-4a86-b4f2-d851ad78ec82"
           },
           {
@@ -5288,7 +5295,6 @@
               "    BLANK()",
               ")"
             ],
-            "isHidden": true,
             "lineageTag": "13e62cdb-c559-46da-8dc8-921dc681ea9a"
           },
           {
@@ -5305,7 +5311,6 @@
               "    BLANK()",
               ")"
             ],
-            "isHidden": true,
             "lineageTag": "31b0d31c-8bd3-40e0-924c-3364de3ef551"
           },
           {
@@ -5317,7 +5322,6 @@
             ],
             "expression": "CALCULATE(SUM(RF_Detalle_ComInv[_costototalApartado]))",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
-            "isHidden": true,
             "lineageTag": "e044ad07-9055-445d-9cad-356a3cb1a61e"
           }
         ],
@@ -6220,6 +6224,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "3a030767-c6a3-4202-b1d4-f84eb224dbd4",
             "sourceColumn": "idAgencia",
             "sourceProviderType": "varchar(255)",
@@ -6239,6 +6244,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "2639017c-8f9e-40e9-8204-1b12b1628c5b",
             "sourceColumn": "factura",
             "sourceProviderType": "varchar(255)",
@@ -6258,6 +6264,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "04efec9c-6fc4-45eb-88a8-d848cab6708f",
             "sourceColumn": "fecha",
             "sourceProviderType": "varchar(255)",
@@ -6277,6 +6284,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "3e639325-49a3-4244-b0cf-69c5bbb53161",
             "sourceColumn": "serie",
             "sourceProviderType": "varchar(255)",
@@ -6296,6 +6304,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "32f99f4b-269d-491c-b47e-95c13541a02a",
             "sourceColumn": "noInv",
             "sourceProviderType": "varchar(255)",
@@ -6315,6 +6324,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "696722d3-8a38-40e3-a7af-2c934d90e003",
             "sourceColumn": "tipo",
             "sourceProviderType": "varchar(255)",
@@ -6334,6 +6344,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "441bc21a-f3a6-4c00-bf22-6425fc16004c",
             "sourceColumn": "ano",
             "sourceProviderType": "varchar(255)",
@@ -6353,6 +6364,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "714afeae-aeb6-4e48-a3d4-d26ef1822b81",
             "sourceColumn": "colExt",
             "sourceProviderType": "varchar(255)",
@@ -6372,6 +6384,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "d401c7fa-5475-43d5-a4ef-532d8a660a2c",
             "sourceColumn": "colInt",
             "sourceProviderType": "varchar(255)",
@@ -6391,6 +6404,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "2c27e14f-e255-4f4a-b28a-fc6f79cda3e1",
             "sourceColumn": "cliente",
             "sourceProviderType": "varchar(255)",
@@ -6410,6 +6424,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "26b5408d-8bb7-4e4a-98c9-1b477a245f79",
             "sourceColumn": "Asesor",
             "sourceProviderType": "varchar(255)",
@@ -6429,6 +6444,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "965cff00-8287-4131-a36d-8a2227553af0",
             "sourceColumn": "Canal",
             "sourceProviderType": "varchar(255)",
@@ -6448,6 +6464,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "9f08fb24-273a-4f5b-a1fa-86a05a6ce261",
             "sourceColumn": "condicion",
             "sourceProviderType": "varchar(255)",
@@ -6469,6 +6486,7 @@
             "dataType": "string",
             "expression": "RELATED(Agencias[Agencia])",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "7f3cd140-9569-4810-b5e6-839c4d823ad7",
             "summarizeBy": "none",
             "type": "calculated"
@@ -6489,6 +6507,7 @@
             "dataType": "string",
             "expression": "RELATED(Agencias[Marca])",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "f7413b89-c7b6-46ad-8f7e-afd725a67531",
             "summarizeBy": "none",
             "type": "calculated"
@@ -6509,6 +6528,7 @@
             "dataType": "string",
             "expression": "RELATED(Agencias[Marca]) & \"  \"",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "eb7260f9-17c6-47b6-8174-aea833d075bb",
             "summarizeBy": "none",
             "type": "calculated"
@@ -6530,6 +6550,7 @@
             "expression": "DATEDIFF(FN_ComPer[fechaEmision], TODAY(), DAY)",
             "formatString": "0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "9bcd6197-db57-4049-b61a-3ecfda87aa2c",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -6551,6 +6572,7 @@
             "expression": "DATEVALUE(FN_ComPer[fecha])",
             "formatString": "Short Date",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "b14e1f87-f9e1-4bf1-baa5-4b4e6c4fb32e",
             "summarizeBy": "none",
             "type": "calculated"
@@ -6577,6 +6599,7 @@
               ")"
             ],
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "448032ae-2565-42c4-b480-4c23a093dc64",
             "sortByColumn": "AntiguedadOrden",
             "summarizeBy": "none",
@@ -6602,11 +6625,13 @@
             ],
             "formatString": "0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "29336991-e00d-44d8-973b-8f82aa8bb8e7",
             "summarizeBy": "sum",
             "type": "calculated"
           }
         ],
+        "isHidden": true,
         "lineageTag": "c7e45e63-f4c9-4ff4-9761-0bf5e1669591",
         "measures": [
           {
@@ -6618,6 +6643,7 @@
             ],
             "expression": "COUNT(FN_ComPer[factura])",
             "formatString": "#,0",
+            "isHidden": true,
             "lineageTag": "e0d61fc9-d0fc-4dde-a9df-f4c5159b52fc"
           }
         ],
