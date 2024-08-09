@@ -4,8 +4,8 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 0,
-        "y": 0
+        "x": 42.47448216394023,
+        "y": 338.222728342487
       },
       "nodes": [
         {
@@ -19,7 +19,7 @@
             "height": 856.546511627907,
             "width": 234
           },
-          "zIndex": 7
+          "zIndex": 12
         },
         {
           "location": {
@@ -32,7 +32,7 @@
             "height": 402.32048775468206,
             "width": 234
           },
-          "zIndex": 3
+          "zIndex": 4
         },
         {
           "location": {
@@ -45,7 +45,7 @@
             "height": 1000,
             "width": 234
           },
-          "zIndex": 8
+          "zIndex": 6
         },
         {
           "location": {
@@ -58,7 +58,7 @@
             "height": 516.56743826966056,
             "width": 234
           },
-          "zIndex": 4
+          "zIndex": 5
         },
         {
           "location": {
@@ -71,7 +71,7 @@
             "height": 378.2102650256719,
             "width": 234
           },
-          "zIndex": 5
+          "zIndex": 11
         },
         {
           "location": {
@@ -84,7 +84,7 @@
             "height": 225.53018347931129,
             "width": 234
           },
-          "zIndex": 6
+          "zIndex": 8
         },
         {
           "location": {
@@ -97,7 +97,7 @@
             "height": 230.30635144164512,
             "width": 234
           },
-          "zIndex": 2
+          "zIndex": 9
         },
         {
           "location": {
@@ -110,7 +110,7 @@
             "height": 202.6255707762557,
             "width": 234
           },
-          "zIndex": 9
+          "zIndex": 10
         },
         {
           "location": {
@@ -123,12 +123,12 @@
             "height": 499.54337899543373,
             "width": 234
           },
-          "zIndex": 1
+          "zIndex": 3
         },
         {
           "location": {
-            "x": 1895.5281001904541,
-            "y": 1055.2759417353366
+            "x": 1465.5961731132074,
+            "y": 1150.1138668259057
           },
           "nodeIndex": "FN_ComPer",
           "nodeLineageTag": "c7e45e63-f4c9-4ff4-9761-0bf5e1669591",
@@ -136,11 +136,99 @@
             "height": 498.98439023542619,
             "width": 234
           },
-          "zIndex": 10
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 2169.5208070915742,
+            "y": 550.97006216358818
+          },
+          "nodeIndex": "PW_BI_UsuariosRLS",
+          "nodeLineageTag": "6c7ca327-81f2-46d3-b16f-32340a8d9b56",
+          "size": {
+            "height": 238.76992714159769,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 2211.2504383055193,
+            "y": 1151.8354837033237
+          },
+          "nodeIndex": "NV_ComInv_control",
+          "nodeLineageTag": "7e92c596-8294-498a-a83e-727dc71ae1b8",
+          "size": {
+            "height": 316.33452144443163,
+            "width": 234
+          },
+          "zIndex": 16
+        },
+        {
+          "location": {
+            "x": 932.378274351069,
+            "y": 986.17667430829476
+          },
+          "nodeIndex": "NV_ComInv_Estatus",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 17
+        },
+        {
+          "location": {
+            "x": 1831.8140153094714,
+            "y": 1170.8979404490672
+          },
+          "nodeIndex": "InvUnidadesNuevas",
+          "size": {
+            "height": 227.8356960815546,
+            "width": 234
+          },
+          "zIndex": 13
+        },
+        {
+          "location": {
+            "x": 2637.1136875353454,
+            "y": 1163.8809862754545
+          },
+          "nodeIndex": "ImporteInvUnidadesNuevas",
+          "size": {
+            "height": 248.10243075844323,
+            "width": 234
+          },
+          "zIndex": 15
+        },
+        {
+          "location": {
+            "x": 1832.5084409632477,
+            "y": 1429.7139721227445
+          },
+          "nodeIndex": "InvUnidadesSemi",
+          "nodeLineageTag": "277b440b-9861-4b73-a72a-a5f69ed78a61",
+          "size": {
+            "height": 240.09522226595027,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 2637.9504731090774,
+            "y": 1441.6425697554607
+          },
+          "nodeIndex": "ImporteInvUnidadesSemi",
+          "nodeLineageTag": "84f297b2-4db7-46a6-9006-d877491abc51",
+          "size": {
+            "height": 210.20577185428829,
+            "width": 234
+          },
+          "zIndex": 14
         }
       ],
       "name": "Todas las tablas",
-      "zoomValue": 43.515127710453662,
+      "zoomValue": 63.567578989632324,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

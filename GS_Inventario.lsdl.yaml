@@ -1,0 +1,2221 @@
+Version: 4.1.0
+Language: en-US
+Entities:
+  FN_com_per:
+    Definition:
+      Binding: {Table: FN_ComPer}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - FN com per: {State: Generated}
+    - FN_ComPer: {Type: Noun, State: Generated, Weight: 0.99}
+
+  FN_com_per.agencia:
+    Definition:
+      Binding: {Table: FN_ComPer, Column: Agencia}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - agencia: {State: Generated}
+
+  FN_com_per.antiguedad:
+    Definition:
+      Binding: {Table: FN_ComPer, Column: Antiguedad}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - antiguedad: {State: Generated}
+
+  FN_com_per.antiguedad_orden:
+    Definition:
+      Binding: {Table: FN_ComPer, Column: AntiguedadOrden}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - antiguedad orden: {State: Generated}
+    - AntiguedadOrden: {Type: Noun, State: Generated, Weight: 0.99}
+
+  FN_com_per.asesor:
+    Definition:
+      Binding: {Table: FN_ComPer, Column: Asesor}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - asesor: {State: Generated}
+
+  FN_com_per.canal:
+    Definition:
+      Binding: {Table: FN_ComPer, Column: Canal}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - canal: {State: Generated}
+    - waterway: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.491}
+    - seaway: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.491}
+    - channel: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.476}
+    - vessel: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.466}
+    - duct: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.452}
+    - tube: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.452}
+    - passage: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.452}
+
+  FN_com_per.dias_sin_entregar:
+    Definition:
+      Binding: {Table: FN_ComPer, Column: diasSinEntregar}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - dias sin entregar: {State: Generated}
+    - Dias Trascurrido: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Dias Trascurrido: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - diasSinEntregar: {Type: Noun, State: Generated, Weight: 0.99}
+
+  FN_com_per.fecha:
+    Definition:
+      Binding: {Table: FN_ComPer, Column: fecha}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - fecha: {State: Generated}
+
+  FN_com_per.id_agencia:
+    Definition:
+      Binding: {Table: FN_ComPer, Column: idAgencia}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - id agencia: {State: Generated}
+    - idAgencia: {Type: Noun, State: Generated, Weight: 0.99}
+    - identification agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identity agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identifier agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - credential agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  FN_com_per.marca:
+    Definition:
+      Binding: {Table: FN_ComPer, Column: Marca}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - marca: {State: Generated}
+
+  FN_com_per.marca_format:
+    Definition:
+      Binding: {Table: FN_ComPer, Column: MarcaFormat}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - marca format: {State: Generated}
+    - Marca: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Marca: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - MarcaFormat: {Type: Noun, State: Generated, Weight: 0.99}
+    - marca arrangement: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - marca setup: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - marca presentation: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - marca organization: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - marca layout: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - marca system: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - marca set-up: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.485}
+    - marca plan: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.485}
+    - marca design: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.485}
+    - marca structure: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.485}
+
+  FN_com_per.no_inv:
+    Definition:
+      Binding: {Table: FN_ComPer, Column: noInv}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - no inv: {State: Generated}
+    - noInv: {Type: Noun, State: Generated, Weight: 0.99}
+    - number inv: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  FN_com_per.titulo_antiguedad_facturas:
+    Definition:
+      Binding: {Table: FN_ComPer, Measure: tituloAntiguedadFacturas}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - titulo antiguedad facturas: {State: Generated}
+    - tituloAntiguedadFacturas: {Type: Noun, State: Generated, Weight: 0.99}
+
+  NV_com_inv:
+    Definition:
+      Binding: {Table: NV_ComInv}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - NV com inv: {State: Generated}
+    - NV_ComInv: {Type: Noun, State: Generated, Weight: 0.99}
+
+  NV_com_inv.compra:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: compra}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - compra: {State: Generated}
+
+  NV_com_inv.costo_neto:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: costoNeto}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - costo neto: {State: Generated}
+    - costoNeto: {Type: Noun, State: Generated, Weight: 0.99}
+
+  NV_com_inv.costo_total:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: costoTotal}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - costo total: {State: Generated}
+    - costoTotal: {Type: Noun, State: Generated, Weight: 0.99}
+    - costo aggregate: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.727}
+    - costo overall: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.727}
+
+  NV_com_inv.costo_total_entero:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: CostoTotalEntero}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - costo total entero: {State: Generated}
+    - CostoTotalEntero: {Type: Noun, State: Generated, Weight: 0.99}
+    - costo aggregate entero: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+    - costo overall entero: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+
+  NV_com_inv.costo_total_neto:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: CostoTotalNeto}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - costo total neto: {State: Generated}
+    - CostoTotalNeto: {Type: Noun, State: Generated, Weight: 0.99}
+    - costo aggregate neto: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+    - costo overall neto: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+
+  NV_com_inv.dias_inv:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: diasInv}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - dias inv: {State: Generated}
+    - diasInv: {Type: Noun, State: Generated, Weight: 0.99}
+
+  NV_com_inv.estatus:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: estatus}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - estatus: {State: Generated}
+
+  NV_com_inv.fecha_compra:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: fechaCompra}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - fecha compra: {State: Generated}
+    - fechaCompra: {Type: Noun, State: Generated, Weight: 0.99}
+
+  NV_com_inv.id_agencia:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: idAgencia}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - id agencia: {State: Generated}
+    - idAgencia: {Type: Noun, State: Generated, Weight: 0.99}
+    - identification agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identity agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identifier agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - credential agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  NV_com_inv.inventario:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: inventario}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - inventario: {State: Generated}
+
+  NV_com_inv.km:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: kms}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - km: {State: Generated}
+
+  NV_com_inv.pedido_es_mayor_90:
+    Definition:
+      Binding: {Table: NV_ComInv, Measure: unidadDiasEnInvEsMayor90}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - unidad dias en inv es mayor 90: {State: Generated}
+    - unidadDiasEnInvEsMayor90: {Type: Noun, State: Generated, Weight: 0.99}
+
+  NV_com_inv.rango_dias_inv_orden:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: RangoDiasInvOrden}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - rango dias inv orden: {State: Generated}
+    - RangoDiasInvOrden: {Type: Noun, State: Generated, Weight: 0.99}
+
+  NV_com_inv.recibio_auto:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: recibioAuto}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - recibio auto: {State: Generated}
+    - recibioAuto: {Type: Noun, State: Generated, Weight: 0.99}
+    - recibio car: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - recibio vehicle: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - recibio sedan: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - recibio automobile: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.485}
+    - recibio van: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.485}
+
+  NV_com_inv.tipo:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: tipo}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - tipo: {State: Generated}
+
+  NV_com_inv.titulo_clasificacion:
+    Definition:
+      Binding: {Table: NV_ComInv, Measure: tituloClasificacion}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - titulo clasificacion: {State: Generated}
+    - tituloClasificacion: {Type: Noun, State: Generated, Weight: 0.99}
+
+  NV_com_inv.titulo_dinamico_inventario_unidades:
+    Definition:
+      Binding: {Table: NV_ComInv, Measure: Titulo Dinamico Inventario Unidades}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - titulo dinamico inventario unidades: {State: Generated}
+
+  NV_com_inv.unidades_porcentaje:
+    Definition:
+      Binding: {Table: NV_ComInv, Measure: UnidadesPorcentaje}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - unidades porcentaje: {State: Generated}
+    - UnidadesPorcentaje: {Type: Noun, State: Generated, Weight: 0.99}
+
+  NV_com_inv.v_año_año:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: _año}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _año: {State: Generated}
+    - Año: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Año: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  NV_com_inv.v_clasificaciónEstatusOrden_clasificaciónEstatusOrden:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: _clasificaciónEstatusOrden}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _clasificaciónEstatusOrden: {State: Generated}
+
+  NV_com_inv.v_descripcion_descripcion:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: _descripcion}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _descripcion: {State: Generated}
+    - Versíon: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Versíon: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  NV_com_inv.v_diasInv_diasInv:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: _diasInv}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _diasInv: {State: Generated}
+    - Dias en Inv: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Dias en Inv: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  NV_com_inv.v_kms_km:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: _kms}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _km: {State: Generated}
+    - Kilometraje: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Kilometraje: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  RF_com_inv:
+    Definition:
+      Binding: {Table: RF_ComInv}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - RF com inv: {State: Generated}
+    - RF_ComInv: {Type: Noun, State: Generated, Weight: 0.99}
+
+  RF_com_inv.apartado:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: apartado}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - apartado: {State: Generated}
+
+  RF_com_inv.costopromedio:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: costopromedio}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - costopromedio: {State: Generated}
+
+  RF_com_inv.costototalapartado:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: costototalapartado}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - costototalapartado: {State: Generated}
+
+  RF_com_inv.costototaldisponible:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: costototaldisponible}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - costototaldisponible: {State: Generated}
+
+  RF_com_inv.costototalexistencia:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: costototalexistencia}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - costototalexistencia: {State: Generated}
+
+  RF_com_inv.disponible:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: disponible}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - disponible: {State: Generated}
+
+  RF_com_inv.existencia:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: existencia}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - existencia: {State: Generated}
+
+  RF_com_inv.fecha_ultima_compra:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: fechaUltimaCompra}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - fecha ultima compra: {State: Generated}
+    - fechaUltimaCompra: {Type: Noun, State: Generated, Weight: 0.99}
+    SemanticType: Time
+
+  RF_com_inv.fecha_ultima_venta:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: fechaUltimaVenta}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - fecha ultima venta: {State: Generated}
+    - fechaUltimaVenta: {Type: Noun, State: Generated, Weight: 0.99}
+    SemanticType: Time
+
+  RF_com_inv.id_agencia:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: idAgencia}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - id agencia: {State: Generated}
+    - idAgencia: {Type: Noun, State: Generated, Weight: 0.99}
+    - identification agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identity agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identifier agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - credential agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  RF_com_inv.id_pedido_detalle:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: idPedidoDetalle}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - id pedido detalle: {State: Generated}
+    - idPedidoDetalle: {Type: Noun, State: Generated, Weight: 0.99}
+    - identification pedido detalle: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - identity pedido detalle: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - identifier pedido detalle: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - credential pedido detalle: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+
+  RF_com_inv.titulo_clasificacion_RF:
+    Definition:
+      Binding: {Table: RF_ComInv, Measure: tituloClasificacionRF}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - titulo clasificacion RF: {State: Generated}
+    - tituloClasificacionRF: {Type: Noun, State: Generated, Weight: 0.99}
+
+  RF_com_inv.titulo_dinamico:
+    Definition:
+      Binding: {Table: RF_ComInv, Measure: tituloDinamico}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - titulo dinamico: {State: Generated}
+    - tituloDinamico: {Type: Noun, State: Generated, Weight: 0.99}
+
+  RF_com_inv.titulo_dinamico_unidades:
+    Definition:
+      Binding: {Table: RF_ComInv, Measure: tituloDinamicoUnidades}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - titulo dinamico unidades: {State: Generated}
+    - tituloDinamicoUnidades: {Type: Noun, State: Generated, Weight: 0.99}
+
+  RF_com_inv.ubicacion:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: ubicacion}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - ubicacion: {State: Generated}
+
+  RF_com_inv.v_apartado_apartado:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: _apartado}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _apartado: {State: Generated}
+
+  RF_com_inv.v_costoTotalApartado_costoTotalApartado:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: _costoTotalApartado}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _costoTotalApartado: {State: Generated}
+
+  RF_com_inv.v_costoTotalDisponible_costoTotalDisponible:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: _costoTotalDisponible}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _costoTotalDisponible: {State: Generated}
+
+  RF_com_inv.v_costoTotalExistencia_costoTotalExistencia:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: _costoTotalExistencia}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _costoTotalExistencia: {State: Generated}
+
+  RF_com_inv.v_disponible_disponible:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: _disponible}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _disponible: {State: Generated}
+
+  RF_com_inv.v_existencia_existencia:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: _existencia}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _existencia: {State: Generated}
+
+  RF_com_inv.v_fechaUltimaCompra_fechaUltimaCompra:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: _fechaUltimaCompra}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _fechaUltimaCompra: {State: Generated}
+    - Fecha Ultima Compra: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Fecha Ultima Compra: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    SemanticType: Time
+
+  RF_com_inv_control:
+    Definition:
+      Binding: {Table: RF_ComInv_control}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - RF com inv control: {State: Generated}
+    - RF_ComInv_control: {Type: Noun, State: Generated, Weight: 0.99}
+    - rf com inv regulator: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.514}
+    - rf com inv controller: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.514}
+    - rf com inv governor: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.514}
+    - rf com inv rheostat: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.514}
+    - rf com inv resistor: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.514}
+    - rf com inv mechanism: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.514}
+    - rf com inv device: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.514}
+    - rf com inv switch: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.499}
+    - rf com inv jurisdiction: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.489}
+    - rf com inv domination: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.489}
+
+  RF_com_inv_control.id_operacion:
+    Definition:
+      Binding: {Table: RF_ComInv_control, Column: IdOperacion}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - id operacion: {State: Generated}
+    - IdOperacion: {Type: Noun, State: Generated, Weight: 0.99}
+    - identification operacion: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identity operacion: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identifier operacion: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - credential operacion: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  RF_com_inv_control.orden:
+    Definition:
+      Binding: {Table: RF_ComInv_control, Column: Orden}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - orden: {State: Generated}
+
+  RF_com_inv_control.tipo_orden:
+    Definition:
+      Binding: {Table: RF_ComInv_control, Column: Tipo de Orden}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - tipo de orden: {State: Generated}
+
+  RF_com_inv_importe:
+    Definition:
+      Binding: {Table: RF_ComInv_importe}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - RF com inv importe: {State: Generated}
+    - RF_ComInv_importe: {Type: Noun, State: Generated, Weight: 0.99}
+
+  RF_com_inv_importe.RF_ComInv_importe_campos:
+    Definition:
+      Binding: {Table: RF_ComInv_importe, Column: RF_ComInv_importe Campos}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - RF_ComInv_importe campos: {State: Generated}
+
+  RF_com_inv_importe.RF_ComInv_importe_orden:
+    Definition:
+      Binding: {Table: RF_ComInv_importe, Column: RF_ComInv_importe Orden}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - RF_ComInv_importe orden: {State: Generated}
+
+  RF_com_inv_importe.RF_com_inv_importe:
+    Definition:
+      Binding: {Table: RF_ComInv_importe, Column: RF_ComInv_importe}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - RF com inv importe: {State: Generated}
+    - RF_ComInv_importe: {Type: Noun, State: Generated, Weight: 0.99}
+
+  RF_com_inv_importe.id_operacion:
+    Definition:
+      Binding: {Table: RF_ComInv_importe, Column: IdOperacion}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - id operacion: {State: Generated}
+    - IdOperacion: {Type: Noun, State: Generated, Weight: 0.99}
+    - identification operacion: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identity operacion: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identifier operacion: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - credential operacion: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  RF_com_inv_pieza:
+    Definition:
+      Binding: {Table: RF_ComInv_piezas}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - RF com inv pieza: {State: Generated}
+    - RF_ComInv_piezas: {Type: Noun, State: Generated, Weight: 0.99}
+
+  RF_com_inv_pieza.RF_field:
+    Definition:
+      Binding: {Table: RF_ComInv_piezas, Column: RF Fields}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - RF field: {State: Generated}
+    - field: {State: Generated, Weight: 0.97}
+    - rf arena: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - arena: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.491}
+    - rf turf: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.485}
+    - rf ground: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.485}
+    - rf pitch: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.485}
+    - rf park: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.485}
+    - turf: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.476}
+    - ground: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.476}
+    - pitch: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.476}
+    - park: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.476}
+
+  RF_com_inv_pieza.RF_order:
+    Definition:
+      Binding: {Table: RF_ComInv_piezas, Column: RF Order}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - RF order: {State: Generated}
+    - order: {State: Generated, Weight: 0.97}
+    - rf instruction: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - rf direction: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - rf edict: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - instruction: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.491}
+    - direction: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.491}
+    - edict: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.491}
+    - rf command: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.485}
+    - rf directive: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.485}
+    - rf demand: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.485}
+    - rf mandate: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.485}
+
+  RF_com_inv_pieza.id_operacion:
+    Definition:
+      Binding: {Table: RF_ComInv_piezas, Column: idOperacion}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - id operacion: {State: Generated}
+    - idOperacion: {Type: Noun, State: Generated, Weight: 0.99}
+    - identification operacion: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identity operacion: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identifier operacion: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - credential operacion: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  RF_com_inv_pieza.rf:
+    Definition:
+      Binding: {Table: RF_ComInv_piezas, Column: RF}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - rf: {State: Generated}
+
+  RF_detalle_com_inv:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - RF detalle com inv: {State: Generated}
+    - RF_Detalle_ComInv: {Type: Noun, State: Generated, Weight: 0.99}
+
+  RF_detalle_com_inv.agencia:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv, Column: Agencia}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - agencia: {State: Generated}
+
+  RF_detalle_com_inv.cantidad:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv, Column: cantidad}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - cantidad: {State: Generated}
+
+  RF_detalle_com_inv.codigo:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv, Column: codigo}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - codigo: {State: Generated}
+    - No. Parte: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - No. Parte: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  RF_detalle_com_inv.es_mayor_de_90:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv, Measure: EsMayorDe90}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - es mayor de 90: {State: Generated}
+    - EsMayorDe90: {Type: Noun, State: Generated, Weight: 0.99}
+
+  RF_detalle_com_inv.fecha_pedido:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv, Column: fechaPedido}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - fecha pedido: {State: Generated}
+    - fechaPedido: {Type: Noun, State: Generated, Weight: 0.99}
+
+  RF_detalle_com_inv.id_agencia:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv, Column: idAgencia}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - id agencia: {State: Generated}
+    - idAgencia: {Type: Noun, State: Generated, Weight: 0.99}
+    - identification agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identity agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identifier agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - credential agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  RF_detalle_com_inv.id_pedido_detalle:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv, Column: idPedidoDetalle}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - id pedido detalle: {State: Generated}
+    - idPedidoDetalle: {Type: Noun, State: Generated, Weight: 0.99}
+    - identification pedido detalle: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - identity pedido detalle: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - identifier pedido detalle: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - credential pedido detalle: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+
+  RF_detalle_com_inv.importe:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv, Measure: Importe}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - importe: {State: Generated}
+
+  RF_detalle_com_inv.marca:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv, Column: Marca}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - marca: {State: Generated}
+
+  RF_detalle_com_inv.receptor:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv, Column: receptor}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - receptor: {State: Generated}
+
+  RF_detalle_com_inv.tipo:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv, Column: tipo}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - tipo: {State: Generated}
+
+  RF_detalle_com_inv.v_cantidad_cantidad:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv, Column: _cantidad}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _cantidad: {State: Generated}
+
+  RF_detalle_com_inv.v_costototalApartado_costototalApartado:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv, Column: _costototalApartado}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _costototalApartado: {State: Generated}
+
+  RF_detalle_com_inv.v_diasEnPedido_diasEnPedido:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv, Column: _diasEnPedido}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _diasEnPedido: {State: Generated}
+    - Dias Transcurrido: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Dias Transcurrido: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  RF_detalle_com_inv.v_fechaPedido_fechaPedido:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv, Column: _fechaPedido}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _fechaPedido: {State: Generated}
+    - Fecha del Pedido: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Fecha del Pedido: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    SemanticType: Time
+
+  SR_com_per:
+    Definition:
+      Binding: {Table: SR_ComPer}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - SR com per: {State: Generated}
+    - SR_ComPer: {Type: Noun, State: Generated, Weight: 0.99}
+
+  SR_com_per.agencia:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: _Agencia}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _agencia: {State: Generated}
+    - Agencia: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Agencia: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  SR_com_per.antiguedad:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: _Antiguedad}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _antiguedad: {State: Generated}
+    - Antiguedad: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Antiguedad: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  SR_com_per.antiguedad_orden:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: _AntiguedadOrden}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _AntiguedadOrden: {State: Generated}
+
+  SR_com_per.dias:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: dias}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - dias: {State: Generated}
+
+  SR_com_per.fecha_orden:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: fechaOrden}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - fecha orden: {State: Generated}
+    - fechaOrden: {Type: Noun, State: Generated, Weight: 0.99}
+
+  SR_com_per.id_agencia:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: idAgencia}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - id agencia: {State: Generated}
+    - idAgencia: {Type: Noun, State: Generated, Weight: 0.99}
+    - identification agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identity agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identifier agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - credential agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  SR_com_per.mano_obra:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: manoObra}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - mano obra: {State: Generated}
+    - manoObra: {Type: Noun, State: Generated, Weight: 0.99}
+
+  SR_com_per.marca:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: Marca}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - marca: {State: Generated}
+
+  SR_com_per.orden_es_mayor_de_90:
+    Definition:
+      Binding: {Table: SR_ComPer, Measure: OrdenEsMayorDe90}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - orden es mayor de 90: {State: Generated}
+    - OrdenEsMayorDe90: {Type: Noun, State: Generated, Weight: 0.99}
+
+  SR_com_per.ordenes:
+    Definition:
+      Binding: {Table: SR_ComPer, Measure: Ordenes}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - ordenes: {State: Generated}
+
+  SR_com_per.refaccionaria:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: refaccionaria}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - refaccionaria: {State: Generated}
+
+  SR_com_per.tipo_orden_E:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: TipoOrdenE}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - tipo orden E: {State: Generated}
+    - Tipo Orden: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Tipo Orden: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - TipoOrdenE: {Type: Noun, State: Generated, Weight: 0.99}
+
+  SR_com_per.titulo_antiguedad_ordenes:
+    Definition:
+      Binding: {Table: SR_ComPer, Measure: tituloAntiguedadOrdenes}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - titulo antiguedad ordenes: {State: Generated}
+    - tituloAntiguedadOrdenes: {Type: Noun, State: Generated, Weight: 0.99}
+
+  SR_com_per.titulo_dinamico_ordenes_de_servicio:
+    Definition:
+      Binding: {Table: SR_ComPer, Measure: Titulo Dinamico Ordenes de Servicio}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - titulo dinamico ordenes de servicio: {State: Generated}
+
+  SR_com_per.total:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: total}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - total: {State: Generated}
+    - aggregate: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.714}
+    - overall: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.714}
+
+  SR_com_per.v_dias_dias:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: _dias}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _dias: {State: Generated}
+    - Dias: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Dias: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  SR_com_per.v_manoDeObra_manoDeObra:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: _manoDeObra}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _manoDeObra: {State: Generated}
+
+  SR_com_per.v_refaccionaria_refaccionaria:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: _refaccionaria}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _refaccionaria: {State: Generated}
+
+  SR_com_per.v_total_total:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: _total}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _total: {State: Generated}
+    - _ aggregate: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.727}
+    - _ overall: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.727}
+
+  SR_com_per.v_varios_vario:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: _varios}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _vario: {State: Generated}
+
+  SR_com_per.vario:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: varios}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - vario: {State: Generated}
+
+  agencia:
+    Definition:
+      Binding: {Table: Agencias}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - agencia: {State: Generated}
+
+  agencia.agencia:
+    Definition:
+      Binding: {Table: Agencias, Column: Agencia}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - agencia: {State: Generated}
+
+  agencia.id_agencia:
+    Definition:
+      Binding: {Table: Agencias, Column: IdAgencia}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - id agencia: {State: Generated}
+    - IdAgencia: {Type: Noun, State: Generated, Weight: 0.99}
+    - identification agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identity agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identifier agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - credential agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  agencia.marca:
+    Definition:
+      Binding: {Table: Agencias, Column: Marca}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - marca: {State: Generated}
+
+  agencia.razon_social:
+    Definition:
+      Binding: {Table: Agencias, Column: RazonSocial}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - razon social: {State: Generated}
+    - RazonSocial: {Type: Noun, State: Generated, Weight: 0.99}
+    - razon party: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.461}
+    - razon get-together: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.461}
+    - razon gathering: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.461}
+
+  agencia.region:
+    Definition:
+      Binding: {Table: Agencias, Column: Region}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - region: {State: Generated}
+    - location: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.818}
+    - province: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.736}
+    - area: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.714}
+    - district: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.714}
+    - section: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.714}
+    - zone: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.714}
+    - continent: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.714}
+
+  agencia.rfc:
+    Definition:
+      Binding: {Table: Agencias, Column: RFC}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - rfc: {State: Generated}
+
+  agencia.status:
+    Definition:
+      Binding: {Table: Agencias, Column: Status}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - status: {State: Generated}
+    - category: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.736}
+    - importance: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.736}
+    - prestige: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.736}
+    - prominence: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.736}
+    - condition: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.714}
+    - class: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.714}
+    - grade: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.714}
+    - level: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.714}
+    - position: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.714}
+
+  agencia.titulo_blanco:
+    Definition:
+      Binding: {Table: Agencias, Measure: Titulo Blanco}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - titulo blanco: {State: Generated}
+
+  agencia.usuario_actual:
+    Definition:
+      Binding: {Table: Agencias, Measure: UsuarioActual}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - usuario actual: {State: Generated}
+    - UsuarioActual: {Type: Noun, State: Generated, Weight: 0.99}
+    - usuario real: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.727}
+    - usuario existent: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.727}
+    - usuario tangible: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.727}
+
+  agencia.usuario_nombre:
+    Definition:
+      Binding: {Table: Agencias, Measure: UsuarioNombre}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - usuario nombre: {State: Generated}
+    - UsuarioNombre: {Type: Noun, State: Generated, Weight: 0.99}
+
+  estatus_pedido:
+    Definition:
+      Binding: {Table: EstatusPedidos}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - estatus pedido: {State: Generated}
+    - EstatusPedidos: {Type: Noun, State: Generated, Weight: 0.99}
+
+  estatus_pedido.dias_en_pedido:
+    Definition:
+      Binding: {Table: EstatusPedidos, Measure: Dias en Pedido}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - dias en pedido: {State: Generated}
+
+  estatus_pedido.dias_pedido:
+    Definition:
+      Binding: {Table: EstatusPedidos, Column: diasPedido}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - dias pedido: {State: Generated}
+    - diasPedido: {Type: Noun, State: Generated, Weight: 0.99}
+
+  estatus_pedido.estatus:
+    Definition:
+      Binding: {Table: EstatusPedidos, Column: estatus}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - estatus: {State: Generated}
+
+  estatus_pedido.fecha_pedido:
+    Definition:
+      Binding: {Table: EstatusPedidos, Column: fechaPedido}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - fecha pedido: {State: Generated}
+    - fechaPedido: {Type: Noun, State: Generated, Weight: 0.99}
+
+  estatus_pedido.id_agencia:
+    Definition:
+      Binding: {Table: EstatusPedidos, Column: idAgencia}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - id agencia: {State: Generated}
+    - idAgencia: {Type: Noun, State: Generated, Weight: 0.99}
+    - identification agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identity agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - identifier agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - credential agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  estatus_pedido.no_serie:
+    Definition:
+      Binding: {Table: EstatusPedidos, Column: noSerie}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - no serie: {State: Generated}
+    - noSerie: {Type: Noun, State: Generated, Weight: 0.99}
+    - number serie: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  estatus_pedido.pedido:
+    Definition:
+      Binding: {Table: EstatusPedidos, Column: pedido}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - pedido: {State: Generated}
+
+  estatus_pedido.pedido_es_mayor_de_90:
+    Definition:
+      Binding: {Table: EstatusPedidos, Measure: PedidoEsMayorDe90}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - pedido es mayor de 90: {State: Generated}
+    - PedidoEsMayorDe90: {Type: Noun, State: Generated, Weight: 0.99}
+
+  estatus_pedido.v_agenciaNombre_agenciaNombre:
+    Definition:
+      Binding: {Table: EstatusPedidos, Column: _agenciaNombre}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _agenciaNombre: {State: Generated}
+
+  estatus_pedido.v_costoTotal_costoTotal:
+    Definition:
+      Binding: {Table: EstatusPedidos, Column: _costoTotal}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _costoTotal: {State: Generated}
+
+  estatus_pedido.v_diasPedido_diasPedido:
+    Definition:
+      Binding: {Table: EstatusPedidos, Column: _diasPedido}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _diasPedido: {State: Generated}
+
+  estatus_pedido.v_fechaPedido_fechaPedido:
+    Definition:
+      Binding: {Table: EstatusPedidos, Column: _fechaPedido}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _fechaPedido: {State: Generated}
+    SemanticType: Time
+
+  estatus_pedido.v_rangoDiasOrden_rangoDiasOrden:
+    Definition:
+      Binding: {Table: EstatusPedidos, Column: _rangoDiasOrden}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _rangoDiasOrden: {State: Generated}
+
+  estatuspedidos.column_rangodias:
+    Definition:
+      Binding: {Table: EstatusPedidos, Column: _rangoDias}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _rangoDia: {State: Generated}
+
+  fn_comper.ano:
+    Definition:
+      Binding: {Table: FN_ComPer, Column: ano}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - ano: {State: Generated}
+    - Año: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Año: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  fn_comper.cantfacturas:
+    Definition:
+      Binding: {Table: FN_ComPer, Measure: Facturas}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - facturas: {State: Generated}
+
+  fn_comper.cliente:
+    Definition:
+      Binding: {Table: FN_ComPer, Column: cliente}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - cliente: {State: Generated}
+
+  fn_comper.colext:
+    Definition:
+      Binding: {Table: FN_ComPer, Column: colExt}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - col ext: {State: Generated}
+    - Color Ext: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Color Ext: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - colExt: {Type: Noun, State: Generated, Weight: 0.99}
+    - ext: {State: Generated, Weight: 0.97}
+
+  fn_comper.colint:
+    Definition:
+      Binding: {Table: FN_ComPer, Column: colInt}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - col int: {State: Generated}
+    - colInt: {Type: Noun, State: Generated, Weight: 0.99}
+
+  fn_comper.condicion:
+    Definition:
+      Binding: {Table: FN_ComPer, Column: condicion}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - condicion: {State: Generated}
+    - Estado: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Estado: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  fn_comper.factura:
+    Definition:
+      Binding: {Table: FN_ComPer, Column: factura}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - factura: {State: Generated}
+
+  fn_comper.fechaemision:
+    Definition:
+      Binding: {Table: FN_ComPer, Column: fechaEmision}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - fecha emision: {State: Generated}
+    - Fecha de Emision: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Fecha de Emision: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - fechaEmision: {Type: Noun, State: Generated, Weight: 0.99}
+    SemanticType: Time
+
+  fn_comper.serie:
+    Definition:
+      Binding: {Table: FN_ComPer, Column: serie}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - serie: {State: Generated}
+    - No. Serie: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - No. Serie: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  fn_comper.tipo:
+    Definition:
+      Binding: {Table: FN_ComPer, Column: tipo}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - tipo: {State: Generated}
+    - Versión: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Versión: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Modelo: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Modelo: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  nv_cominv.agencianombre:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: _agenciaNombre}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _agenciaNombre: {State: Generated}
+    - Agencia: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Agencia: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  nv_cominv.ano:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: ano}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - ano: {State: Generated}
+    - Año: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Año: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  nv_cominv.carline:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: carline}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - carline: {State: Generated}
+    - Modelo: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Modelo: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  nv_cominv.clasificaciónestatus:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: _clasificaciónEstatus}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _clasificaciónEstatus: {State: Generated}
+    - Estatus: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Estatus: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  nv_cominv.colorext:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: colorExt}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - color ext: {State: Generated}
+    - Color Externo: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Color Externo: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Exterior: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Exterior: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - colorExt: {Type: Noun, State: Generated, Weight: 0.99}
+    - ext: {State: Generated, Weight: 0.97}
+
+  nv_cominv.colorint:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: colorInt}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - color int: {State: Generated}
+    - Color Interno: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Color Interno: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Interior: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Interior: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - colorInt: {Type: Noun, State: Generated, Weight: 0.99}
+
+  nv_cominv.column_marca:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: _marca}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _marca: {State: Generated}
+    - Marca: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Marca: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  nv_cominv.column_marcaagenciai:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: _marcaAgenciaI}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _marcaAgenciaI: {State: Generated}
+    - Marca: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Marca: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  nv_cominv.column_region:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: _Region}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _region: {State: Generated}
+    - Region: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Region: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - _ location: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.833}
+    - _ province: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.75}
+    - _ area: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.727}
+    - _ district: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.727}
+    - _ section: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.727}
+    - _ zone: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.727}
+    - _ continent: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.727}
+
+  nv_cominv.costo_neto:
+    Definition:
+      Binding: {Table: NV_ComInv, Measure: Costo Bruto}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - costo bruto: {State: Generated}
+    - Costo: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Costo: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Importe: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Importe: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  nv_cominv.descripcion:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: descripcion}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - descripcion: {State: Generated}
+    - Versión: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Versión: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  nv_cominv.fechacompra_date:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: _fechaCompra}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _fechaCompra: {State: Generated}
+    - Periodo: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Periodo: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Fecha de Compra: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Fecha de Compra: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    SemanticType: Time
+
+  nv_cominv.importeinvunidades:
+    Definition:
+      Binding: {Table: NV_ComInv, Measure: importeInvUnidades}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - importe inv unidades: {State: Generated}
+    - Pesos: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Pesos: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - importeInvUnidades: {Type: Noun, State: Generated, Weight: 0.99}
+
+  nv_cominv.rangodiasinv:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: RangoDiasInv}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - rango dias inv: {State: Generated}
+    - Antiguedad: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Antiguedad: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - RangoDiasInv: {Type: Noun, State: Generated, Weight: 0.99}
+
+  nv_cominv.serie:
+    Definition:
+      Binding: {Table: NV_ComInv, Column: serie}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - serie: {State: Generated}
+
+  nv_cominv.unidades:
+    Definition:
+      Binding: {Table: NV_ComInv, Measure: Unidades}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - unidades: {State: Generated}
+
+  nv_cominv.unidadesdisponibles:
+    Definition:
+      Binding: {Table: NV_ComInv, Measure: UnidadesCard}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - unidades card: {State: Generated}
+    - Unidades: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Unidades: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Otros: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Otros: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Apartados: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Apartados: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Disponibles: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Disponibles: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Traspaso: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Traspaso: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Pedidos: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Pedidos: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Demo: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Demo: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - UnidadesCard: {Type: Noun, State: Generated, Weight: 0.99}
+    - unidade postcard: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - unidade valentine: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - unidade pass: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.461}
+
+  rf_cominv.agencianombre:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: _agenciaNombre}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _agenciaNombre: {State: Generated}
+    - Agencia: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Agencia: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  rf_cominv.clasificacion:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: clasificacion}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - clasificacion: {State: Generated}
+    - Clasificiacion: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Clasificiacion: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  rf_cominv.column_fechaultimaventa:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: _fechaUltimaVenta}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _fechaUltimaVenta: {State: Generated}
+    - Fecha Ultima Venta: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Fecha Ultima Venta: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    SemanticType: Time
+
+  rf_cominv.column_importeinvref:
+    Definition:
+      Binding: {Table: RF_ComInv, Measure: _ImporteInvRef}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _ImporteInvRef: {State: Generated}
+    - Importe: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Importe: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  rf_cominv.column_importerefinvcard:
+    Definition:
+      Binding: {Table: RF_ComInv, Measure: _importeRefInvCard}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _importeRefInvCard: {State: Generated}
+    - Importe: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Importe: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  rf_cominv.column_marcaagencia:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: Marca}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - marca: {State: Generated}
+
+  rf_cominv.column_sum_apartado:
+    Definition:
+      Binding: {Table: RF_ComInv, Measure: _sum_apartado}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - sum apartado: {State: Generated}
+    - Apartado: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Apartado: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - _sum_apartado: {Type: Noun, State: Generated, Weight: 0.99}
+    - summation apartado: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - aggregation apartado: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - total apartado: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+    - aggregate apartado: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+    - amount apartado: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  rf_cominv.column_sum_apartado_importe:
+    Definition:
+      Binding: {Table: RF_ComInv, Measure: _sum_apartado_importe}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - sum apartado importe: {State: Generated}
+    - Importe: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Importe: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - _sum_apartado_importe: {Type: Noun, State: Generated, Weight: 0.99}
+    - summation apartado importe: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - aggregation apartado importe: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - total apartado importe: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+    - aggregate apartado importe: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+    - amount apartado importe: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+
+  rf_cominv.column_sum_disponible:
+    Definition:
+      Binding: {Table: RF_ComInv, Measure: _sum_disponible}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - sum disponible: {State: Generated}
+    - Disponible: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Disponible: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - _sum_disponible: {Type: Noun, State: Generated, Weight: 0.99}
+    - summation disponible: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - aggregation disponible: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - total disponible: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+    - aggregate disponible: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+    - amount disponible: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  rf_cominv.column_sum_disponible_importe:
+    Definition:
+      Binding: {Table: RF_ComInv, Measure: _sum_disponible_importe}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - sum disponible importe: {State: Generated}
+    - Importe: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Importe: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - _sum_disponible_importe: {Type: Noun, State: Generated, Weight: 0.99}
+    - summation disponible importe: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - aggregation disponible importe: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - total disponible importe: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+    - aggregate disponible importe: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+    - amount disponible importe: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+
+  rf_cominv.column_sum_existencia:
+    Definition:
+      Binding: {Table: RF_ComInv, Measure: _sum_existencia}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - sum existencia: {State: Generated}
+    - Existencia: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Existencia: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - _sum_existencia: {Type: Noun, State: Generated, Weight: 0.99}
+    - summation existencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - aggregation existencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - total existencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+    - aggregate existencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+    - amount existencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  rf_cominv.column_sum_existencia_importe:
+    Definition:
+      Binding: {Table: RF_ComInv, Measure: _sum_existencia_importe}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - sum existencia importe: {State: Generated}
+    - Importe: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Importe: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - _sum_existencia_importe: {Type: Noun, State: Generated, Weight: 0.99}
+    - summation existencia importe: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - aggregation existencia importe: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.609}
+    - total existencia importe: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+    - aggregate existencia importe: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+    - amount existencia importe: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.591}
+
+  rf_cominv.column_totalgeneral:
+    Definition:
+      Binding: {Table: RF_ComInv, Measure: _totalGeneralPorcentaje}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _totalGeneralPorcentaje: {State: Generated}
+    - '%': {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - '%': {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  rf_cominv.descripcion:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: descripcion}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - descripcion: {State: Generated}
+    - Articulo: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Articulo: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  rf_cominv.numeroparte:
+    Definition:
+      Binding: {Table: RF_ComInv, Column: numeroParte}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - numero parte: {State: Generated}
+    - No. Parte: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - No. Parte: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - numeroParte: {Type: Noun, State: Generated, Weight: 0.99}
+
+  rf_detalle_cominv.cliente:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv, Column: cliente}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - cliente: {State: Generated}
+
+  rf_detalle_cominv.column_cantidad_sum:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv, Measure: _cantidad_card}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - cantidad card: {State: Generated}
+    - Apartado: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Apartado: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - _cantidad_card: {Type: Noun, State: Generated, Weight: 0.99}
+    - cantidad postcard: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - cantidad valentine: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - cantidad pass: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.461}
+
+  rf_detalle_cominv.column_cantidad_sum1:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv, Measure: _cantidad_sum}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - cantidad sum: {State: Generated}
+    - Apartado: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Apartado: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - _cantidad_sum: {Type: Noun, State: Generated, Weight: 0.99}
+    - cantidad summation: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.75}
+    - cantidad aggregation: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.75}
+    - cantidad total: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.727}
+    - cantidad aggregate: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.727}
+    - cantidad amount: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.727}
+
+  rf_detalle_cominv.column_descripcion:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv, Column: _descripcion}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _descripcion: {State: Generated}
+    - Descripcion: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Descripcion: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  rf_detalle_cominv.pedido:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv, Column: pedido}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - pedido: {State: Generated}
+    - No. Pedido: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - No. Pedido: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  rf_detalle_cominv.vendedor:
+    Definition:
+      Binding: {Table: RF_Detalle_ComInv, Column: vendedor}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - vendedor: {State: Generated}
+
+  sr_comper.column_estatus:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: _estatus}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _estatus: {State: Generated}
+    - Estatus: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Estatus: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  sr_comper.column_fechaorden:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: _fechaOrden}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - _fechaOrden: {State: Generated}
+    - Fecha de Orden: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Fecha de Orden: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    SemanticType: Time
+
+  sr_comper.estatus:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: estatus}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - estatus: {State: Generated}
+
+  sr_comper.modelo:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: modelo}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - modelo: {State: Generated}
+    - Año: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Año: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  sr_comper.nombreasesor:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: nombreAsesor}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - nombre asesor: {State: Generated}
+    - Asesor: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Asesor: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - nombreAsesor: {Type: Noun, State: Generated, Weight: 0.99}
+
+  sr_comper.nombrecliente:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: nombreCliente}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - nombre cliente: {State: Generated}
+    - Cliente: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Cliente: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - nombreCliente: {Type: Noun, State: Generated, Weight: 0.99}
+
+  sr_comper.numserie:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: numSerie}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - num serie: {State: Generated}
+    - No. Serie: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - No. Serie: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Serie: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Serie: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - numSerie: {Type: Noun, State: Generated, Weight: 0.99}
+    - number serie: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  sr_comper.orden:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: orden}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - orden: {State: Generated}
+    - No. Orden: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - No. Orden: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+
+  sr_comper.placas:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: placas}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - Placa: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Placa: {Type: Noun, State: Generated, Source: {Type: External, Agent: PowerBI.VisualColumnRename}}
+
+  sr_comper.tipoauto:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: tipoAuto}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - tipo auto: {State: Generated}
+    - Modelo: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Modelo: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - tipoAuto: {Type: Noun, State: Generated, Weight: 0.99}
+    - tipo car: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - tipo vehicle: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - tipo sedan: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - tipo automobile: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.485}
+    - tipo van: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.485}
+
+  sr_comper.tipoorden:
+    Definition:
+      Binding: {Table: SR_ComPer, Column: tipoOrden}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - tipo orden: {State: Generated}
+    - Tipo de Orden: {State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - Tipo de Orden: {Type: Noun, State: Suggested, Source: {Type: External, Agent: PowerBI.VisualColumnRename}, Weight: 0.9}
+    - tipoOrden: {Type: Noun, State: Generated, Weight: 0.99}
+
+  PW_BI_usuarios_RL:
+    Definition:
+      Binding: {Table: PW_BI_UsuariosRLS}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - PW BI usuarios RL: {State: Generated}
+    - PW BI usuario RL: {Type: Noun, State: Generated, Weight: 0.78}
+    - PW_BI_UsuariosRLS: {Type: Noun, State: Generated, Weight: 0.99}
+
+  PW_BI_usuarios_RL.usuario:
+    Definition:
+      Binding: {Table: PW_BI_UsuariosRLS, Column: usuario}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - usuario: {State: Generated}
+
+  PW_BI_usuarios_RL.email:
+    Definition:
+      Binding: {Table: PW_BI_UsuariosRLS, Column: email}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - email: {State: Generated}
+    - correspondence: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.476}
+    - message: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.452}
+    - communication: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.452}
+
+  PW_BI_usuarios_RL.is_manager:
+    Definition:
+      Binding: {Table: PW_BI_UsuariosRLS, Column: isManager}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - is manager: {State: Generated}
+    - isManager: {Type: Noun, State: Generated, Weight: 0.99}
+    - manager: {State: Generated, Weight: 0.97}
+    - is director: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - is administrator: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - is supervisor: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - is leader: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.5}
+    - director: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.491}
+    - administrator: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.491}
+    - supervisor: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.491}
+    - leader: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.491}
+    - is boss: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.485}
+    - is executive: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.485}
+
+  PW_BI_usuarios_RL.group_agencia:
+    Definition:
+      Binding: {Table: PW_BI_UsuariosRLS, Column: groupAgencias}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - group agencia: {State: Generated}
+    - groupAgencias: {Type: Noun, State: Generated, Weight: 0.99}
+    - category agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - organization agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.6}
+    - bracket agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+    - class agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+    - crew agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+    - team agencia: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.582}
+
+  PW_BI_usuarios_RL.acceso_seminuevo:
+    Definition:
+      Binding: {Table: PW_BI_UsuariosRLS, Column: accesoSeminuevo}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - acceso seminuevo: {State: Generated}
+    - accesoSeminuevo: {Type: Noun, State: Generated, Weight: 0.99}
+
+  PW_BI_usuarios_RL.acceso_nuevo:
+    Definition:
+      Binding: {Table: PW_BI_UsuariosRLS, Column: accesoNuevo}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - acceso nuevo: {State: Generated}
+    - accesoNuevo: {Type: Noun, State: Generated, Weight: 0.99}
+
+  PW_BI_usuarios_RL.inventario_nuevo_check_azul:
+    Definition:
+      Binding: {Table: PW_BI_UsuariosRLS, Measure: InventarioNuevoCheckAzul}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - inventario nuevo check azul: {State: Generated}
+    - InventarioNuevoCheckAzul: {Type: Noun, State: Generated, Weight: 0.99}
+    - inventario nuevo cheque azul: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.617}
+    - inventario nuevo checkup azul: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.617}
+    - inventario nuevo inspection azul: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.617}
+    - inventario nuevo payment azul: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.617}
+    - inventario nuevo test azul: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.599}
+    - inventario nuevo tick azul: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.599}
+    - inventario nuevo bill azul: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.599}
+    - inventario nuevo safety inspection azul: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.494}
+    - inventario nuevo safety test azul: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.494}
+
+  PW_BI_usuarios_RL.inventario_nuevo_check_texto_azul:
+    Definition:
+      Binding: {Table: PW_BI_UsuariosRLS, Measure: InventarioNuevoCheckTextoAzul}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - inventario nuevo check texto azul: {State: Generated}
+    - InventarioNuevoCheckTextoAzul: {Type: Noun, State: Generated, Weight: 0.99}
+    - inventario nuevo cheque texto azul: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.624}
+    - inventario nuevo checkup texto azul: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.624}
+    - inventario nuevo inspection texto azul: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.624}
+    - inventario nuevo payment texto azul: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.624}
+    - inventario nuevo test texto azul: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.605}
+    - inventario nuevo tick texto azul: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.605}
+    - inventario nuevo bill texto azul: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.605}
+    - inventario nuevo safety inspection texto azul: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.503}
+    - inventario nuevo safety test texto azul: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.503}
+
+  PW_BI_usuarios_RL.logic:
+    Definition:
+      Binding: {Table: PW_BI_UsuariosRLS, Measure: logic}
+    State: Generated
+    Visibility: Hidden
+    Terms:
+    - logic: {State: Generated}
+    - judgement: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.491}
+    - judgment: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.491}
+    - lucidity: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.491}
+    - rationality: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.491}
+    - sensibleness: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.491}
+    - soundness: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.491}
+    - reason: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.476}
+    - sense: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.476}
+    - reasoning: {Type: Noun, State: Suggested, Source: {Agent: Thesaurus}, Weight: 0.476}
+
+Relationships:
+  estatus_pedido_has_NV_com_inv:
+    Binding: {Table: EstatusPedidos}
+    State: Generated
+    Roles:
+      estatus_pedido: estatus_pedido
+      NV_com_inv: NV_com_inv
+
+  SR_com_per_has_agencia:
+    Binding: {Table: SR_ComPer}
+    State: Generated
+    Roles:
+      SR_com_per: SR_com_per
+      agencia: agencia
+
+  RF_detalle_com_inv_has_RF_com_inv:
+    Binding: {Table: RF_Detalle_ComInv}
+    State: Generated
+    Roles:
+      RF_detalle_com_inv: RF_detalle_com_inv
+      RF_com_inv: RF_com_inv
+
+  RF_com_inv_pieza_has_RF_com_inv_control:
+    Binding: {Table: RF_ComInv_piezas}
+    State: Generated
+    Roles:
+      RF_com_inv_pieza: RF_com_inv_pieza
+      RF_com_inv_control: RF_com_inv_control
+
+  RF_com_inv_importe_has_RF_com_inv_control:
+    Binding: {Table: RF_ComInv_importe}
+    State: Generated
+    Roles:
+      RF_com_inv_importe: RF_com_inv_importe
+      RF_com_inv_control: RF_com_inv_control
+
+  RF_com_inv_control_has_RF_com_inv_importe:
+    Binding: {Table: RF_ComInv_control}
+    State: Generated
+    Roles:
+      RF_com_inv_control: RF_com_inv_control
+      RF_com_inv_importe: RF_com_inv_importe
+
+  RF_com_inv_control_has_RF_com_inv_pieza:
+    Binding: {Table: RF_ComInv_control}
+    State: Generated
+    Roles:
+      RF_com_inv_control: RF_com_inv_control
+      RF_com_inv_pieza: RF_com_inv_pieza
+
+  RF_com_inv_has_agencia:
+    Binding: {Table: RF_ComInv}
+    State: Generated
+    Roles:
+      RF_com_inv: RF_com_inv
+      agencia: agencia
+
+  NV_com_inv_has_estatus_pedido:
+    Binding: {Table: NV_ComInv}
+    State: Generated
+    Roles:
+      NV_com_inv: NV_com_inv
+      estatus_pedido: estatus_pedido
+
+  NV_com_inv_has_agencia:
+    Binding: {Table: NV_ComInv}
+    State: Generated
+    Roles:
+      NV_com_inv: NV_com_inv
+      agencia: agencia
+
+  FN_com_per_has_agencia:
+    Binding: {Table: FN_ComPer}
+    State: Generated
+    Roles:
+      FN_com_per: FN_com_per
+      agencia: agencia
+
