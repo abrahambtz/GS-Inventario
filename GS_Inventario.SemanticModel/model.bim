@@ -17409,6 +17409,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "708bde5f-c6c5-4a08-a2b3-91cc1a7cdea7",
             "sourceColumn": "idAgencia",
             "sourceProviderType": "varchar(255)",
@@ -17428,6 +17429,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "isKey": true,
             "lineageTag": "3a7dacac-4bcd-402d-b708-a7df3e6dfa4f",
             "sourceColumn": "numeroParte",
@@ -17448,6 +17450,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "2714eb6d-b27b-4b4c-b1bc-2fc61c745aa4",
             "sourceColumn": "descripcion",
             "sourceProviderType": "varchar(255)",
@@ -17467,6 +17470,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "cca3fc36-2352-4c1f-95d1-80ffebf76280",
             "sourceColumn": "ubicacion",
             "sourceProviderType": "varchar(255)",
@@ -17486,6 +17490,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "7b1b24df-3d5a-4208-a255-1e92557825aa",
             "sourceColumn": "existencia",
             "sourceProviderType": "varchar(255)",
@@ -17506,6 +17511,7 @@
             ],
             "dataType": "dateTime",
             "formatString": "General Date",
+            "isHidden": true,
             "lineageTag": "479c6d5d-533a-4352-bd18-d97281a94f68",
             "sourceColumn": "fechaUltimaCompra",
             "sourceProviderType": "date",
@@ -17526,6 +17532,7 @@
             ],
             "dataType": "dateTime",
             "formatString": "General Date",
+            "isHidden": true,
             "lineageTag": "174b6149-ad0c-4f30-ab17-1da89386e356",
             "sourceColumn": "fechaUltimaVenta",
             "sourceProviderType": "date",
@@ -17545,6 +17552,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "87b8d43d-ce76-4130-b507-ff7f9634b508",
             "sourceColumn": "clasificacion",
             "sourceProviderType": "varchar(255)",
@@ -17569,6 +17577,7 @@
               ""
             ],
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "a9dc1d28-c961-4e53-9c43-fc83ed4be4f0",
             "summarizeBy": "none",
             "type": "calculated"
@@ -17596,6 +17605,7 @@
             "dataType": "double",
             "expression": "VALUE(RF_ComInv[existencia])",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "11fbd4fc-fd71-4bf5-9656-ad0e186f9704",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -17617,6 +17627,7 @@
             "expression": "DATEVALUE(RF_ComInv[fechaUltimaCompra])",
             "formatString": "Short Date",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "26c49f35-6df1-4f4c-89f7-2ab73b258eab",
             "summarizeBy": "none",
             "type": "calculated"
@@ -17638,6 +17649,7 @@
             "expression": "IF(DATEVALUE(RF_ComInv[fechaUltimaVenta]) = DATE(1900,01,01), BLANK(),DATEVALUE(RF_ComInv[fechaUltimaVenta]))",
             "formatString": "Short Date",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "39f5cfe8-3ca3-477e-896a-d3f66c35d366",
             "summarizeBy": "none",
             "type": "calculated"
@@ -17661,6 +17673,7 @@
               ""
             ],
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "44237006-02c2-4ac1-b49a-6f097c7fe6e0",
             "summarizeBy": "none",
             "type": "calculated"
@@ -17679,6 +17692,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "04bf27c3-9fc5-440f-8cbb-50e64f775e9b",
             "sourceColumn": "apartado",
             "sourceProviderType": "varchar(255)",
@@ -17704,6 +17718,7 @@
             "expression": "VALUE(RF_ComInv[apartado])",
             "formatString": "0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "9e3002b5-3e3e-4982-b14d-73993d447462",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -17722,6 +17737,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "2a45b14c-6ffc-404e-8ea1-1b32f2bc731c",
             "sourceColumn": "disponible",
             "sourceProviderType": "varchar(255)",
@@ -17741,6 +17757,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "45640a6c-5c60-4faf-b735-bb4f5418e771",
             "sourceColumn": "costototalexistencia",
             "sourceProviderType": "varchar(255)",
@@ -17760,6 +17777,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "c8ce1297-eda7-4fec-84e1-b6f17b8b532c",
             "sourceColumn": "costototaldisponible",
             "sourceProviderType": "varchar(255)",
@@ -17779,6 +17797,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "731ab266-bb9e-4a43-9e24-a1c450bba8c2",
             "sourceColumn": "costototalapartado",
             "sourceProviderType": "varchar(255)",
@@ -17798,6 +17817,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "f2ca3f36-6a19-4200-9062-02a5b0c821d6",
             "sourceColumn": "costopromedio",
             "sourceProviderType": "varchar(255)",
@@ -17824,6 +17844,7 @@
             "expression": "VALUE(RF_ComInv[costototalapartado])",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "7c33964a-3795-4949-ad3c-acaea47f1eec",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -17849,6 +17870,7 @@
             "expression": "VALUE(RF_ComInv[costototalexistencia])",
             "formatString": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "2159caf0-36f8-43a2-84fc-7050f67bc4ea",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -17873,6 +17895,7 @@
             "dataType": "double",
             "expression": "VALUE(RF_ComInv[disponible])",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "bbf7626c-8d27-4497-bc7c-b8b6f3d32c72",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -17897,6 +17920,7 @@
             "dataType": "double",
             "expression": "VALUE(RF_ComInv[costototaldisponible])",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "39be7677-37b9-4c86-b5e5-dd7c95dc24ea",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -17915,6 +17939,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "isNullable": false,
             "lineageTag": "904c6787-0869-4d4b-bb3c-b5f42203af75",
             "sourceColumn": "idPedidoDetalle",
@@ -17936,6 +17961,7 @@
             ],
             "dataType": "dateTime",
             "formatString": "General Date",
+            "isHidden": true,
             "lineageTag": "2628c0ac-c631-4ea1-8fd4-6c17a9d22a5e",
             "sourceColumn": "fechaAlta",
             "sourceProviderType": "date",
@@ -17958,6 +17984,7 @@
             "expression": "IF(DATEVALUE(RF_ComInv[fechaAlta]) = DATE(1900,01,01), BLANK(),DATEVALUE(RF_ComInv[fechaAlta])) ",
             "formatString": "Short Date",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "4320a3d0-afa4-428c-938f-2c4cca7aece2",
             "summarizeBy": "none",
             "type": "calculated"
@@ -17978,6 +18005,7 @@
             "dataType": "string",
             "expression": "RELATED(Agencias[formateoMarca]) ",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "7900f1cf-9051-4387-b52f-d453523b2b94",
             "summarizeBy": "none",
             "type": "calculated"
@@ -17998,6 +18026,7 @@
             "dataType": "string",
             "expression": "\"ﾠ\"",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "0f6910f3-ebd6-4c55-8e66-be485f29db79",
             "summarizeBy": "none",
             "type": "calculated"
@@ -18019,6 +18048,7 @@
             "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes2])),0,RELATED(RF_Venta[_mes2]))",
             "formatString": "#,0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "836b6ebf-d9be-47ba-bbbc-7709780feef3",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -18040,6 +18070,7 @@
             "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes3])),0,RELATED(RF_Venta[_mes3]))",
             "formatString": "#,0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "762d56de-8bfe-4feb-9461-62165a21cd0d",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -18061,6 +18092,7 @@
             "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes4])),0,RELATED(RF_Venta[_mes4]))",
             "formatString": "#,0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "35634170-bbae-4f0f-9890-8a7c77c15954",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -18082,6 +18114,7 @@
             "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes5])),0,RELATED(RF_Venta[_mes5]))",
             "formatString": "#,0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "d01fd990-e4b1-46d8-a8e1-d70c2924cef8",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -18103,6 +18136,7 @@
             "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes6])),0,RELATED(RF_Venta[_mes6]))",
             "formatString": "#,0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "25dc5a49-534a-4bef-8f8c-8418e099d6f6",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -18124,6 +18158,7 @@
             "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes7])),0,RELATED(RF_Venta[_mes7]))",
             "formatString": "#,0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "9b421b5f-854e-4750-9bd4-39057dbf2266",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -18145,6 +18180,7 @@
             "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes8])),0,RELATED(RF_Venta[_mes8]))",
             "formatString": "#,0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "bbfaec7f-c734-493d-b71c-adeae4a5837b",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -18166,6 +18202,7 @@
             "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes9])),0,RELATED(RF_Venta[_mes9]))",
             "formatString": "#,0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "64314d5a-4c4e-4bee-a035-e2bd1869df72",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -18187,6 +18224,7 @@
             "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes10])),0,RELATED(RF_Venta[_mes10]))",
             "formatString": "#,0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "a8ae3beb-1687-49fd-80bf-143d45652cae",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -18208,6 +18246,7 @@
             "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes11])),0,RELATED(RF_Venta[_mes11]))",
             "formatString": "#,0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "a0c7f30d-7382-4ec0-96b0-37627b7de441",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -18229,6 +18268,7 @@
             "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes12])),0,RELATED(RF_Venta[_mes12]))",
             "formatString": "#,0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "5d6989bb-3bf1-41bc-aebc-78ce63f51b73",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -18250,11 +18290,13 @@
             "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes1])),0,RELATED(RF_Venta[_mes1]))",
             "formatString": "#,0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "bf66d633-0ae5-4e3d-9b4a-cfeb4be16dc4",
             "summarizeBy": "sum",
             "type": "calculated"
           }
         ],
+        "isHidden": true,
         "lineageTag": "c4364007-39ce-4c50-ba8b-5ffdf9c7d309",
         "measures": [
           {
@@ -18276,6 +18318,7 @@
               ")",
               ""
             ],
+            "isHidden": true,
             "lineageTag": "bbabe64f-a3d0-4f64-8e18-bda30699f220"
           },
           {
@@ -18294,6 +18337,7 @@
               "RETURN DIVIDE([_ImporteInvRef], costoTotal)"
             ],
             "formatString": "#,0.00\\ %;-#,0.00\\ %;#,0.00\\ %",
+            "isHidden": true,
             "lineageTag": "2f2d839b-6424-4ab8-9cd3-a7efcf98a399"
           },
           {
@@ -18314,6 +18358,7 @@
               ""
             ],
             "formatString": "#,0",
+            "isHidden": true,
             "lineageTag": "1dc46357-5628-4102-a35a-6c5575d2a29e"
           },
           {
@@ -18334,6 +18379,7 @@
               ""
             ],
             "formatString": "#,0",
+            "isHidden": true,
             "lineageTag": "aec1b436-b4c2-443e-bf7c-f0d5a02f2271"
           },
           {
@@ -18351,6 +18397,7 @@
             ],
             "expression": "CALCULATE(SUM(RF_ComInv[_disponible]))",
             "formatString": "#,0",
+            "isHidden": true,
             "lineageTag": "e79aca18-2b2c-4287-a16c-2bc38824fe05"
           },
           {
@@ -18374,6 +18421,7 @@
               ""
             ],
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "isHidden": true,
             "lineageTag": "575079f9-3bd2-48e2-a2e9-cdd36a71c112"
           },
           {
@@ -18388,6 +18436,7 @@
               ""
             ],
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "isHidden": true,
             "lineageTag": "b2fe009c-41ae-4eb4-9ebd-bd4ddd4b9cd5"
           },
           {
@@ -18399,6 +18448,7 @@
             ],
             "expression": "CALCULATE(SUM(RF_ComInv[_costoTotalDisponible]))",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "isHidden": true,
             "lineageTag": "827b50e6-733f-4232-bb39-c2a6ec5cd180"
           },
           {
@@ -18413,6 +18463,7 @@
               ""
             ],
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "isHidden": true,
             "lineageTag": "5d16e044-5d3c-4c12-9bbd-434ce990e9cb"
           },
           {
@@ -18424,6 +18475,7 @@
             ],
             "expression": "IF([_ImporteInvRef]<>0,[_ImporteInvRef],0)",
             "formatString": "\\$#,0.###############;(\\$#,0.###############);\\$#,0.###############",
+            "isHidden": true,
             "lineageTag": "f0bfd103-9567-4f7b-aaf2-b81c8f99872d"
           },
           {
@@ -18445,6 +18497,7 @@
               "    BLANK()",
               ")"
             ],
+            "isHidden": true,
             "lineageTag": "2e9bf700-bec2-41f9-b791-2deb83365bc3"
           },
           {
@@ -18455,6 +18508,7 @@
               }
             ],
             "expression": "\"Clasificacion \" & LOWER(SELECTEDVALUE(RF_ComInv[clasificacion]))",
+            "isHidden": true,
             "lineageTag": "6a33c9b3-1855-4665-b8f8-dd2ddfef4510"
           },
           {
@@ -18465,6 +18519,7 @@
               }
             ],
             "expression": "SELECTEDVALUE(RF_ComInv[_agenciaNombre])",
+            "isHidden": true,
             "lineageTag": "9cd4bc48-b135-4207-81ed-1fa74cccf8e6"
           },
           {
@@ -18481,6 +18536,7 @@
               }
             ],
             "expression": "SUMX(RF_ComInv,RF_ComInv[_ago 2023])",
+            "isHidden": true,
             "lineageTag": "17bd40f2-6168-4b46-8abf-aed306534376"
           }
         ],
@@ -19053,6 +19109,7 @@
             ],
             "dataType": "string",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "isNameInferred": false,
             "lineageTag": "1c9beb5d-d093-4c4e-b262-360a9d99dc37",
             "relatedColumnDetails": {
@@ -19086,6 +19143,7 @@
               }
             ],
             "isDataTypeInferred": true,
+            "isHidden": true,
             "isNameInferred": false,
             "lineageTag": "b3d1b523-03b1-4adf-b1fe-2d85373a3f84",
             "sortByColumn": "RF Order",
@@ -19104,6 +19162,7 @@
             "dataType": "int64",
             "formatString": "0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "isNameInferred": false,
             "lineageTag": "a8e4d177-799f-4381-ad99-60e851a6ad41",
             "sourceColumn": "[Value3]",
@@ -19121,6 +19180,7 @@
             "dataType": "int64",
             "formatString": "0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "isNameInferred": false,
             "lineageTag": "51be3d62-12b4-449a-a5be-31835390a145",
             "sourceColumn": "[Value4]",
@@ -19128,6 +19188,7 @@
             "type": "calculatedTableColumn"
           }
         ],
+        "isHidden": true,
         "lineageTag": "2b3f6ac1-d6da-4343-941c-ed814c8b0d35",
         "partitions": [
           {
@@ -19174,6 +19235,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "isNullable": false,
             "lineageTag": "d8708dda-e012-4739-9eb3-593ea2253bdc",
             "sourceColumn": "idPedidoDetalle",
@@ -19194,6 +19256,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "aad7b536-8abc-4d45-ad8f-8bf5b82a086e",
             "sourceColumn": "idAgencia",
             "sourceProviderType": "varchar(255)",
@@ -19213,6 +19276,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "2618d40b-cd64-427a-b70b-d434e77c046c",
             "sourceColumn": "pedido",
             "sourceProviderType": "varchar(255)",
@@ -19232,6 +19296,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "afb32647-8a2a-438b-9d04-fc531b26073e",
             "sourceColumn": "fechaPedido",
             "sourceProviderType": "varchar(255)",
@@ -19251,6 +19316,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "25430c76-1417-4fc8-b82c-6428af84c746",
             "sourceColumn": "cliente",
             "sourceProviderType": "varchar(255)",
@@ -19270,6 +19336,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "9034cd6d-7e99-43e5-af51-01eba2b35287",
             "sourceColumn": "vendedor",
             "sourceProviderType": "varchar(255)",
@@ -19289,6 +19356,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "351b8f45-e124-4db2-8a4a-bb806a4c421d",
             "sourceColumn": "codigo",
             "sourceProviderType": "varchar(255)",
@@ -19308,6 +19376,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "23c81d48-2379-4d2f-b783-abc9dc12b070",
             "sourceColumn": "cantidad",
             "sourceProviderType": "varchar(255)",
@@ -19333,6 +19402,7 @@
             "dataType": "double",
             "expression": "VALUE(RF_Detalle_ComInv[cantidad])",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "27642005-199b-4681-9a5c-bcd349882f95",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -19358,6 +19428,7 @@
             "expression": "VALUE(RELATED(RF_ComInv[costopromedio])) * RF_Detalle_ComInv[_cantidad]",
             "formatString": "#,0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "901003b0-39d1-431d-a63f-f5c31b71c70e",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -19379,6 +19450,7 @@
             "expression": "DATEVALUE(RF_Detalle_ComInv[fechaPedido])",
             "formatString": "Short Date",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "3b8a0d3c-9915-4b6e-a7d2-a0ec963334c5",
             "summarizeBy": "none",
             "type": "calculated"
@@ -19399,6 +19471,7 @@
             "dataType": "string",
             "expression": "RELATED((RF_ComInv[descripcion]))",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "74f9469a-a000-4a3a-ad99-e295da32cd1c",
             "summarizeBy": "none",
             "type": "calculated"
@@ -19423,6 +19496,7 @@
             ],
             "formatString": "0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "16d4c5d2-a5e0-462f-bd30-e795564da6a0",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -19443,6 +19517,7 @@
             "dataType": "string",
             "expression": "RELATED((RF_ComInv[_agenciaNombre]))",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "8fee258d-cfc7-443b-9caf-1d1638c4af5a",
             "summarizeBy": "none",
             "type": "calculated"
@@ -19463,6 +19538,7 @@
             "dataType": "string",
             "expression": "RELATED((RF_ComInv[Marca]))",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "e806fab3-8fa2-4272-b0a3-f04ec81fe329",
             "summarizeBy": "none",
             "type": "calculated"
@@ -19481,6 +19557,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "10b9d8f7-e88b-41a0-98e8-655ce2052dca",
             "sourceColumn": "receptor",
             "sourceProviderType": "varchar(255)",
@@ -19500,6 +19577,7 @@
               }
             ],
             "dataType": "string",
+            "isHidden": true,
             "lineageTag": "56f9db32-6449-494e-9a07-9c20f600bef7",
             "sourceColumn": "tipo",
             "sourceProviderType": "varchar(255)",
@@ -19521,6 +19599,7 @@
             "dataType": "string",
             "expression": "RELATED(RF_ComInv[_agenciaNombre])",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "aeaad488-e5d2-4521-99d2-6ac050794414",
             "summarizeBy": "none",
             "type": "calculated"
@@ -19545,11 +19624,13 @@
             "dataType": "double",
             "expression": "RELATED(RF_ComInv[_ago 2023])",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "lineageTag": "e98fc348-fc46-434b-ac64-f45491855876",
             "summarizeBy": "sum",
             "type": "calculated"
           }
         ],
+        "isHidden": true,
         "lineageTag": "f9b4b92d-d589-4673-a012-835d8c1c86f5",
         "measures": [
           {
@@ -19566,6 +19647,7 @@
               }
             ],
             "expression": "IF([_cantidad_sum]<>0,[_cantidad_sum],0)",
+            "isHidden": true,
             "lineageTag": "8fc304f1-6631-493f-83ac-b2413bdad5ff"
           },
           {
@@ -19582,6 +19664,7 @@
               }
             ],
             "expression": "SUM(RF_Detalle_ComInv[_cantidad])",
+            "isHidden": true,
             "lineageTag": "0850c57e-38b8-481a-933c-2788f90f5bf8"
           },
           {
@@ -19592,6 +19675,7 @@
               }
             ],
             "expression": "IF(SUM(RF_Detalle_ComInv[_diasEnPedido]) > 90, \"#FFF9C4\", \"#FFFFFF\")",
+            "isHidden": true,
             "lineageTag": "e997d495-c2b1-436d-88a7-e34ee2200dea"
           },
           {
@@ -19603,6 +19687,7 @@
             ],
             "expression": "CALCULATE(SUM(RF_Detalle_ComInv[_costototalApartado]))",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
+            "isHidden": true,
             "lineageTag": "e044ad07-9055-445d-9cad-356a3cb1a61e"
           }
         ],
@@ -19641,6 +19726,7 @@
             ],
             "dataType": "string",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "isNameInferred": false,
             "lineageTag": "59953f5b-4208-46fd-8b0f-33411b970484",
             "relatedColumnDetails": {
@@ -19675,6 +19761,7 @@
               }
             ],
             "isDataTypeInferred": true,
+            "isHidden": true,
             "isNameInferred": false,
             "lineageTag": "33c62d18-8032-464c-81a3-e9b925ba693c",
             "sortByColumn": "RF_ComInv_importe Orden",
@@ -19693,6 +19780,7 @@
             "dataType": "int64",
             "formatString": "0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "isNameInferred": false,
             "lineageTag": "25d471d7-0e70-428f-be02-24e20e394223",
             "sourceColumn": "[Value3]",
@@ -19710,6 +19798,7 @@
             "dataType": "int64",
             "formatString": "0",
             "isDataTypeInferred": true,
+            "isHidden": true,
             "isNameInferred": false,
             "lineageTag": "f51daf1e-325f-47b8-81c4-dd764ccd5b7b",
             "sourceColumn": "[Value4]",
@@ -19717,6 +19806,7 @@
             "type": "calculatedTableColumn"
           }
         ],
+        "isHidden": true,
         "lineageTag": "c43fe4cb-5e62-4b2a-97ee-716220f5aa30",
         "partitions": [
           {
