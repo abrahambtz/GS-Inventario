@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"NV_ComInv\",\"Agencias\",\"RF_ComInv\",\"ListaMarca\",\"Marca\",\"EstatusPedidos\",\"RF_Detalle_ComInv\",\"SR_ComPer\",\"FN_ComPer\",\"PW_BI_UsuariosRLS\",\"RF_Venta\"]"
+        "value": "[\"NV_ComInv\",\"Agencias\",\"RF_ComInv\",\"ListaMarca\",\"Marca\",\"EstatusPedidos\",\"RF_Detalle_ComInv\",\"SR_ComPer\",\"FN_ComPer\",\"PW_BI_UsuariosRLS\",\"RF_Venta\",\"Actualizacion\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -11361,6 +11361,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "changedProperties": [
@@ -16245,6 +16249,10 @@
           {
             "name": "PBI_ResultType",
             "value": "Table"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
           }
         ],
         "changedProperties": [
@@ -18410,6 +18418,157 @@
                 ""
               ],
               "type": "calculated"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Actualizacion",
+        "annotations": [
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ],
+        "changedProperties": [
+          {
+            "property": "IsHidden"
+          }
+        ],
+        "columns": [
+          {
+            "name": "idReporte",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "5b1b49a6-d262-4a67-b79e-5ca7386283fb",
+            "sourceColumn": "idReporte",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "nombreReporte",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "07d4f223-67a5-4cd5-acac-865c562d99da",
+            "sourceColumn": "nombreReporte",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "fechaHora",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "dateTime",
+            "formatString": "General Date",
+            "isHidden": true,
+            "lineageTag": "1f4b1839-049a-4fce-be93-74b28ecda277",
+            "sourceColumn": "fechaHora",
+            "sourceProviderType": "datetime",
+            "summarizeBy": "none"
+          }
+        ],
+        "isHidden": true,
+        "lineageTag": "325efe9f-d592-4dfe-8f72-54765e7830cc",
+        "measures": [
+          {
+            "name": "fechaActualizacionFacturado",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "expression": "CALCULATE(\"Ultima actualizacion \" & SELECTEDVALUE(Actualizacion[fechaHora]), Actualizacion[idReporte]=\"4\")",
+            "isHidden": true,
+            "lineageTag": "7e0bc7c8-a158-4cd6-a1db-72e6f5e0759d"
+          },
+          {
+            "name": "fechaActualizacionRefacciones",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "expression": "CALCULATE(\"Ultima actualizacion \" & SELECTEDVALUE(Actualizacion[fechaHora]), Actualizacion[idReporte]=\"1\")",
+            "isHidden": true,
+            "lineageTag": "dbc47db4-474f-4a66-90e1-4741fc6dc1cf"
+          },
+          {
+            "name": "fechaActualizacionUnidadesNuevas",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "expression": "CALCULATE(\"Ultima actualizacion \" & SELECTEDVALUE(Actualizacion[fechaHora]), Actualizacion[idReporte]=\"3\")",
+            "isHidden": true,
+            "lineageTag": "006589f4-ed0f-47ec-a928-6771e5669ec1"
+          },
+          {
+            "name": "fechaActualizacionUnidadesSeminuevas",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "expression": "CALCULATE(\"Ultima actualizacion \" & SELECTEDVALUE(Actualizacion[fechaHora]), Actualizacion[idReporte]=\"2\")",
+            "isHidden": true,
+            "lineageTag": "030c0f21-076a-4e7f-b1c5-a44626cf6b6f"
+          },
+          {
+            "name": "fechaActualizacionordenesDeServicio",
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "expression": "CALCULATE(\"Ultima actualizacion \" & SELECTEDVALUE(Actualizacion[fechaHora]), Actualizacion[idReporte]=\"5\")",
+            "isHidden": true,
+            "lineageTag": "00ee1855-f7ae-4bf6-bae1-d0d8ed535004"
+          }
+        ],
+        "partitions": [
+          {
+            "name": "Actualizacion",
+            "mode": "directQuery",
+            "source": {
+              "expression": [
+                "let",
+                "    Source = Sql.Database(\"192.168.249.151\", \"SBI\", [Query=\"SELECT * FROM  catalogoReportes#(lf)\"])",
+                "in",
+                "    Source"
+              ],
+              "type": "m"
             }
           }
         ]
