@@ -12,7 +12,7 @@
       },
       {
         "name": "PBIDesktopVersion",
-        "value": "2.131.1203.0 (24.07)"
+        "value": "2.132.908.0 (24.08)"
       },
       {
         "name": "PBI_ProTooling",
@@ -12907,13 +12907,6 @@
         "toTable": "NV_ComInv"
       },
       {
-        "name": "cc7f7db9-4db6-af73-ebbe-0aa099e34b32",
-        "fromColumn": "idPedidoDetalle",
-        "fromTable": "RF_Detalle_ComInv",
-        "toColumn": "idPedidoDetalle",
-        "toTable": "RF_ComInv"
-      },
-      {
         "name": "f39d5ba0-7386-5417-5344-d964016bbb79",
         "crossFilteringBehavior": "bothDirections",
         "fromCardinality": "one",
@@ -12946,6 +12939,14 @@
         "fromTable": "RF_ComInv_control",
         "toColumn": "IdOperacion",
         "toTable": "RF_ComInv_importe"
+      },
+      {
+        "name": "ef8cead3-4a84-998b-99c6-08ae7ccfd1d2",
+        "fromColumn": "_clasificaciónEstatus",
+        "fromTable": "NV_ComInv",
+        "toCardinality": "many",
+        "toColumn": "IdEstatusInv",
+        "toTable": "NV_ComInv_Estatus"
       },
       {
         "name": "a8db3bc2-e8f7-0fe0-fb41-48507375f33b",
@@ -12991,19 +12992,11 @@
         "toTable": "NV_ComInv_control"
       },
       {
-        "name": "ef8cead3-4a84-998b-99c6-08ae7ccfd1d2",
-        "fromColumn": "_clasificaciónEstatus",
-        "fromTable": "NV_ComInv",
-        "toCardinality": "many",
-        "toColumn": "IdEstatusInv",
-        "toTable": "NV_ComInv_Estatus"
-      },
-      {
-        "name": "5af9a3fa-336f-0fe4-1ba9-715dd85b3601",
+        "name": "cc7f7db9-4db6-af73-ebbe-0aa099e34b32",
         "fromColumn": "idPedidoDetalle",
-        "fromTable": "RF_ComInv",
+        "fromTable": "RF_Detalle_ComInv",
         "toColumn": "idPedidoDetalle",
-        "toTable": "RF_Venta"
+        "toTable": "RF_ComInv"
       },
       {
         "name": "5f196b97-d935-60cf-578f-17722ebc4567",
@@ -15333,7 +15326,7 @@
               }
             ],
             "dataType": "double",
-            "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes2])),0,RELATED(RF_Venta[_mes2]))",
+            "expression": "VALUE(RF_ComInv[mes2])",
             "formatString": "#,0",
             "isDataTypeInferred": true,
             "isHidden": true,
@@ -15355,7 +15348,7 @@
               }
             ],
             "dataType": "double",
-            "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes3])),0,RELATED(RF_Venta[_mes3]))",
+            "expression": "VALUE(RF_ComInv[mes3])",
             "formatString": "#,0",
             "isDataTypeInferred": true,
             "isHidden": true,
@@ -15377,7 +15370,7 @@
               }
             ],
             "dataType": "double",
-            "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes4])),0,RELATED(RF_Venta[_mes4]))",
+            "expression": "VALUE(RF_ComInv[mes4])",
             "formatString": "#,0",
             "isDataTypeInferred": true,
             "isHidden": true,
@@ -15399,7 +15392,7 @@
               }
             ],
             "dataType": "double",
-            "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes5])),0,RELATED(RF_Venta[_mes5]))",
+            "expression": "VALUE(RF_ComInv[mes5])",
             "formatString": "#,0",
             "isDataTypeInferred": true,
             "isHidden": true,
@@ -15421,7 +15414,7 @@
               }
             ],
             "dataType": "double",
-            "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes6])),0,RELATED(RF_Venta[_mes6]))",
+            "expression": "VALUE(RF_ComInv[mes6])",
             "formatString": "#,0",
             "isDataTypeInferred": true,
             "isHidden": true,
@@ -15443,7 +15436,7 @@
               }
             ],
             "dataType": "double",
-            "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes7])),0,RELATED(RF_Venta[_mes7]))",
+            "expression": "VALUE(RF_ComInv[mes7])",
             "formatString": "#,0",
             "isDataTypeInferred": true,
             "isHidden": true,
@@ -15465,7 +15458,7 @@
               }
             ],
             "dataType": "double",
-            "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes8])),0,RELATED(RF_Venta[_mes8]))",
+            "expression": "VALUE(RF_ComInv[mes8])",
             "formatString": "#,0",
             "isDataTypeInferred": true,
             "isHidden": true,
@@ -15487,7 +15480,7 @@
               }
             ],
             "dataType": "double",
-            "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes9])),0,RELATED(RF_Venta[_mes9]))",
+            "expression": "VALUE(RF_ComInv[mes9])",
             "formatString": "#,0",
             "isDataTypeInferred": true,
             "isHidden": true,
@@ -15509,7 +15502,7 @@
               }
             ],
             "dataType": "double",
-            "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes10])),0,RELATED(RF_Venta[_mes10]))",
+            "expression": "VALUE(RF_ComInv[mes10])",
             "formatString": "#,0",
             "isDataTypeInferred": true,
             "isHidden": true,
@@ -15531,7 +15524,7 @@
               }
             ],
             "dataType": "double",
-            "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes11])),0,RELATED(RF_Venta[_mes11]))",
+            "expression": "VALUE(RF_ComInv[mes11])",
             "formatString": "#,0",
             "isDataTypeInferred": true,
             "isHidden": true,
@@ -15553,7 +15546,7 @@
               }
             ],
             "dataType": "double",
-            "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes12])),0,RELATED(RF_Venta[_mes12]))",
+            "expression": "VALUE(RF_ComInv[mes12])",
             "formatString": "#,0",
             "isDataTypeInferred": true,
             "isHidden": true,
@@ -15575,13 +15568,181 @@
               }
             ],
             "dataType": "double",
-            "expression": "IF(ISBLANK(RELATED(RF_Venta[_mes1])),0,RELATED(RF_Venta[_mes1]))",
+            "expression": "VALUE(RF_ComInv[mes1])",
             "formatString": "#,0",
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "bf66d633-0ae5-4e3d-9b4a-cfeb4be16dc4",
             "summarizeBy": "sum",
             "type": "calculated"
+          },
+          {
+            "name": "mes1",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c49d3ca7-b4e2-4667-8db4-e35bb5628222",
+            "sourceColumn": "mes1",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "mes2",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "74c7dd49-8cdb-40e7-a55c-cf8bcce868f5",
+            "sourceColumn": "mes2",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "mes3",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "e21f369f-8703-4333-a10a-3b70a8120f0c",
+            "sourceColumn": "mes3",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "mes4",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "3bc9f9a7-f0c0-4f77-bcd4-60afc2fd71e4",
+            "sourceColumn": "mes4",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "mes5",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "8979f399-b4f3-4d2d-934c-1a24b7fdb3a3",
+            "sourceColumn": "mes5",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "mes6",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "ae268828-0fed-4080-ab19-de693dec30af",
+            "sourceColumn": "mes6",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "mes7",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "10a0faf2-eac6-4951-93cb-6d29b77d1ba3",
+            "sourceColumn": "mes7",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "mes8",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "c80ad7d0-bd4d-4e8a-89b6-db323267bfd1",
+            "sourceColumn": "mes8",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "mes9",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "d9c13e02-1abd-4e4b-8fd9-e3923a3f8ece",
+            "sourceColumn": "mes9",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "mes10",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "17535274-5d6a-4f71-a411-67e5f509ea71",
+            "sourceColumn": "mes10",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "mes11",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "4ea8315f-23ce-4a93-b3c4-686caba1ecb6",
+            "sourceColumn": "mes11",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "mes12",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "5067ef04-72c6-43a8-b072-48d8d063461a",
+            "sourceColumn": "mes12",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
           }
         ],
         "isHidden": true,
@@ -16790,6 +16951,46 @@
             "type": "calculated"
           },
           {
+            "name": "receptor",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "10b9d8f7-e88b-41a0-98e8-655ce2052dca",
+            "sourceColumn": "receptor",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "tipo",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "dataType": "string",
+            "isHidden": true,
+            "lineageTag": "56f9db32-6449-494e-9a07-9c20f600bef7",
+            "sourceColumn": "tipo",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
             "name": "Agencia",
             "annotations": [
               {
@@ -16830,46 +17031,6 @@
             "lineageTag": "e806fab3-8fa2-4272-b0a3-f04ec81fe329",
             "summarizeBy": "none",
             "type": "calculated"
-          },
-          {
-            "name": "receptor",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "isHidden": true,
-            "lineageTag": "10b9d8f7-e88b-41a0-98e8-655ce2052dca",
-            "sourceColumn": "receptor",
-            "sourceProviderType": "varchar(255)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "tipo",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "isHidden": true,
-            "lineageTag": "56f9db32-6449-494e-9a07-9c20f600bef7",
-            "sourceColumn": "tipo",
-            "sourceProviderType": "varchar(255)",
-            "summarizeBy": "none"
           },
           {
             "name": "agenciaNombreRF_Detalles",
@@ -16916,28 +17077,39 @@
             "lineageTag": "e98fc348-fc46-434b-ac64-f45491855876",
             "summarizeBy": "sum",
             "type": "calculated"
+          },
+          {
+            "name": "nombreAgencia",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "38233d26-9489-4f5a-a360-a8f8517c359e",
+            "sourceColumn": "nombreAgencia",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
+          },
+          {
+            "name": "clasificacion",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "lineageTag": "33a79e43-1810-48f4-9a39-8043cdcebbb6",
+            "sourceColumn": "clasificacion",
+            "sourceProviderType": "varchar(255)",
+            "summarizeBy": "none"
           }
         ],
         "isHidden": true,
         "lineageTag": "f9b4b92d-d589-4673-a012-835d8c1c86f5",
         "measures": [
-          {
-            "name": "_cantidad_card",
-            "annotations": [
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "expression": "IF([_cantidad_sum]<>0,[_cantidad_sum],0)",
-            "isHidden": true,
-            "lineageTag": "8fc304f1-6631-493f-83ac-b2413bdad5ff"
-          },
           {
             "name": "_cantidad_sum",
             "annotations": [
@@ -16977,6 +17149,23 @@
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
             "isHidden": true,
             "lineageTag": "e044ad07-9055-445d-9cad-356a3cb1a61e"
+          },
+          {
+            "name": "_cantidad_card",
+            "annotations": [
+              {
+                "name": "PBI_FormatHint",
+                "value": "{\"isGeneralNumber\":true}"
+              }
+            ],
+            "changedProperties": [
+              {
+                "property": "IsHidden"
+              }
+            ],
+            "expression": "IF([_cantidad_sum]<>0,[_cantidad_sum],0)",
+            "isHidden": true,
+            "lineageTag": "8fc304f1-6631-493f-83ac-b2413bdad5ff"
           }
         ],
         "partitions": [
@@ -19624,7 +19813,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "6c01a1ca-56e4-406c-b2f4-80fce8928e33",
-            "summarizeBy": "none",
+            "summarizeBy": "sum",
             "type": "calculated"
           },
           {
@@ -19649,7 +19838,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "b899d445-00c9-41d3-ad12-a49d2963a96e",
-            "summarizeBy": "none",
+            "summarizeBy": "sum",
             "type": "calculated"
           },
           {
@@ -19674,7 +19863,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "64f3d029-5113-49cb-9f29-a102d7107be6",
-            "summarizeBy": "none",
+            "summarizeBy": "sum",
             "type": "calculated"
           },
           {
@@ -19699,7 +19888,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "d2820e33-2c2f-4b87-96ef-4d201dc54e80",
-            "summarizeBy": "none",
+            "summarizeBy": "sum",
             "type": "calculated"
           },
           {
@@ -19724,7 +19913,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "716fe98d-b3e4-4585-b628-594972379426",
-            "summarizeBy": "none",
+            "summarizeBy": "sum",
             "type": "calculated"
           },
           {
@@ -19749,7 +19938,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "7385ef1f-21d0-4a7b-82ba-d8cec7e0e24b",
-            "summarizeBy": "none",
+            "summarizeBy": "sum",
             "type": "calculated"
           },
           {
@@ -19774,7 +19963,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "93c948ba-74fd-4c87-af6e-8ec301184ee8",
-            "summarizeBy": "none",
+            "summarizeBy": "sum",
             "type": "calculated"
           },
           {
@@ -19799,7 +19988,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "e618f901-4a17-4d87-9a80-7564ebcecef9",
-            "summarizeBy": "none",
+            "summarizeBy": "sum",
             "type": "calculated"
           },
           {
@@ -19824,7 +20013,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "f05c8404-de02-43e5-82e4-9c2b10473cf0",
-            "summarizeBy": "none",
+            "summarizeBy": "sum",
             "type": "calculated"
           },
           {
@@ -19849,7 +20038,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "1af26d42-b1df-4350-95c6-cae558c507d8",
-            "summarizeBy": "none",
+            "summarizeBy": "sum",
             "type": "calculated"
           },
           {
@@ -19874,7 +20063,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "27e459c4-7faf-4a0d-bd3f-376fb68c3a55",
-            "summarizeBy": "none",
+            "summarizeBy": "sum",
             "type": "calculated"
           },
           {
@@ -19899,7 +20088,7 @@
             "isDataTypeInferred": true,
             "isHidden": true,
             "lineageTag": "3bff129f-f5f5-4f1d-a7f5-81bead643d0b",
-            "summarizeBy": "none",
+            "summarizeBy": "sum",
             "type": "calculated"
           }
         ],
