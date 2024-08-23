@@ -4,7 +4,7 @@
     "annotations": [
       {
         "name": "PBI_QueryOrder",
-        "value": "[\"NV_ComInv\",\"Agencias\",\"RF_ComInv\",\"ListaMarca\",\"Marca\",\"EstatusPedidos\",\"RF_Detalle_ComInv\",\"SR_ComPer\",\"FN_ComPer\",\"PW_BI_UsuariosRLS\",\"RF_Venta\",\"Actualizacion\"]"
+        "value": "[\"NV_ComInv\",\"Agencias\",\"RF_ComInv\",\"ListaMarca\",\"Marca\",\"EstatusPedidos\",\"RF_Detalle_ComInv\",\"SR_ComPer\",\"FN_ComPer\",\"PW_BI_UsuariosRLS\",\"Actualizacion\"]"
       },
       {
         "name": "__PBI_TimeIntelligenceEnabled",
@@ -5550,787 +5550,6 @@
                 "Terms": [
                   {
                     "_fechaPedido": {
-                      "State": "Generated"
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "RF venta": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "RF_Venta": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.id_agencia": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "idAgencia"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "id agencia": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "idAgencia": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "identification agencia": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "identity agencia": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "identifier agencia": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.6
-                    }
-                  },
-                  {
-                    "credential agencia": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.582
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.id_pedido_detalle": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "idPedidoDetalle"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "id pedido detalle": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "idPedidoDetalle": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  },
-                  {
-                    "identification pedido detalle": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "identity pedido detalle": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "identifier pedido detalle": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.609
-                    }
-                  },
-                  {
-                    "credential pedido detalle": {
-                      "Source": {
-                        "Agent": "Thesaurus"
-                      },
-                      "State": "Suggested",
-                      "Type": "Noun",
-                      "Weight": 0.591
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.mes_1": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "mes1"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "mes 1": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "me 1": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.78
-                    }
-                  },
-                  {
-                    "mes1": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.mes_10": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "mes10"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "mes 10": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "me 10": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.78
-                    }
-                  },
-                  {
-                    "mes10": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.mes_11": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "mes11"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "mes 11": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "me 11": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.78
-                    }
-                  },
-                  {
-                    "mes11": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.mes_12": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "mes12"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "mes 12": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "me 12": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.78
-                    }
-                  },
-                  {
-                    "mes12": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.mes_2": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "mes2"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "mes 2": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "me 2": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.78
-                    }
-                  },
-                  {
-                    "mes2": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.mes_3": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "mes3"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "mes 3": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "me 3": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.78
-                    }
-                  },
-                  {
-                    "mes3": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.mes_4": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "mes4"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "mes 4": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "me 4": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.78
-                    }
-                  },
-                  {
-                    "mes4": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.mes_5": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "mes5"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "mes 5": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "me 5": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.78
-                    }
-                  },
-                  {
-                    "mes5": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.mes_6": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "mes6"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "mes 6": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "me 6": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.78
-                    }
-                  },
-                  {
-                    "mes6": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.mes_7": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "mes7"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "mes 7": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "me 7": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.78
-                    }
-                  },
-                  {
-                    "mes7": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.mes_8": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "mes8"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "mes 8": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "me 8": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.78
-                    }
-                  },
-                  {
-                    "mes8": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.mes_9": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "mes9"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "mes 9": {
-                      "State": "Generated"
-                    }
-                  },
-                  {
-                    "me 9": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.78
-                    }
-                  },
-                  {
-                    "mes9": {
-                      "State": "Generated",
-                      "Type": "Noun",
-                      "Weight": 0.99
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.v_mes10_mes10": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "_mes10"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "_mes10": {
-                      "State": "Generated"
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.v_mes11_mes11": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "_mes11"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "_mes11": {
-                      "State": "Generated"
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.v_mes12_mes12": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "_mes12"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "_mes12": {
-                      "State": "Generated"
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.v_mes1_mes1": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "_mes1"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "_mes1": {
-                      "State": "Generated"
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.v_mes2_mes2": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "_mes2"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "_mes2": {
-                      "State": "Generated"
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.v_mes3_mes3": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "_mes3"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "_mes3": {
-                      "State": "Generated"
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.v_mes4_mes4": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "_mes4"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "_mes4": {
-                      "State": "Generated"
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.v_mes5_mes5": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "_mes5"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "_mes5": {
-                      "State": "Generated"
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.v_mes6_mes6": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "_mes6"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "_mes6": {
-                      "State": "Generated"
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.v_mes7_mes7": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "_mes7"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "_mes7": {
-                      "State": "Generated"
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.v_mes8_mes8": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "_mes8"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "_mes8": {
-                      "State": "Generated"
-                    }
-                  }
-                ],
-                "Visibility": {
-                  "Value": "Hidden"
-                }
-              },
-              "RF_venta.v_mes9_mes9": {
-                "Definition": {
-                  "Binding": {
-                    "ConceptualEntity": "RF_Venta",
-                    "ConceptualProperty": "_mes9"
-                  }
-                },
-                "State": "Generated",
-                "Terms": [
-                  {
-                    "_mes9": {
                       "State": "Generated"
                     }
                   }
@@ -12999,14 +12218,14 @@
         "toTable": "RF_ComInv"
       },
       {
-        "name": "5f196b97-d935-60cf-578f-17722ebc4567",
+        "name": "ef66c4fd-9c58-7e53-08f3-f86b679e0e21",
         "crossFilteringBehavior": "bothDirections",
-        "fromColumn": "IDProducto",
-        "fromTable": "TransposedTable",
+        "fromColumn": "idPedidoDetalle",
+        "fromTable": "RF_ComInv",
         "isActive": false,
         "toCardinality": "many",
-        "toColumn": "idPedidoDetalle",
-        "toTable": "RF_ComInv"
+        "toColumn": "IDProducto",
+        "toTable": "TransposedTable"
       }
     ],
     "sourceQueryCulture": "es-MX",
@@ -15743,6 +14962,53 @@
             "sourceColumn": "mes12",
             "sourceProviderType": "varchar(255)",
             "summarizeBy": "none"
+          },
+          {
+            "name": "esDisponible",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": "IF(RF_ComInv[_disponible] <> 0, 1)",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "3c88b6cd-2531-4e06-a2da-c6fe11eac02d",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "esExistencias",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "int64",
+            "expression": "IF(RF_ComInv[_existencia] <> 0, 1)",
+            "formatString": "0",
+            "isDataTypeInferred": true,
+            "lineageTag": "c9ff4531-a66b-4c7c-8c3d-d4d9ab3fbb4d",
+            "summarizeBy": "sum",
+            "type": "calculated"
+          },
+          {
+            "name": "esPedido",
+            "annotations": [
+              {
+                "name": "SummarizationSetBy",
+                "value": "Automatic"
+              }
+            ],
+            "dataType": "string",
+            "expression": "IF(RF_ComInv[_apartado] <> 0, \"Pedido\")",
+            "isDataTypeInferred": true,
+            "lineageTag": "8e561fcb-cf56-4ccf-86e3-f8d6c4a8f998",
+            "summarizeBy": "none",
+            "type": "calculated"
           }
         ],
         "isHidden": true,
@@ -15803,7 +15069,7 @@
               }
             ],
             "expression": [
-              "CALCULATE(SUM(RF_ComInv[_existencia]))",
+              "CALCULATE(SUM(RF_ComInv[_existencia]), RF_ComInv[esExistencias] = 1)",
               ""
             ],
             "formatString": "#,0",
@@ -15823,10 +15089,7 @@
                 "property": "IsHidden"
               }
             ],
-            "expression": [
-              "IF(CALCULATE(SUM(RF_ComInv[_apartado]))<>0, CALCULATE(SUM(RF_ComInv[_apartado])))",
-              ""
-            ],
+            "expression": "CALCULATE(SUM(RF_ComInv[_apartado]), RF_ComInv[esPedido]=\"Pedido\")",
             "formatString": "#,0",
             "isHidden": true,
             "lineageTag": "aec1b436-b4c2-443e-bf7c-f0d5a02f2271"
@@ -15844,7 +15107,7 @@
                 "property": "IsHidden"
               }
             ],
-            "expression": "CALCULATE(SUM(RF_ComInv[_disponible]))",
+            "expression": "CALCULATE(SUM(RF_ComInv[_disponible]), RF_ComInv[esDisponible] = 1)",
             "formatString": "#,0",
             "isHidden": true,
             "lineageTag": "e79aca18-2b2c-4287-a16c-2bc38824fe05"
@@ -15881,7 +15144,7 @@
               }
             ],
             "expression": [
-              "IF(CALCULATE(SUM(RF_ComInv[_costoTotalApartado]))<>0, CALCULATE(SUM(RF_ComInv[_costoTotalApartado])))",
+              "CALCULATE(SUM(RF_ComInv[_costoTotalApartado]), RF_ComInv[esPedido]=\"Pedido\")",
               ""
             ],
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
@@ -15895,7 +15158,7 @@
                 "property": "IsHidden"
               }
             ],
-            "expression": "CALCULATE(SUM(RF_ComInv[_costoTotalDisponible]))",
+            "expression": "CALCULATE(SUM(RF_ComInv[_costoTotalDisponible]), RF_ComInv[esDisponible] = 1)",
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
             "isHidden": true,
             "lineageTag": "827b50e6-733f-4232-bb39-c2a6ec5cd180"
@@ -15908,7 +15171,8 @@
               }
             ],
             "expression": [
-              "CALCULATE(SUM(RF_ComInv[_costoTotalExistencia]))",
+              "CALCULATE(SUM(RF_ComInv[_costoTotalExistencia]), RF_ComInv[esExistencias]=1)",
+              "",
               ""
             ],
             "formatString": "\\$#,0;(\\$#,0);\\$#,0",
@@ -18127,7 +17391,6 @@
               }
             ],
             "dataType": "string",
-            "isHidden": true,
             "lineageTag": "3a030767-c6a3-4202-b1d4-f84eb224dbd4",
             "sourceColumn": "idAgencia",
             "sourceProviderType": "varchar(255)",
@@ -18150,7 +17413,6 @@
               }
             ],
             "dataType": "string",
-            "isHidden": true,
             "lineageTag": "2639017c-8f9e-40e9-8204-1b12b1628c5b",
             "sourceColumn": "factura",
             "sourceProviderType": "varchar(255)",
@@ -18170,7 +17432,6 @@
               }
             ],
             "dataType": "string",
-            "isHidden": true,
             "lineageTag": "04efec9c-6fc4-45eb-88a8-d848cab6708f",
             "sourceColumn": "fecha",
             "sourceProviderType": "varchar(255)",
@@ -18190,7 +17451,6 @@
               }
             ],
             "dataType": "string",
-            "isHidden": true,
             "lineageTag": "3e639325-49a3-4244-b0cf-69c5bbb53161",
             "sourceColumn": "serie",
             "sourceProviderType": "varchar(255)",
@@ -18210,7 +17470,6 @@
               }
             ],
             "dataType": "string",
-            "isHidden": true,
             "lineageTag": "32f99f4b-269d-491c-b47e-95c13541a02a",
             "sourceColumn": "noInv",
             "sourceProviderType": "varchar(255)",
@@ -18230,7 +17489,6 @@
               }
             ],
             "dataType": "string",
-            "isHidden": true,
             "lineageTag": "696722d3-8a38-40e3-a7af-2c934d90e003",
             "sourceColumn": "tipo",
             "sourceProviderType": "varchar(255)",
@@ -18250,7 +17508,6 @@
               }
             ],
             "dataType": "string",
-            "isHidden": true,
             "lineageTag": "441bc21a-f3a6-4c00-bf22-6425fc16004c",
             "sourceColumn": "ano",
             "sourceProviderType": "varchar(255)",
@@ -18270,7 +17527,6 @@
               }
             ],
             "dataType": "string",
-            "isHidden": true,
             "lineageTag": "714afeae-aeb6-4e48-a3d4-d26ef1822b81",
             "sourceColumn": "colExt",
             "sourceProviderType": "varchar(255)",
@@ -18290,7 +17546,6 @@
               }
             ],
             "dataType": "string",
-            "isHidden": true,
             "lineageTag": "d401c7fa-5475-43d5-a4ef-532d8a660a2c",
             "sourceColumn": "colInt",
             "sourceProviderType": "varchar(255)",
@@ -18310,7 +17565,6 @@
               }
             ],
             "dataType": "string",
-            "isHidden": true,
             "lineageTag": "2c27e14f-e255-4f4a-b28a-fc6f79cda3e1",
             "sourceColumn": "cliente",
             "sourceProviderType": "varchar(255)",
@@ -18330,7 +17584,6 @@
               }
             ],
             "dataType": "string",
-            "isHidden": true,
             "lineageTag": "26b5408d-8bb7-4e4a-98c9-1b477a245f79",
             "sourceColumn": "Asesor",
             "sourceProviderType": "varchar(255)",
@@ -18350,7 +17603,6 @@
               }
             ],
             "dataType": "string",
-            "isHidden": true,
             "lineageTag": "965cff00-8287-4131-a36d-8a2227553af0",
             "sourceColumn": "Canal",
             "sourceProviderType": "varchar(255)",
@@ -18370,7 +17622,6 @@
               }
             ],
             "dataType": "string",
-            "isHidden": true,
             "lineageTag": "9f08fb24-273a-4f5b-a1fa-86a05a6ce261",
             "sourceColumn": "condicion",
             "sourceProviderType": "varchar(255)",
@@ -18392,7 +17643,6 @@
             "dataType": "string",
             "expression": "RELATED(Agencias[Agencia])",
             "isDataTypeInferred": true,
-            "isHidden": true,
             "lineageTag": "7f3cd140-9569-4810-b5e6-839c4d823ad7",
             "summarizeBy": "none",
             "type": "calculated"
@@ -18413,7 +17663,6 @@
             "dataType": "string",
             "expression": "RELATED(Agencias[Marca])",
             "isDataTypeInferred": true,
-            "isHidden": true,
             "lineageTag": "f7413b89-c7b6-46ad-8f7e-afd725a67531",
             "summarizeBy": "none",
             "type": "calculated"
@@ -18434,7 +17683,6 @@
             "dataType": "string",
             "expression": "RELATED(Agencias[Marca]) & \"  \"",
             "isDataTypeInferred": true,
-            "isHidden": true,
             "lineageTag": "eb7260f9-17c6-47b6-8174-aea833d075bb",
             "summarizeBy": "none",
             "type": "calculated"
@@ -18456,7 +17704,6 @@
             "expression": "DATEDIFF(FN_ComPer[fechaEmision], TODAY(), DAY)",
             "formatString": "0",
             "isDataTypeInferred": true,
-            "isHidden": true,
             "lineageTag": "9bcd6197-db57-4049-b61a-3ecfda87aa2c",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -18478,7 +17725,6 @@
             "expression": "DATEVALUE(FN_ComPer[fecha])",
             "formatString": "Short Date",
             "isDataTypeInferred": true,
-            "isHidden": true,
             "lineageTag": "b14e1f87-f9e1-4bf1-baa5-4b4e6c4fb32e",
             "summarizeBy": "none",
             "type": "calculated"
@@ -18505,7 +17751,6 @@
               ")"
             ],
             "isDataTypeInferred": true,
-            "isHidden": true,
             "lineageTag": "448032ae-2565-42c4-b480-4c23a093dc64",
             "sortByColumn": "AntiguedadOrden",
             "summarizeBy": "none",
@@ -18531,7 +17776,6 @@
             ],
             "formatString": "0",
             "isDataTypeInferred": true,
-            "isHidden": true,
             "lineageTag": "29336991-e00d-44d8-973b-8f82aa8bb8e7",
             "summarizeBy": "sum",
             "type": "calculated"
@@ -18552,7 +17796,6 @@
             "dataType": "string",
             "expression": "RELATED(Agencias[formateoMarca]) ",
             "isDataTypeInferred": true,
-            "isHidden": true,
             "lineageTag": "3fd1c078-e64b-48e6-8daf-5d295fa7901d",
             "summarizeBy": "none",
             "type": "calculated"
@@ -18573,13 +17816,11 @@
             "dataType": "string",
             "expression": "SWITCH(DATEDIFF(FN_ComPer[fechaEmision],TODAY(),  MONTH), 0, \"Mes Actual\", \"Anteriores\")",
             "isDataTypeInferred": true,
-            "isHidden": true,
             "lineageTag": "209e6c78-3b3c-4ce3-ba89-3ec3eef638e8",
             "summarizeBy": "none",
             "type": "calculated"
           }
         ],
-        "isHidden": true,
         "lineageTag": "c7e45e63-f4c9-4ff4-9761-0bf5e1669591",
         "measures": [
           {
@@ -18591,7 +17832,6 @@
             ],
             "expression": "COUNT(FN_ComPer[factura])",
             "formatString": "#,0",
-            "isHidden": true,
             "lineageTag": "e0d61fc9-d0fc-4dde-a9df-f4c5159b52fc"
           },
           {
@@ -18602,7 +17842,6 @@
               }
             ],
             "expression": "\"Antiguedad \" & SELECTEDVALUE(FN_ComPer[Antiguedad])",
-            "isHidden": true,
             "lineageTag": "8f0693a9-a354-4725-9b7c-dfbe25cf51b6"
           }
         ],
@@ -19493,619 +18732,6 @@
                 "}"
               ],
               "type": "calculated"
-            }
-          }
-        ]
-      },
-      {
-        "name": "RF_Venta",
-        "annotations": [
-          {
-            "name": "PBI_ResultType",
-            "value": "Table"
-          }
-        ],
-        "changedProperties": [
-          {
-            "property": "IsHidden"
-          }
-        ],
-        "columns": [
-          {
-            "name": "idPedidoDetalle",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "isHidden": true,
-            "lineageTag": "3367b172-d41d-49fb-94d0-97f25ca73b1f",
-            "sourceColumn": "idPedidoDetalle",
-            "sourceProviderType": "varchar(255)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "idAgencia",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "isHidden": true,
-            "lineageTag": "69da0063-fdb7-4d26-a7b0-20d43e6b826c",
-            "sourceColumn": "idAgencia",
-            "sourceProviderType": "varchar(255)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "mes1",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "isHidden": true,
-            "lineageTag": "ca48a234-3b57-46c2-8197-8b6105fb1dc2",
-            "sourceColumn": "mes1",
-            "sourceProviderType": "varchar(255)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "mes2",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "isHidden": true,
-            "lineageTag": "4fca7deb-208c-4588-b800-38ad97290191",
-            "sourceColumn": "mes2",
-            "sourceProviderType": "varchar(255)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "mes3",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "isHidden": true,
-            "lineageTag": "b1d247fc-25e0-4d56-9c98-8b4402eb75be",
-            "sourceColumn": "mes3",
-            "sourceProviderType": "varchar(255)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "mes4",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "isHidden": true,
-            "lineageTag": "c3f92430-4e3d-4fb0-95aa-f11ae308c6a2",
-            "sourceColumn": "mes4",
-            "sourceProviderType": "varchar(255)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "mes5",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "isHidden": true,
-            "lineageTag": "31b11137-4e92-4885-ac6c-05dd5722901b",
-            "sourceColumn": "mes5",
-            "sourceProviderType": "varchar(255)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "mes6",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "isHidden": true,
-            "lineageTag": "d579dfeb-eab5-4cc5-824c-8ab78f17c311",
-            "sourceColumn": "mes6",
-            "sourceProviderType": "varchar(255)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "mes7",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "isHidden": true,
-            "lineageTag": "f445c359-b4cb-46ba-8bd1-e5c38d25f256",
-            "sourceColumn": "mes7",
-            "sourceProviderType": "varchar(255)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "mes8",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "isHidden": true,
-            "lineageTag": "1abfe01b-23f8-4c5d-ac39-4e1849e5bdcc",
-            "sourceColumn": "mes8",
-            "sourceProviderType": "varchar(255)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "mes9",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "isHidden": true,
-            "lineageTag": "85ac3f21-f166-4816-bf3a-0e1c4617e8d1",
-            "sourceColumn": "mes9",
-            "sourceProviderType": "varchar(255)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "mes10",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "isHidden": true,
-            "lineageTag": "6e612d2a-4255-4392-abcd-cc9a8c776331",
-            "sourceColumn": "mes10",
-            "sourceProviderType": "varchar(255)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "mes11",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "isHidden": true,
-            "lineageTag": "82de29cd-f97e-4fb2-9d26-bdd52df0e873",
-            "sourceColumn": "mes11",
-            "sourceProviderType": "varchar(255)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "mes12",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "string",
-            "isHidden": true,
-            "lineageTag": "37b05c71-0320-4542-b3b8-574c8abbf8a2",
-            "sourceColumn": "mes12",
-            "sourceProviderType": "varchar(255)",
-            "summarizeBy": "none"
-          },
-          {
-            "name": "_mes1",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "double",
-            "expression": "VALUE(RF_Venta[mes1])",
-            "isDataTypeInferred": true,
-            "isHidden": true,
-            "lineageTag": "6c01a1ca-56e4-406c-b2f4-80fce8928e33",
-            "summarizeBy": "sum",
-            "type": "calculated"
-          },
-          {
-            "name": "_mes2",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "double",
-            "expression": "VALUE(RF_Venta[mes2])",
-            "isDataTypeInferred": true,
-            "isHidden": true,
-            "lineageTag": "b899d445-00c9-41d3-ad12-a49d2963a96e",
-            "summarizeBy": "sum",
-            "type": "calculated"
-          },
-          {
-            "name": "_mes3",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "double",
-            "expression": "VALUE(RF_Venta[mes3])",
-            "isDataTypeInferred": true,
-            "isHidden": true,
-            "lineageTag": "64f3d029-5113-49cb-9f29-a102d7107be6",
-            "summarizeBy": "sum",
-            "type": "calculated"
-          },
-          {
-            "name": "_mes4",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "double",
-            "expression": "VALUE(RF_Venta[mes4])",
-            "isDataTypeInferred": true,
-            "isHidden": true,
-            "lineageTag": "d2820e33-2c2f-4b87-96ef-4d201dc54e80",
-            "summarizeBy": "sum",
-            "type": "calculated"
-          },
-          {
-            "name": "_mes5",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "double",
-            "expression": "VALUE(RF_Venta[mes5])",
-            "isDataTypeInferred": true,
-            "isHidden": true,
-            "lineageTag": "716fe98d-b3e4-4585-b628-594972379426",
-            "summarizeBy": "sum",
-            "type": "calculated"
-          },
-          {
-            "name": "_mes6",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "double",
-            "expression": "VALUE(RF_Venta[mes6])",
-            "isDataTypeInferred": true,
-            "isHidden": true,
-            "lineageTag": "7385ef1f-21d0-4a7b-82ba-d8cec7e0e24b",
-            "summarizeBy": "sum",
-            "type": "calculated"
-          },
-          {
-            "name": "_mes7",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "double",
-            "expression": "VALUE(RF_Venta[mes7])",
-            "isDataTypeInferred": true,
-            "isHidden": true,
-            "lineageTag": "93c948ba-74fd-4c87-af6e-8ec301184ee8",
-            "summarizeBy": "sum",
-            "type": "calculated"
-          },
-          {
-            "name": "_mes8",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "double",
-            "expression": "VALUE(RF_Venta[mes8])",
-            "isDataTypeInferred": true,
-            "isHidden": true,
-            "lineageTag": "e618f901-4a17-4d87-9a80-7564ebcecef9",
-            "summarizeBy": "sum",
-            "type": "calculated"
-          },
-          {
-            "name": "_mes9",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "double",
-            "expression": "VALUE(RF_Venta[mes9])",
-            "isDataTypeInferred": true,
-            "isHidden": true,
-            "lineageTag": "f05c8404-de02-43e5-82e4-9c2b10473cf0",
-            "summarizeBy": "sum",
-            "type": "calculated"
-          },
-          {
-            "name": "_mes10",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "double",
-            "expression": "VALUE(RF_Venta[mes10])",
-            "isDataTypeInferred": true,
-            "isHidden": true,
-            "lineageTag": "1af26d42-b1df-4350-95c6-cae558c507d8",
-            "summarizeBy": "sum",
-            "type": "calculated"
-          },
-          {
-            "name": "_mes11",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "double",
-            "expression": "VALUE(RF_Venta[mes11])",
-            "isDataTypeInferred": true,
-            "isHidden": true,
-            "lineageTag": "27e459c4-7faf-4a0d-bd3f-376fb68c3a55",
-            "summarizeBy": "sum",
-            "type": "calculated"
-          },
-          {
-            "name": "_mes12",
-            "annotations": [
-              {
-                "name": "SummarizationSetBy",
-                "value": "Automatic"
-              },
-              {
-                "name": "PBI_FormatHint",
-                "value": "{\"isGeneralNumber\":true}"
-              }
-            ],
-            "changedProperties": [
-              {
-                "property": "IsHidden"
-              }
-            ],
-            "dataType": "double",
-            "expression": "VALUE(RF_Venta[mes12])",
-            "isDataTypeInferred": true,
-            "isHidden": true,
-            "lineageTag": "3bff129f-f5f5-4f1d-a7f5-81bead643d0b",
-            "summarizeBy": "sum",
-            "type": "calculated"
-          }
-        ],
-        "isHidden": true,
-        "lineageTag": "de0564a8-52a4-4750-bcbd-2def6ce4c230",
-        "partitions": [
-          {
-            "name": "RF_Venta",
-            "mode": "directQuery",
-            "source": {
-              "expression": [
-                "let",
-                "    Source = Sql.Database(\"192.168.249.151\", \"SBI\", [Query=\"SELECT * FROM RF_Venta\"])",
-                "in",
-                "    Source"
-              ],
-              "type": "m"
             }
           }
         ]
