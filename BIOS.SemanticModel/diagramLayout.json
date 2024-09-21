@@ -4,8 +4,8 @@
     {
       "ordinal": 0,
       "scrollPosition": {
-        "x": 6863.76811594203,
-        "y": 1569.5652173913045
+        "x": 7595.652173913044,
+        "y": 2056.521739130435
       },
       "nodes": [
         {
@@ -23,8 +23,8 @@
         },
         {
           "location": {
-            "x": 4478.7098006971228,
-            "y": 1286.2663471314
+            "x": 4801.8982064942247,
+            "y": 1606.5562022038637
           },
           "nodeIndex": "Agencias",
           "nodeLineageTag": "d32107d6-0c48-4812-ace9-b26dd9efa8bc",
@@ -32,7 +32,7 @@
             "height": 402.32048775468206,
             "width": 234
           },
-          "zIndex": 26
+          "zIndex": 25
         },
         {
           "location": {
@@ -304,7 +304,7 @@
             "height": 481.07462686567146,
             "width": 234
           },
-          "zIndex": 25
+          "zIndex": 31
         },
         {
           "location": {
@@ -317,7 +317,7 @@
             "height": 218.10717761019896,
             "width": 234
           },
-          "zIndex": 27
+          "zIndex": 36
         },
         {
           "location": {
@@ -329,7 +329,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 33
+          "zIndex": 28
         },
         {
           "location": {
@@ -342,7 +342,7 @@
             "height": 309.14285714285688,
             "width": 234
           },
-          "zIndex": 28
+          "zIndex": 38
         },
         {
           "location": {
@@ -354,19 +354,20 @@
             "height": 838.00200030773885,
             "width": 234
           },
-          "zIndex": 2
+          "zIndex": 30
         },
         {
           "location": {
-            "x": 7277.7415004114509,
-            "y": 1730.6907936111161
+            "x": 7296.5820801215959,
+            "y": 2046.6328225966233
           },
           "nodeIndex": "VentaAutos_Comper_ModoDirectQuery",
+          "nodeLineageTag": "0524e7a0-5341-4696-b67d-834f9aa991c2",
           "size": {
-            "height": 848.41551926452348,
+            "height": 457.11117143843649,
             "width": 234
           },
-          "zIndex": 3
+          "zIndex": 29
         },
         {
           "location": {
@@ -379,7 +380,7 @@
             "height": 200,
             "width": 351.91044776119361
           },
-          "zIndex": 32
+          "zIndex": 37
         },
         {
           "location": {
@@ -392,7 +393,7 @@
             "height": 200,
             "width": 234
           },
-          "zIndex": 31
+          "zIndex": 35
         },
         {
           "location": {
@@ -405,7 +406,7 @@
             "height": 249.01492537313425,
             "width": 234
           },
-          "zIndex": 29
+          "zIndex": 26
         },
         {
           "location": {
@@ -418,7 +419,7 @@
             "height": 254.98507462686575,
             "width": 234
           },
-          "zIndex": 30
+          "zIndex": 27
         },
         {
           "location": {
@@ -431,7 +432,137 @@
             "height": 200,
             "width": 234
           },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 5694.5095411520406,
+            "y": 1535.2381399055744
+          },
+          "nodeIndex": "VentaRefa_Comper",
+          "nodeLineageTag": "3f19d6d2-dcd8-427d-a267-c5accc136d71",
+          "size": {
+            "height": 440.57971014492728,
+            "width": 234
+          },
+          "zIndex": 32
+        },
+        {
+          "location": {
+            "x": 4427.7849034708806,
+            "y": 1936.6874152678934
+          },
+          "nodeIndex": "VentaRefa_Comper_ModoDirectQuery",
+          "nodeLineageTag": "7e6336b7-cd58-4235-beb3-38bc757d4493",
+          "size": {
+            "height": 447.82608695652175,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 5183.2047687335635,
+            "y": 1337.8468178663989
+          },
+          "nodeIndex": "VentaServ_Comper_ModoDirectQuery",
+          "nodeLineageTag": "c5e09a42-de6c-4aa2-ad9a-1a691d9db195",
+          "size": {
+            "height": 373.91304347826076,
+            "width": 278.927536231884
+          },
+          "zIndex": 33
+        },
+        {
+          "location": {
+            "x": 4992.4227261610949,
+            "y": 2108.8613106200219
+          },
+          "nodeIndex": "VentaServ_Comper",
+          "nodeLineageTag": "4689ad37-a1d0-45c4-9cae-3eb3308d5766",
+          "size": {
+            "height": 475.36231884057952,
+            "width": 368.78260869565293
+          },
+          "zIndex": 34
+        },
+        {
+          "location": {
+            "x": 8680.0167875288516,
+            "y": 2051.9048065722409
+          },
+          "nodeIndex": "controlVentaRefacciones",
+          "nodeLineageTag": "cec2446c-d5ba-4a1b-b1b2-ed6f1f5f44c0",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 39
+        },
+        {
+          "location": {
+            "x": 9094.4515701375476,
+            "y": 1849.8178500505019
+          },
+          "nodeIndex": "RefaccionesVendidas",
+          "nodeLineageTag": "ea07c6e3-a07a-4f2b-a4c3-aedab57d7ada",
+          "size": {
+            "height": 257.79710144927503,
+            "width": 234
+          },
+          "zIndex": 40
+        },
+        {
+          "location": {
+            "x": 9098.7414252100116,
+            "y": 2164.31060367369
+          },
+          "nodeIndex": "RefaccionesVendidasLineaY",
+          "nodeLineageTag": "f047ffed-6451-4832-8215-91d69658ba17",
+          "size": {
+            "height": 231.71014492753648,
+            "width": 234
+          },
           "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 8710.2776570940714,
+            "y": 2379.4410384562989
+          },
+          "nodeIndex": "controlVentaOrdenes",
+          "nodeLineageTag": "e4123282-0aa0-4f2f-9226-68c0642c40b1",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 42
+        },
+        {
+          "location": {
+            "x": 9005.9298310071117,
+            "y": 2441.1221978765889
+          },
+          "nodeIndex": "OrdenesVendidas",
+          "nodeLineageTag": "ebea761b-a803-421b-b35e-36c8dae77e6a",
+          "size": {
+            "height": 228.8115942028985,
+            "width": 234
+          },
+          "zIndex": 41
+        },
+        {
+          "location": {
+            "x": 8991.3791063694316,
+            "y": 2688.9482848331108
+          },
+          "nodeIndex": "OrdenesVendidasLineaY",
+          "nodeLineageTag": "191c2676-da5b-41f3-b0e5-fb62c575e2ca",
+          "size": {
+            "height": 218.66666666666697,
+            "width": 234
+          },
+          "zIndex": 43
         }
       ],
       "name": "Todas las tablas",

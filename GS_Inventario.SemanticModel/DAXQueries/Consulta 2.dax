@@ -1,0 +1,37 @@
+DEFINE
+	MPARAMETER 'ParamPeriodoUnidadesFacturadas' = 
+		"Mes Actual"
+
+	VAR __DS0FilterTable = 
+		TREATAS({"Mes Actual"}, 'PeriodosUnidadesFacturadas'[Descripcion])
+
+	VAR __DS0Core = 
+		SELECTCOLUMNS(
+			KEEPFILTERS(
+				FILTER(
+					KEEPFILTERS(
+						SUMMARIZECOLUMNS(
+							'NV_ComPer'[_fechaDocumento],
+							'Calendario_NV_ComPer'[MesNombre],
+							__DS0FilterTable,
+							"CountRowsNV_ComPer", COUNTROWS('NV_ComPer')
+						)
+					),
+					OR(
+						NOT(ISBLANK('NV_ComPer'[_fechaDocumento])),
+						NOT(ISBLANK('Calendario_NV_ComPer'[MesNombre]))
+					)
+				)
+			),
+			"'NV_ComPer'[_fechaDocumento]", 'NV_ComPer'[_fechaDocumento],
+			"'Calendario_NV_ComPer'[MesNombre]", 'Calendario_NV_ComPer'[MesNombre]
+		)
+
+	VAR __DS0PrimaryWindowed = 
+		TOPN(501, __DS0Core, 'NV_ComPer'[_fechaDocumento], 1, 'Calendario_NV_ComPer'[MesNombre], 1)
+
+EVALUATE
+	__DS0PrimaryWindowed
+
+ORDER BY
+	'NV_ComPer'[_fechaDocumento], 'Calendario_NV_ComPer'[MesNombre]

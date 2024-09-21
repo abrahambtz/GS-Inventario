@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "BIOS"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "80d06ef0-3962-4c0d-a631-c9633a21dbea"
+  }
+}
